@@ -7,13 +7,9 @@ function App() {
       <header className="App-header">
 
       <p>Hello Mariia</p>
-      <P>Hello world</P>
-      <P>Hello Alexandr !!!</P>
+      <p>Hello Alexandr</p>
+      <p>Hello Daria</p>
 
-
-      <h1>Hello Daria</h1>
-      <h1>Hello world</h1> 
-      <p>Hello</p>
 
 
       </header>
