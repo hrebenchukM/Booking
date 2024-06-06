@@ -13,10 +13,10 @@ function App() {
         {/* Основной контент  */}
       </main>
 
-
       <footer className="App-footer">
         <Footer></Footer>
       </footer>
+
     </div>
   );
 }
