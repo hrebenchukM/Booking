@@ -128,8 +128,7 @@ export  function PlacesOfInterest(){
 
 export function NotFound(){
     return(
-        <div>ERROR 404</div>
-    
+        <div></div>
 ) ;
 }
 
