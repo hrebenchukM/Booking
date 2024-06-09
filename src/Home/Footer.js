@@ -5,9 +5,12 @@ import { Link,Outlet  } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-export const MainPage = () => (
+export const MainPageFooter = () => (
     <>
-  
+   <hr/> 
+
+<Outlet/>
+<hr/> 
   <nav>
     <ul className='list'>
 
@@ -68,10 +71,7 @@ export const MainPage = () => (
 
     </ul>  
   </nav>
-   <hr/> 
-
-  <Outlet/>
-<hr/> 
+  
   </>
 
 );
@@ -377,7 +377,7 @@ export function Footer (props)
   return (
 <BrowserRouter>
 <Routes>
-  <Route path="/" element={<MainPage/> } >
+  <Route path="/" element={<MainPageFooter/> } >
   <Route index element={<NotFound />} />
    <Route path="countries" element={<Countries/> } />
   <Route path="regions" element={<Regions />} />
