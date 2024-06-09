@@ -1,0 +1,95 @@
+.language {
+    position: absolute; 
+    right: 250px;
+    top: 15px; 
+    height: 32px;
+}
+
+.head
+{
+width: 1470px;
+position: absolute;
+height: 150px;
+left: 0px;
+top: 60px;
+}
+
+.hotelforyou
+{
+width: 167px;
+height: 63px;
+left: 80px;
+top: 13px;
+text-decoration: none;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+display: flex;
+align-items: center;
+white-space: nowrap;
+color: #222222;
+}
+
+.register
+{
+position: absolute;
+text-decoration: none;
+box-sizing: border-box;
+flex-direction: row;
+padding: 8px 16px;
+gap: 10px;
+width: 96px;
+height: 32px;
+right: 150px;
+top: 15px; 
+background: #FFFFFF;
+border: 1px solid #DDDDDD;
+border-radius: 30px;
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #222222;
+
+}
+
+.signin {
+position: absolute;
+text-decoration: none;
+box-sizing: border-box;
+flex-direction: row;
+padding: 8px 16px;
+gap: 10px;
+width: 115px;
+height: 32px;
+right: 20px;
+top: 15px; 
+background: #FFFFFF;
+border: 1px solid #DDDDDD;
+border-radius: 30px;
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+color: #222222;
+order: 0;
+flex-grow: 0;
+white-space: nowrap;
+}
+
+
+.signin-icon {
+    position: absolute; 
+    right: 5px;
+    width: 25px; 
+    height: 25px; 
+}
+
