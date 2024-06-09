@@ -1,0 +1,27 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh; 
+}
+
+.register-button {
+    background-color: #581ADB;
+    ;
+    width: 256px;
+    height: 64px;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Увеличенные отступы */
+    font-size: 16px; 
+    font-family:sans-serif  ;
+    border-radius: 35px; /* Закругленные углы */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+    box-shadow: 0 4px 10px rgba(80, 1, 125, 0.347); 
+}
+
+.register-button:hover {
+    background-color: #5a1ce0; 
+    transform: scale(1.05); 
+}

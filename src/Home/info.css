@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 280px; /* Корректируем отступ слева для контейнера */
+  }
+  
+  .header {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Nunito Sans';
+    text-transform: uppercase;
+    color: #717171;
+    width: 138px;
+    height: 21px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центрирование текста */
+  }
+  
+  .info-content {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08), 0px 4px 69px rgba(0, 0, 0, 0.05);
+    width: 880px;
+    height: 168px;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #DDDDDD;
+    position: relative; /* Добавляем позиционирование для относительного смещения */
+    
+  }
+  
+  .image-section {
+    position: absolute;
+    left: -292px; /* Подвинем изображение немного вправо */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .customer-image {
+    width: 272px;
+    height: 171px;
+    border-radius: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
+  }
+  
+  .text-section {
+    text-align: justify; /* Добавление выравнивания текста по ширине */
+  width: 100%;  /* Заполнение оставшегося пространства */
+    padding-left: 20px; /* Дополнительное выравнивание текста */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #717171;}
+  
+  .text-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
