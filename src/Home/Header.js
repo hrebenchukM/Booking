@@ -22,7 +22,7 @@ export const MainPageHeader = () => (
 
     
     <div>
-      <img src="language.png" width="40" alt="Language" className='language'/>
+      <img src="language.png"alt="Language" className='language'/>
       <Link to="/register" className='register'>Register</Link>
       <Link to="/sign_in" className='signin'>Sign In<img src="signin.png" width="40" alt="SignIn" className="signin-icon" /></Link>
     </div>
