@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import { Footer } from './Home/Footer';
+import RegisterButton from './Home/regBtn';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
 
-      <p>Проверка на чужие изменения ,проблема с веткой дарья</p>
 
         {/* меню */}
 
@@ -24,5 +24,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
