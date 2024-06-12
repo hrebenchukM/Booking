@@ -7,10 +7,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 export const MainPageFooter = () => (
     <>
-   <hr/> 
-
+   {/* <hr/>  */}
 <Outlet/>
-<hr/> 
+{/* <hr/>  */}
   <nav>
     <ul className='list'>
 

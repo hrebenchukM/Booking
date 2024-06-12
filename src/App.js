@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Footer } from './Home/Footer';
 import { Header } from './Home/Header';
-
+import { Nav } from './Home/Nav';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       </header>
       
       <main className="App-main">
-        {/* Основной контент  */}
+      <Nav></Nav>
       </main>
 
       <footer className="App-footer">

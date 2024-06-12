@@ -1,0 +1,139 @@
+.easybooking
+{
+position: absolute;
+width: 97.28px;
+height: 48px;
+left: 493px;
+top: 360px;
+
+
+}
+
+.easy-icon{
+
+position: absolute;
+left: 36.84%;
+right: 37.89%;
+top: 0%;
+bottom: 50%;
+
+}
+.easy_text
+{
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+
+color: #717171;
+
+
+}
+
+
+.securepayment
+{
+
+
+position: absolute;
+width: 118.78px;
+height: 48px;
+left: 669px;
+top: 360px;
+
+
+}
+.secure_text
+{
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+display: flex;
+align-items: center;
+
+
+color: #717171;
+
+
+}
+
+.secure-icon
+{
+
+
+position: absolute;
+left: 39.65%;
+right: 39.66%;
+top: 0%;
+bottom: 50%;
+
+
+}
+
+
+.relevantinformation
+{
+
+position: absolute;
+width: 153.6px;
+height: 48px;
+left: 852px;
+top: 360px;
+
+
+}
+.info_text
+{
+
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #717171;
+
+
+}
+
+.info-icon
+{
+
+position: absolute;
+left: 42%;
+right: 42%;
+top: 0%;
+bottom: 50%;
+
+
+}
