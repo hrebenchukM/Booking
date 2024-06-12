@@ -9,9 +9,9 @@ export const MainPageNav = () => (
   <nav  >
     
     <div>
-      <Link to="/easy_booking" className='easybooking'><span className='easy_text'>Easy booking</span><img src="easy.png" width="25" className="easy-icon" /></Link>
-      <Link to="/secure_payment" className='securepayment'><span className='secure_text'>Secure payment</span><img src="secure.png" width="25" className="secure-icon" /></Link>
-      <Link to="/relevant_information" className='relevantinformation'><span className='info_text'>Relevant information</span><img src="info.png" width="25" className="info-icon" /></Link>
+      <Link to="/easy_booking" className='easybooking'><span className='easy_text'>Easy booking</span><img src="" width="25" className="easy-icon" /></Link>
+      <Link to="/secure_payment" className='securepayment'><span className='secure_text'>Secure payment</span><img src="" width="25" className="secure-icon" /></Link>
+      <Link to="/relevant_information" className='relevantinformation'><span className='info_text'>Relevant information</span><img src="" width="25" className="info-icon" /></Link>
     </div>
    
   </nav>
