@@ -16,20 +16,20 @@ export const MainPageHeader = () => (
   <HeadImage />
 
   <nav  >
-  <Link to="/" className='hotelforyou'>
-    Hotel for <span style={{ color: 'blueviolet', marginLeft: '5px' }}> you.</span>
-</Link>
 
-    
-    <div>
+    <div className='container'>
+    <Link to="/" className='hotelforyou'>
+    Hotel for <span style={{ color: 'blueviolet', marginLeft: '5px' }}> you.</span>
+    </Link>
       <img src="language.png"alt="Language" className='language'/>
       <Link to="/register" className='register'>Register</Link>
       <Link to="/sign_in" className='signin'>Sign In<img src="signin.png" width="40" alt="SignIn" className="signin-icon" /></Link>
     </div>
    
   </nav>
-
-  <Outlet/>
+   {/* <hr/>  */}
+   <Outlet/>
+{/* <hr/>  */}
 
   </>
 
@@ -39,7 +39,8 @@ export const MainPageHeader = () => (
 
 export  function HotelForYou(){//HOME page 
     return(
-        <div></div>
+        <div>
+        </div>
     
 ) ;
 }

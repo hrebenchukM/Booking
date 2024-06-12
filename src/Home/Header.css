@@ -1,89 +1,138 @@
-.language {
-    position: absolute; 
-    right: 250px;
-    top: 15px; 
-    height: 30px;
-    width:30px; 
-}
-
 .head
 {
-width: 1488px;
+
 position: absolute;
-height: 150px;
+width: 1477px;
+height: 220px;
 left: 0px;
-top: 60px;
+top: 80px;
+background-color:  #D9D9D9;
+
 }
+
+.container{
+
+position: absolute;
+width: 1420px;
+height: 80px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+
+}
+
+
+.language {
+ 
+position: absolute;
+width: 32px;
+height: 32px;
+left: 1154px;
+top: 24px;
+
+
+}
+
 
 .hotelforyou
 {
-width: 167px;
-height: 63px;
-left: 80px;
-top: 13px;
-text-decoration: none;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-style: normal;
-font-weight: 800;
+
+white-space: nowrap;
+color: #222222; 
 font-size: 24px;
 line-height: 33px;
-display: flex;
-align-items: center;
-white-space: nowrap;
-color: #222222;
+font-style: normal;
+font-weight: 800;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-decoration: none;
+position: absolute;
+width: 167px;
+height: 33px;
+left: 80px;
+top: 23px;
+
+
 }
 
 .register
 {
-position: absolute;
-text-decoration: none;
-box-sizing: border-box;
-flex-direction: row;
-padding: 8px 16px;
-gap: 10px;
-width: 96px;
-height: 32px;
-right: 150px;
-top: 15px; 
-background: #FFFFFF;
-border: 1px solid #DDDDDD;
-border-radius: 30px;
-font-family: 'Nunito Sans',sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
-color: #222222;
+
+    
+
+
+
+
+
+    box-sizing: border-box;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 40px 10px 16px;
+    gap: 10px;
+    isolation: isolate;
+    
+    position: absolute;
+    width: 96px;
+    height: 32px;
+    left: 1197px;
+    top: 24px;
+    
+    
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 30px;
+    
+    flex-grow: 0;
+    white-space: nowrap;
+    
+    font-family: 'Nunito Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    color: #222222;
+
+
 
 }
 
 .signin {
-position: absolute;
-text-decoration: none;
+
+
+
 box-sizing: border-box;
+text-decoration: none;
+display: flex;
 flex-direction: row;
-padding: 8px 16px;
+align-items: center;
+padding: 10px 40px 10px 16px;
 gap: 10px;
-width: 115px;
+isolation: isolate;
+
+position: absolute;
+width: 120px;
 height: 32px;
-right: 20px;
-top: 15px; 
+left: 1317px;
+top: 24px;
+
+
 background: #FFFFFF;
 border: 1px solid #DDDDDD;
 border-radius: 30px;
+
+flex-grow: 0;
+white-space: nowrap;
+
 font-family: 'Nunito Sans',sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 22px;
-display: flex;
 align-items: center;
 color: #222222;
-order: 0;
-flex-grow: 0;
-white-space: nowrap;
 }
 
 
