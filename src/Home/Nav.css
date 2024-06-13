@@ -1,0 +1,163 @@
+.easybooking
+{
+position: absolute;
+width: 97.28px;
+height: 48px;
+left: 493px;
+top: 360px;
+
+
+}
+
+.easy-icon{
+
+position: absolute;
+left: 36.84%;
+right: 37.89%;
+top: 0%;
+bottom: 50%;
+background-image: url('/public/easy.png'); 
+background-size:cover; 
+
+}
+.easybooking:hover .easy-icon {
+    background-image: url('/public/easy2.png'); 
+    background-size:cover; 
+}
+
+.easy_text
+{
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+
+color: #717171;
+
+
+}
+
+.easybooking:hover .easy_text {
+color: #222222;
+
+}
+.securepayment
+{
+
+
+position: absolute;
+width: 118.78px;
+height: 48px;
+left: 669px;
+top: 360px;
+
+
+}
+
+.secure_text
+{
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+display: flex;
+align-items: center;
+
+
+color: #717171;
+
+
+}
+.securepayment:hover .secure_text {
+    color: #222222;
+}
+
+.secure-icon
+{
+
+
+position: absolute;
+left: 39.65%;
+right: 39.66%;
+top: 0%;
+bottom: 50%;
+background-image: url('/public/secure.png'); 
+background-size:cover; 
+}
+.securepayment:hover .secure-icon {
+    background-image: url('/public/secure2.png'); 
+    background-size:cover; 
+}
+
+.relevantinformation
+{
+
+position: absolute;
+width: 153.6px;
+height: 48px;
+left: 852px;
+top: 360px;
+
+
+}
+
+.info_text
+{
+
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #717171;
+
+
+}
+.relevantinformation:hover .info_text {
+    color: #222222;
+}
+.info-icon
+{
+
+position: absolute;
+left: 42%;
+right: 42%;
+top: 0%;
+bottom: 50%;
+background-image: url('/public/info.png');
+background-size:cover; 
+}
+.relevantinformation:hover .info-icon {
+    background-image: url('/public/info2.png'); 
+    background-size:cover; 
+}
