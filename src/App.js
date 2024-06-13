@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Footer } from './Home/Footer';
-import RegBtn from './Home/button/regBtn';
-import Register from './Home/button/Register';
-import Info from './Home/info';
-import About from './Home/About';
+//import { Footer } from './Home/Footer';
+import { RegBtn } from './Home/button/regBtn';
+import { Info } from './Home/info';
+import { About } from './Home/About';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,28 +22,25 @@ function App() {
       <header className="App-header">
 
 
-        {/* меню */}
-
       </header>
      
 
 
       <main className="App-main">
-        {/* Основной контент */}
-        <About />  {/* Вставляем компонент About */}
+       
+      <About/>
+      <Info />
+        <RegBtn onRegisterClick={handleRegisterClick} /> 
+
+
+
       </main>
-      <div className="App-info">
-        <Info imageUrl={process.env.PUBLIC_URL + '/info.jpeg'} />
-      </div>
-      <div className="App-RegBtn">
-        <RegBtn onRegisterClick={handleRegisterClick} />
-      </div>
+    
       
 
       <footer className="App-footer">
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </footer>
-      <Register isOpen={isModalOpen} onClose={handleCloseModal} />
 
     </div>
   );
