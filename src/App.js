@@ -10,6 +10,8 @@ import { About } from './Home/About/About';
 import { Header } from './Home/Header/Header';
 import { Nav } from './Home/Nav/Nav';
 
+
+
 // branch hotels and reviews
 import { ReviewsList } from './Components/ReviewsList.js';
 import { HotelsList } from './Components/HotelsList.js';
@@ -18,6 +20,7 @@ import reviewsArr from './api/reviews.json';
 import './Components/styles.css';
 
 // -----------------------
+
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -31,7 +34,6 @@ function App() {
 
   return (
     <div className="App">
-
       <header className="App-header">
 
       <Header></Header>
@@ -40,9 +42,9 @@ function App() {
      
 
 
-      <main className="App-main">
+      <main>
       <Nav></Nav>
-
+      
       <section className="hotels">
         <div className="container1">
           <HotelsList cardsArr={hotelsArr} />
@@ -66,15 +68,9 @@ function App() {
     
       
 
-      <footer className="App-footer">
+      <footer>
         <Footer></Footer>
       </footer>
-      
-   
-
-      
-
-
     </div>
   );
 }
