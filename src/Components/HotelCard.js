@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, A11y, Autoplay } from 'swiper/modules';
 import classNames from "classnames";
 import 'swiper/swiper-bundle.css';
-
+// asdas
 export const HotelCard = ({
     imagesArr,
     starsNum,
