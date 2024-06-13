@@ -22,23 +22,31 @@ function App() {
       
       <main className="App-main">
       <Nav></Nav>
-      </main>
 
-      <footer className="App-footer">
-        <Footer></Footer>
-      </footer>
+
+
       
       <section className="hotels">
         <div className="container1">
           <HotelsList cardsArr={hotelsArr} />
         </div>
       </section>
+
+
+      
       <section className="reviews">
         <div className="container1">
           <h3 className="reviews__title">reviews</h3>
           <ReviewsList reviewsArr={reviewsArr} />
         </div>
       </section>
+      </main>
+
+      <footer className="App-footer">
+        <Footer></Footer>
+      </footer>
+      
+   
 
       
 
