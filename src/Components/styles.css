@@ -22,22 +22,6 @@ input::-webkit-inner-spin-button {
   box-sizing: border-box;
 }
 
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-ol,
-ul,
-li,
-div,
-hr {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  font-family: inherit;
-}
 
 .container1 {
   box-sizing: content-box;
@@ -67,6 +51,11 @@ body {
   column-gap: 32px;
   overflow-x: auto;
   top: 450px; 
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: inherit;
 }
 
 @media screen and (max-width: 600px) {
@@ -206,7 +195,12 @@ body {
 .reviews__list {
   display: flex;
   gap: 40px;
-  top: 450px; 
+  top: 470px; 
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: inherit;
 }
 
 @media screen and (max-width: 1000px) {
@@ -224,6 +218,13 @@ body {
   color: rgb(113, 113, 113);
   margin-bottom: 32px;
   top: 450px; 
+
+
+  
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: inherit;
 }
 
 .review {
