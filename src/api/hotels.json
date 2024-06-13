@@ -1,6 +1,6 @@
 [
     {
-        "imagesArr": ["./images/hotel__1.svg", "./images/hotel__1.svg", "./images/hotel__1.svg", "./images/hotel__1.svg", "./images/hotel__1.svg"],
+        "imagesArr": ["./hotel__1.svg", "./hotel__1.svg", "./hotel__1.svg", "./hotel__1.svg", "./hotel__1.svg"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -9,7 +9,7 @@
         "nightCost": 130
     },
     {
-        "imagesArr": ["./images/hotel__2.svg", "./images/hotel__2.svg", "./images/hotel__2.svg", "./images/hotel__2.svg", "./images/hotel__2.svg"],
+        "imagesArr": ["./hotel__2.svg", "./hotel__2.svg", "./hotel__2.svg", "./hotel__2.svg", "./hotel__2.svg"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -18,7 +18,7 @@
         "nightCost": 142
     },
     {
-        "imagesArr": ["./images/hotel__3.svg", "./images/hotel__3.svg", "./images/hotel__3.svg", "./images/hotel__3.svg", "./images/hotel__3.svg"],
+        "imagesArr": ["./hotel__3.svg", "./hotel__3.svg", "./hotel__3.svg", "./hotel__3.svg", "./hotel__3.svg"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -27,7 +27,7 @@
         "nightCost": 98
     },
     {
-        "imagesArr": ["./images/hotel__4.svg", "./images/hotel__4.svg", "./images/hotel__4.svg", "./images/hotel__4.svg", "./images/hotel__4.svg"],
+        "imagesArr": ["./hotel__4.svg", "./hotel__4.svg", "./hotel__4.svg", "./hotel__4.svg", "./hotel__4.svg"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -36,7 +36,7 @@
         "nightCost": 167
     },
     {
-        "imagesArr": ["./images/hotel__5.svg", "./images/hotel__5.svg", "./images/hotel__5.svg", "./images/hotel__5.svg", "./images/hotel__5.svg"],
+        "imagesArr": ["./hotel__5.svg", "./hotel__5.svg", "./hotel__5.svg", "./hotel__5.svg", "./hotel__5.svg"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -45,7 +45,7 @@
         "nightCost": 130
     },
     {
-        "imagesArr": ["./images/hotel__6.svg", "./images/hotel__6.svg", "./images/hotel__6.svg", "./images/hotel__6.svg", "./images/hotel__6.svg"],
+        "imagesArr": ["./hotel__6.svg", "./hotel__6.svg", "./hotel__6.svg", "./hotel__6.svg", "./hotel__6.svg"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -54,7 +54,7 @@
         "nightCost": 142
     },
     {
-        "imagesArr": ["./images/hotel__7.svg", "./images/hotel__7.svg", "./images/hotel__7.svg", "./images/hotel__7.svg", "./images/hotel__7.svg"],
+        "imagesArr": ["./hotel__7.svg", "./hotel__7.svg", "./hotel__7.svg", "./hotel__7.svg", "./hotel__7.svg"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -63,7 +63,7 @@
         "nightCost": 98
     },
     {
-        "imagesArr": ["./images/hotel__8.svg", "./images/hotel__8.svg", "./images/hotel__8.svg", "./images/hotel__8.svg", "./images/hotel__8.svg"],
+        "imagesArr": ["./hotel__8.svg", "./hotel__8.svg", "./hotel__8.svg", "./hotel__8.svg", "./hotel__8.svg"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",

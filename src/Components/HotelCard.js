@@ -28,9 +28,9 @@ export const HotelCard = ({
                 setIsHotelFavourite(!isHotelFavourite);
             }}>
                 {!isHotelFavourite ? (
-                    <img src="./images/star.svg" alt="" className="hoter__favourite-star" />
+                    <img src="./star.svg" alt="" className="hoter__favourite-star" />
                 ) : (
-                    <img src="./images/black-star-icon.svg" alt="" className="hoter__favourite-star" />
+                    <img src="./black-star-icon.svg" alt="" className="hoter__favourite-star" />
                 )}
             </button>
             <div className="hotel__slider">
