@@ -2,15 +2,16 @@
 
 .list {
 
-    display: flex;
-    position: absolute;
-    width: 1317px;
-    height: 323px;
-    left: 0px;
-    top: 1072px;
-    list-style-type: none;
+list-style-type: none;
+box-sizing: border-box;
+position: absolute;
+width: 1317px;
+height: 323px;
+left: 0px;
+top: 2472px;
 
-
+    background: #FFFFFF;
+    border-top: 1px solid #DDDDDD;
 
     
     }
@@ -22,7 +23,7 @@
     position: absolute;
     width: 181px;
     height: 156px;
-    top: 1072px;
+    top: 72px;
     
     }
     

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Footer } from './Home/Footer';
+import { Footer } from './Home/Footer/Footer';
 
 import { RegBtn } from './Home/button/regBtn';
-import { Info } from './Home/info';
-import { About } from './Home/About';
+import { Info } from './Home/Info/info';
+import { About } from './Home/About/About';
 
-import { Header } from './Home/Header';
-import { Nav } from './Home/Nav';
+import { Header } from './Home/Header/Header';
+import { Nav } from './Home/Nav/Nav';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,15 +32,11 @@ function App() {
 
 
       <main className="App-main">
-
+      <Nav></Nav>
       <About/>
       <Info />
-        <RegBtn onRegisterClick={handleRegisterClick} /> 
-
-
-
-      <Nav></Nav>
-
+      <RegBtn onRegisterClick={handleRegisterClick} /> 
+  
       </main>
     
       
