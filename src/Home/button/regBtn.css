@@ -1,0 +1,92 @@
+.rect
+{
+
+position: absolute;
+width: 380px;
+height: 92px;
+left: 770px;
+top: 2146px;
+
+
+}
+.register-container
+{
+
+position: absolute;
+width: 336px;
+height: 64px;
+left: 22px;
+top: 14px;
+
+
+}
+.register-button
+{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 256px; 
+height: 64px;
+left: calc(50% - 656px/2);
+top: calc(50% - 64px/2);
+border: none;
+
+background: #581ADB;
+
+box-shadow: 0px 0px 10px rgba(88, 26, 219, 0.35), 0px 0px 43px rgba(88, 26, 219, 0.37);
+border-radius: 60px;
+}
+
+.rect:hover {
+    transform: scale(1.01); 
+  }
+  
+.txt
+{
+  
+
+width: 147px;
+height: 11px;
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+.icon-flag
+{
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: calc(50% - 24px/2 - 356px);
+top: calc(50% - 24px/2);
+
+}
+
+
+.icon-flagg
+{
+position: absolute;
+width: 24px;
+height: 24px;
+left: calc(50% - 24px/2 - 44px);
+top: calc(50% - 24px/2);
+}
