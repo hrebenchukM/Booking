@@ -1,6 +1,6 @@
-/* .App {
+.App {
 
-} */
+}
 
 
 .App-header {
@@ -11,7 +11,10 @@
   background: #FFFFFF;
   
 }
-.App-footer{
+.App-footer
+{
+
+
 box-sizing: border-box;
 
 position: absolute;
@@ -22,4 +25,7 @@ top: 1472px;
 
 background: #FFFFFF;
 border-top: 1px solid #DDDDDD;
+
+
 }
+
