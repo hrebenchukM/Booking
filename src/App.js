@@ -28,7 +28,7 @@ function App() {
         <Footer></Footer>
       </footer>
       
-      {/* <section className="hotels">
+      <section className="hotels">
         <div className="container1">
           <HotelsList cardsArr={hotelsArr} />
         </div>
@@ -38,7 +38,7 @@ function App() {
           <h3 className="reviews__title">reviews</h3>
           <ReviewsList reviewsArr={reviewsArr} />
         </div>
-      </section> */}
+      </section>
 
       
 

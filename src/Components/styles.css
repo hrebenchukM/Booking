@@ -66,6 +66,7 @@ body {
   -moz-column-gap: 32px;
   column-gap: 32px;
   overflow-x: auto;
+  top: 450px; 
 }
 
 @media screen and (max-width: 600px) {
@@ -172,7 +173,7 @@ body {
   width: 16px;
   height: 16px;
   display: block;
-  background-image: url('C:\Users\Sasha\Desktop\project\Booking\public\hotel__star.svg');
+  background-image: url('/public/hotel__star.svg');
   background-position: center;
   background-size: 11.5px 11px;
   background-repeat: no-repeat;
@@ -199,11 +200,13 @@ body {
 .reviews {
   margin-top: 66px;
   width: 100%;
+
 }
 
 .reviews__list {
   display: flex;
   gap: 40px;
+  top: 450px; 
 }
 
 @media screen and (max-width: 1000px) {
@@ -220,6 +223,7 @@ body {
   text-align: center;
   color: rgb(113, 113, 113);
   margin-bottom: 32px;
+  top: 450px; 
 }
 
 .review {
