@@ -10,6 +10,14 @@ import { About } from './Home/About/About';
 import { Header } from './Home/Header/Header';
 import { Nav } from './Home/Nav/Nav';
 
+// branch hotels and reviews
+import { ReviewsList } from './Components/ReviewsList.js';
+import { HotelsList } from './Components/HotelsList.js';
+import hotelsArr from './api/hotels.json';
+import reviewsArr from './api/reviews.json';
+import './Components/styles.css';
+
+// -----------------------
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -23,6 +31,7 @@ function App() {
 
   return (
     <div className="App">
+
       <header className="App-header">
 
       <Header></Header>
@@ -33,6 +42,22 @@ function App() {
 
       <main className="App-main">
       <Nav></Nav>
+
+      <section className="hotels">
+        <div className="container1">
+          <HotelsList cardsArr={hotelsArr} />
+        </div>
+      </section>
+
+
+      
+      <section className="reviews">
+        <div className="container1">
+          <h3 className="reviews__title">reviews</h3>
+          <ReviewsList reviewsArr={reviewsArr} />
+        </div>
+      </section>
+
       <About/>
       <Info />
       <RegBtn onRegisterClick={handleRegisterClick} /> 
@@ -44,6 +69,12 @@ function App() {
       <footer className="App-footer">
         <Footer></Footer>
       </footer>
+      
+   
+
+      
+
+
     </div>
   );
 }

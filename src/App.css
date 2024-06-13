@@ -14,5 +14,18 @@
 .App-footer
 {
 
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1448px;
+height: 464px;
+left: 0px;
+top: 1472px;
+
+background: #FFFFFF;
+border-top: 1px solid #DDDDDD;
+
+
 }
 
