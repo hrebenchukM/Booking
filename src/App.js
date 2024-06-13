@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-//import { Footer } from './Home/Footer';
+import { Footer } from './Home/Footer';
 import { RegBtn } from './Home/button/regBtn';
 import { Info } from './Home/info';
 import { About } from './Home/About';
