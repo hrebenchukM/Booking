@@ -46,7 +46,7 @@ function App() {
       
 
       <footer className="App-footer">
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </footer>
     </div>
   );
