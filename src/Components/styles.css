@@ -18,6 +18,23 @@ input::-webkit-inner-spin-button {
   appearance: textfield;
 } 
 
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+ol,
+ul,
+li,
+div,
+hr {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -32,12 +49,20 @@ input::-webkit-inner-spin-button {
 
 @media screen and (min-width: 1200px) {
   .container1 {
-    padding: 0 120px;
+    padding: 0 80px;
   }
 }
 
 body {
   font-family: inherit;
+}
+
+.hotels {
+  width: 100%;
+}
+
+.reviews {
+  width: 100%;
 }
 
 .hotels__list {
@@ -85,8 +110,10 @@ body {
 .hotel {
   flex-basis: 20%;
   min-width: 272px;
+  display: block;
   width: 272px;
   position: relative;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {

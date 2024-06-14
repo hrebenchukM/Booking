@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Footer } from './Home/Footer/Footer';
+import { Footer } from './Home/Footer/Footer.js';
 
-import { RegBtn } from './Home/button/regBtn';
-import { Info } from './Home/Info/info';
-import { About } from './Home/About/About';
+import { RegBtn } from './Home/button/regBtn.js';
+import { Info } from './Home/Info/info.js';
+import { About } from './Home/About/About.js';
 
-import { Header } from './Home/Header/Header';
-import { Nav } from './Home/Nav/Nav';
+import { Header } from './Home/Header/Header.js';
+import { Nav } from './Home/Nav/Nav.js';
 
 
 
 // branch hotels and reviews
-import { ReviewsList } from './Components/ReviewsList.js';
-import { HotelsList } from './Components/HotelsList.js';
+import { Reviews } from './Components/Reviews.js';
+import { Hotels } from './Components/Hotels.js';
 import hotelsArr from './api/hotels.json';
 import reviewsArr from './api/reviews.json';
 import './Components/styles.css';
@@ -36,37 +36,26 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-      <Header></Header>
+        <Header></Header>
 
       </header>
-     
+
 
 
       <main>
-      <Nav></Nav>
-      
-      <section className="hotels">
-        <div className="container1">
-          <HotelsList cardsArr={hotelsArr} />
-        </div>
-      </section>
+        <Nav></Nav>
 
+        <Hotels />
 
-      
-      <section className="reviews">
-        <div className="container1">
-          <h3 className="reviews__title">reviews</h3>
-          <ReviewsList reviewsArr={reviewsArr} />
-        </div>
-      </section>
+        <Reviews />
 
-      <About/>
-      <Info />
-      <RegBtn onRegisterClick={handleRegisterClick} /> 
-  
+        <About />
+        <Info />
+        <RegBtn onRegisterClick={handleRegisterClick} />
+
       </main>
-    
-      
+
+
 
       <footer>
         <Footer></Footer>
