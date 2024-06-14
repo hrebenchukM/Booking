@@ -1,4 +1,4 @@
-/* Branch hotels and reviews */
+/* 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 html {
@@ -10,8 +10,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 } 
-
-/* Firefox */
  input[type=number] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
@@ -335,5 +333,4 @@ body {
 .my-swiper-pagination-bullet-active {
   width: 10px;
   height: 10px;
-}
-/* -------------------------- */
+} */
