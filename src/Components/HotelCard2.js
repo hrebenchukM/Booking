@@ -28,12 +28,12 @@ export const HotelCard = ({
         }
     }, [currentIndex, imagesArr]);
 
-    useEffect(() => {//для автопереключения фоток каждые 5 сек
-        let slider = setInterval(() => setCurrentIndex((prevState) => prevState + 1), 5000);
-        return () => {
-            clearInterval(slider);
-        };
-    }, [currentIndex]);
+    // useEffect(() => {//to automatically switch photos every 5 seconds
+    //     let slider = setInterval(() => setCurrentIndex((prevState) => prevState + 1), 5000);
+    //     return () => {
+    //         clearInterval(slider);
+    //     };
+    // }, [currentIndex]);
 
     return (
         <div className="hotel">
