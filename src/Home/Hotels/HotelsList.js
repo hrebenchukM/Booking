@@ -6,10 +6,17 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './HotelStyles2.css';
 import { HotelCard } from "./HotelCard2.js";
 
+import { Reviews } from "../Reviews/Reviews.js";
+import reviewsArr from '../Reviews/reviews.json';
+
+import{RegBtn} from '../button/regBtn.js'
+import{Info} from '../Info/info.js'
+import{About} from '../About/About.js'
 
 
 export const MainPageHotels = () => (
     <>
+
   <nav  >
   <section className="hotels">
             <div className="container1">
@@ -30,9 +37,13 @@ export const MainPageHotels = () => (
             </div>
             </div>
         </section>
+    
   </nav>
-  
-  
+  <Reviews />
+  <About />
+  <Info />
+  <RegBtn />
+
   </>
 
 );
@@ -63,6 +74,9 @@ export function HotelPages (props)
       <Route path="/" element={<MainPageHotels />} />
       <Route path="hotel/:hotelId" element={<Hotel />} />
       <Route path="*" element={<NotFound />} />
+</Routes>
+<Routes>
+      
 </Routes>
 </BrowserRouter>
 
