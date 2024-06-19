@@ -4,6 +4,15 @@ import { Link,Outlet  } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
+import { Reviews } from "../Reviews/Reviews.js";
+import reviewsArr from '../Reviews/reviews.json';
+
+import{RegBtn} from '../button/regBtn.js'
+import{Info} from '../Info/info.js'
+import{About} from '../About/About.js'
+
+
+
 export const MainPageNav = () => (
     <>
   <nav  >
@@ -16,9 +25,6 @@ export const MainPageNav = () => (
    
   </nav>
 
-     {/* <hr/>  */}
-<Outlet/>
-{/* <hr/>  */}
   </>
 
 );
