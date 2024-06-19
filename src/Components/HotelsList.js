@@ -1,7 +1,7 @@
 import React from "react";
-import { HotelCard } from "./HotelCard";
-// import HotelCard from './HotelCard.js';
-
+// import { HotelCard } from "./HotelCard";
+import './HotelStyles2.css';
+import { HotelCard } from "./HotelCard2.js";
 export const HotelsList = ({
     cardsArr
 }) => {

@@ -1,7 +1,6 @@
 import React from "react";
 import { ReviewCard } from "./ReviewCard";
-
-
+import './ReviewsStyles2.css';
 export const ReviewsList = ({
     reviewsArr
 }) => {

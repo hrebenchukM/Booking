@@ -1,4 +1,4 @@
-/* Branch hotels and reviews */
+/* 
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 html {
@@ -10,13 +10,28 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 } 
-
-/* Firefox */
  input[type=number] {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
   appearance: textfield;
 } 
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+ol,
+ul,
+li,
+div,
+hr {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
 
 * {
   box-sizing: border-box;
@@ -32,12 +47,20 @@ input::-webkit-inner-spin-button {
 
 @media screen and (min-width: 1200px) {
   .container1 {
-    padding: 0 120px;
+    padding: 0 80px;
   }
 }
 
 body {
   font-family: inherit;
+}
+
+.hotels {
+  width: 100%;
+}
+
+.reviews {
+  width: 100%;
 }
 
 .hotels__list {
@@ -85,8 +108,10 @@ body {
 .hotel {
   flex-basis: 20%;
   min-width: 272px;
+  display: block;
   width: 272px;
   position: relative;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -308,5 +333,4 @@ body {
 .my-swiper-pagination-bullet-active {
   width: 10px;
   height: 10px;
-}
-/* -------------------------- */
+} */
