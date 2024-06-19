@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-
+import hotelsArr from '../Hotels/hotels.json';
 export const HotelCard = ({
     imagesArr,
     starsNum,
@@ -28,12 +27,12 @@ export const HotelCard = ({
         }
     }, [currentIndex, imagesArr]);
 
-    // useEffect(() => {//to automatically switch photos every 5 seconds
-    //     let slider = setInterval(() => setCurrentIndex((prevState) => prevState + 1), 5000);
-    //     return () => {
-    //         clearInterval(slider);
-    //     };
-    // }, [currentIndex]);
+    useEffect(() => {//to automatically switch photos every 5 seconds
+        let slider = setInterval(() => setCurrentIndex((prevState) => prevState + 1), 5000);
+        return () => {
+            clearInterval(slider);
+        };
+    }, [currentIndex]);
 
     return (
         <div className="hotel">
@@ -42,9 +41,13 @@ export const HotelCard = ({
                 onClick={() => setIsHotelFavourite(!isHotelFavourite)}
             >
                 {!isHotelFavourite ? (
-                    <img src="./star.svg" alt="" className="hotel__favourite-star" />
+                    // <img src="./star.svg" alt="" className="hotel__favourite-star" />
+                    <img src={process.env.PUBLIC_URL + '/star.svg'} alt="" className="hotel__favourite-star" />
+
                 ) : (
-                    <img src="./black-star-icon.svg" alt="" className="hotel__favourite-star" />
+                    // <img src="./black-star-icon.svg" alt="" className="hotel__favourite-star" />
+                    <img src={process.env.PUBLIC_URL + '/black-star-icon.svg'} alt="" className="hotel__favourite-star" />
+
                 )}
             </button>
             <div className="hotel__slider">
@@ -60,7 +63,9 @@ export const HotelCard = ({
 
                             return (
                                 <article className={position} key={imageIndex}>
-                                    <img src={imageSrc} alt="Hotel" className='hotel__image' />
+                                    {/* <img src={imageSrc} alt="Hotel" className='hotel__image' /> */}
+                                    <img src={process.env.PUBLIC_URL + '/' + imageSrc} alt="Hotel" className='hotel__image' />
+
                                 </article>
                             );
                         })}

@@ -1,6 +1,8 @@
 import React from "react";
 import { ReviewCard } from "./ReviewCard";
 import './ReviewsStyles2.css';
+import reviewsArr from './reviews.json';
+
 export const ReviewsList = ({
     reviewsArr
 }) => {

@@ -1,7 +1,6 @@
 import React from "react";
 import { ReviewsList } from "./ReviewsList";
-import reviewsArr from '../api/reviews.json';
-
+import reviewsArr from './reviews.json';
 
 export const Reviews = () => {
     return (

@@ -1,23 +1,21 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Footer } from './Home/Footer/Footer.js';
+import { Footer } from './Footer/Footer.js';
 
 import { RegBtn } from './Home/button/regBtn.js';
 import { Info } from './Home/Info/info.js';
 import { About } from './Home/About/About.js';
 
-import { Header } from './Home/Header/Header.js';
+import { Header } from './Header/Header.js';
 import { Nav } from './Home/Nav/Nav.js';
 
 
-
 // branch hotels and reviews
-import { Reviews } from './Components/Reviews.js';
-import { Hotels } from './Components/Hotels.js';
-import hotelsArr from './api/hotels.json';
-import reviewsArr from './api/reviews.json';
-import './Components/styles.css';
+import { Reviews } from './Home/Reviews/Reviews.js';
+
+import { HotelPages } from './Home/Hotels/HotelsList.js';
+import hotelsArr from './Home/Hotels/hotels.json';
+import reviewsArr from './Home/Reviews/reviews.json';
 
 // -----------------------
 
@@ -45,8 +43,7 @@ function App() {
       <main>
         <Nav></Nav>
 
-        <Hotels />
-
+        <HotelPages />
         <Reviews />
 
         <About />

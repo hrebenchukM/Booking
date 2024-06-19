@@ -1,5 +1,5 @@
 import React from "react";
-
+import reviewsArr from './reviews.json';
 export const ReviewCard = ({
     avatar,
     reviewerName,
