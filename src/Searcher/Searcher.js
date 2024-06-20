@@ -132,6 +132,7 @@ export function SearchBar  (){
 };
 
   
+const formattedCheckInOut = checkInDate || checkOutDate ? `${checkInDate} - ${checkOutDate}` : '';
 
         return (
           <div className="search-bar">
@@ -157,13 +158,13 @@ export function SearchBar  (){
             <span className='vector1'></span>
             <img src='cal.png' className='cal' width={24}></img><span className='vector'></span>
             <div className="search-input2">
-              <input
-                type="text"
-                placeholder="Check in - Check out"
-                value={`${checkInDate} - ${checkOutDate}`}
-                onClick={handleCalendar}
-              />
-                
+     
+                   <input 
+          type="text"
+       placeholder="Check in-Check out"
+          value={formattedCheckInOut}
+             onClick={handleCalendar}
+        />
               {showCalendar && (
                 <div className="down2">
              {renderCalendar('check-in')}

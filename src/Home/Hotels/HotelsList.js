@@ -12,11 +12,10 @@ import reviewsArr from '../Reviews/reviews.json';
 import{RegBtn} from '../button/regBtn.js'
 import{Info} from '../Info/info.js'
 import{About} from '../About/About.js'
-
+import { SearchBar } from "../../Searcher/Searcher.js";
 
 export const MainPageHotels = () => (
     <>
-
   <nav  >
   <section className="hotels">
             <div className="container1">
@@ -39,6 +38,7 @@ export const MainPageHotels = () => (
         </section>
     
   </nav>
+  
   <Reviews />
   <About />
   <Info />

@@ -6,14 +6,11 @@ import { Header } from './Header/Header.js';
 import { Nav } from './Home/Nav/Nav.js';
 
 
-// branch hotels and reviews
-
-
 import { HotelPages } from './Home/Hotels/HotelsList.js';
 import hotelsArr from './Home/Hotels/hotels.json';
 import { SearchBar } from './Searcher/Searcher.js';
 
-
+// import { NavS } from './SearchPage/Nav.js';
 // -----------------------
 
 function App() {
@@ -24,21 +21,16 @@ function App() {
       <header className="App-header">
 
         <Header></Header>
-<SearchBar></SearchBar>
+        <SearchBar></SearchBar>
       </header>
 
 
 
       <main>
         <Nav></Nav>
-
+        {/* <NavS></NavS> */}
         <HotelPages />
-        
-
-    
       </main>
-
-
 
       <footer>
         <Footer></Footer>

@@ -3,7 +3,7 @@ import './Header.css';
 import { Link,Outlet  } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-
+import { SearchBar } from '../Searcher/Searcher';
 const HeadImage = () => (
     <img src="head.png" alt="Head" className='head' />
   );
@@ -40,6 +40,7 @@ export const MainPageHeader = () => (
 export  function HotelForYou(){//HOME page 
     return(
         <div>
+         
         </div>
     
 ) ;
