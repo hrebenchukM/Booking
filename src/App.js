@@ -19,12 +19,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
         <Header></Header>
         <SearchBar></SearchBar>
       </header>
-
-
 
       <main>
         <Nav></Nav>
