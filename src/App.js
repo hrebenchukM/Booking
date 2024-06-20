@@ -11,6 +11,7 @@ import { Nav } from './Home/Nav/Nav.js';
 
 import { HotelPages } from './Home/Hotels/HotelsList.js';
 import hotelsArr from './Home/Hotels/hotels.json';
+import { SearchBar } from './Searcher/Searcher.js';
 
 
 // -----------------------
@@ -23,7 +24,7 @@ function App() {
       <header className="App-header">
 
         <Header></Header>
-
+<SearchBar></SearchBar>
       </header>
 
 
