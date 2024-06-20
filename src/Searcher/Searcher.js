@@ -2,6 +2,14 @@ import React from 'react';
 
 import './Searcher.css'
 import { useState } from 'react';
+
+
+import { Link,Outlet  } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
+
+
 export function SearchBar  (){
    
         const [showLocation, setShowLocation] = useState(false);
@@ -140,7 +148,7 @@ export function SearchBar  (){
               {showLocation && (
                 <div className="down1">
                 {cities.map((city, index) => (
-              <p key={index} onClick={() => handleLocationSelect(city)}>{city}</p>
+              <p key={index} onClick={() => handleLocationSelect(city)}>{city}<img src='logo.png' width={15} className='logo'></img></p>
             ))}
                </div>
               )}
@@ -200,11 +208,65 @@ export function SearchBar  (){
           </div>
        
               )}  
-              
-     <img src='search.png'  className='search-icon'></img>
+          <Searcher></Searcher>
             </div>
 
           </div>
 
     );
+}
+
+
+
+export const MainPageSearching = () => (
+    <>
+  <nav  >
+
+    <div >
+    <Link to="/" className='hotelforyou'>
+    </Link>
+    <Link to="/search_results" > <img src='search.png'  className='search-icon'></img> </Link>
+     </div>
+   
+  </nav>
+
+  </>
+
+);
+
+
+
+export  function Search(){
+    return(
+        <div>
+        </div>
+    
+) ;
+}
+
+
+
+export function NotFound(){
+    return(
+        <div></div>
+) ;
+}
+
+
+export function Searcher (props)
+ {
+  return (
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={<MainPageSearching/> } >
+  <Route index element={<NotFound />} />
+   <Route path="search_results" element={<Search/> } />
+  <Route path="*" element= {<NotFound />} />  
+
+  </Route>
+</Routes>
+</BrowserRouter>
+
+
+  );
 }
