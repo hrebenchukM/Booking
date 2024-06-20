@@ -7,7 +7,7 @@ export  function About(){
   return(
       <div>
          <h2 className="header1">SAFE WITH US</h2>
-        <div className='rectangle'style={{ left: `${155}px` }}>
+        <div className='rectangle'style={{ left: '10%' }}>
           <div className='cont'>
              <img src="about1.png" width={30} className='icon1'></img>
              <p className='textAbout'>
@@ -16,7 +16,7 @@ export  function About(){
           </div>
         </div>
 
-        <div className='rectangle' style={{ left: `${395}px` }}>
+        <div className='rectangle' style={{ left: '26%' }}>
           <div className='cont'>
              <img src="about2.png" width={30} className='icon2'></img>
              <p className='textAbout'>
@@ -25,7 +25,7 @@ export  function About(){
           </div>
         </div>
 
-        <div className='rectangle'style={{ left: `${635}px` }}>
+        <div className='rectangle'style={{ left: '42%' }}>
           <div className='cont'>
              <img src="about3.png" width={30} className='icon3'></img>
              <p className='textAbout'>
@@ -34,7 +34,7 @@ export  function About(){
           </div>
         </div>
 
-        <div className='rectangle'style={{ left: `${875}px` }}>
+        <div className='rectangle'style={{ left: '58%' }}>
           <div className='cont'>
              <img src="about4.png" width={30} className='icon4'></img>
              <p className='textAbout'>
@@ -44,7 +44,7 @@ export  function About(){
         </div>
 
 
-        <div className='rectangle'style={{ left: `${1115}px` }}>
+        <div className='rectangle'style={{ left: '74%' }}>
           <div className='cont'>
              <img src="about5.png" width={30} className='icon5'></img>
              <p className='textAbout'>
