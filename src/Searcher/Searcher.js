@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../Searcher/Searcher.css'
+import './Searcher.css'
 import { useState } from 'react';
 export function SearchBar  (){
    
@@ -95,7 +95,7 @@ export function SearchBar  (){
   ];
   const monthName = monthNames[currentDate.getMonth()];
   const year = currentDate.getFullYear();
-  const lastDayOfMonth = new Date(year, currentDate.getMonth() + 1, 0);
+  const lastDayOfMonth = new Date(year, currentDate.getMonth(), 0);
   const daysInMonth = lastDayOfMonth.getDate();
   
   const currentDay = currentDate.getDate();
@@ -105,7 +105,7 @@ export function SearchBar  (){
       <div
         key={day}
         className="calendar-day"
-        onClick={() => handleDateSelect(choice, `${day}/${currentDate.getMonth() + 1}/${year}`)}
+        onClick={() => handleDateSelect(choice, `${day}/${currentDate.getMonth() }/${year}`)}
       >
         {day}
       </div>

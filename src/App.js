@@ -11,7 +11,7 @@ import { Nav } from './Home/Nav/Nav.js';
 
 import { HotelPages } from './Home/Hotels/HotelsList.js';
 import hotelsArr from './Home/Hotels/hotels.json';
-import { SearchBar } from './Home/Searcher/Searcher.js';
+import { SearchBar } from './Searcher/Searcher.js';
 
 
 // -----------------------
