@@ -1,0 +1,33 @@
+[
+    {
+      "left": "10%",
+      "imgSrc": "about1.png",
+      "imgClass": "icon1",
+      "text": "We choose hotels that meet our standards"
+    },
+    {
+      "left": "26%",
+      "imgSrc": "about2.png",
+      "imgClass": "icon2",
+      "text": "Secure payment without hidden fees"
+    },
+    {
+      "left": "42%",
+      "imgSrc": "about3.png",
+      "imgClass": "icon3",
+      "text": "Current prices and best deals"
+    },
+    {
+      "left": "58%",
+      "imgSrc": "about4.png",
+      "imgClass": "icon4",
+      "text": "Easy booking which will not take you long"
+    },
+    {
+      "left": "74%",
+      "imgSrc": "about5.png",
+      "imgClass": "icon5",
+      "text": "We'll promptly email booking confirmation."
+    }
+  ]
+  
