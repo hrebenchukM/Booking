@@ -1,24 +1,32 @@
 
+.contAbout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  height: 250px;
+  position: relative;
+  width: 100%;
+  top:550px;
+
+  margin: 0 auto;
+}
+
 .header1 {
 
-  
-  position: absolute;
-  width: 116px;
-  height: 11px;
-  left: 702px;
-  top:  1740px;
-  
+
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  display: flex;
-  align-items: center;
   text-transform: uppercase;
-  
   color: #717171;
-  }
+  top:550px;
+position: relative;
+display: flex;
+ left: 48%;
+}
 
 
 
@@ -27,58 +35,36 @@
 .rectangle {
 
 
-box-sizing: border-box;
+  border: 1px solid #DDDDDD;
+  border-radius: 13px;
+  width: 208px;
+  height: 208px;
+  margin: 20px;
+  margin-top: 30px;
+}
 
-position: absolute;
-width: 208px;
-height: 208px;
-left: 368px;
-top: 1780px;
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+   margin-right: 20px;
+   margin-left: 20px;
+}
+
+
+.textAbout {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #717171;
   
-
-border: 1px solid #DDDDDD;
-border-radius: 13px;
-
 }
 
-
-.rectangle-cont
-{
-
-position: absolute;
-width: 160px;
-height: 128px;
-left: 392px;
-top: 600px;
-color: aqua;
-
-}
-
-
-
-.textAbout
-{
-position: absolute;
-left: 5%;
-right: 5%;
-top: 100px;
-bottom: 0%;
-
-font-family: 'Nunito Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: -0.01em;
-
-color: #717171;
-
-
-}
 .rectangle:hover .textAbout {
   color: #222222;
 }
@@ -86,46 +72,21 @@ color: #717171;
 .rectangle:hover .icon1 {
   content: url('/public/about1_.png');
 }
-
-.icon1
-{
- 
-position: absolute;
-left: 42.5%;
-right: 42.5%;
-top: 30px;
-bottom: 80.95%;
+.icon1, .icon2, .icon3, .icon4, .icon5 {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
 }
-
 
 .rectangle:hover .icon2 {
   content: url('/public/about2_.png');
 }
 
-.icon2
-{
- 
-position: absolute;
-left: 42.5%;
-right: 42.5%;
-top: 30px;
-bottom: 80.95%;
-}
 
 
 
 .rectangle:hover .icon3 {
   content: url('/public/about3_.png');
-}
-
-.icon3
-{
- 
-position: absolute;
-left: 42.5%;
-right: 42.5%;
-top: 30px;
-bottom: 80.95%;
 }
 
 
@@ -135,15 +96,6 @@ bottom: 80.95%;
   content: url('/public/about4_.png');
 }
 
-.icon4
-{
- 
-position: absolute;
-left: 42.5%;
-right: 42.5%;
-top: 30px;
-bottom: 80.95%;
-}
 
 
 
@@ -151,15 +103,16 @@ bottom: 80.95%;
   content: url('/public/about5_.png');
 }
 
-.icon5
-{
- 
-position: absolute;
-left: 42.5%;
-right: 42.5%;
-top: 30px;
-bottom: 80.95%;
+
+
+@media (max-width: 768px) {
+  .rectangle {
+    width: calc(50% - 40px);
+  }
 }
 
-
-
+@media (max-width: 480px) {
+  .rectangle {
+    width: calc(100% - 40px); 
+  }
+}

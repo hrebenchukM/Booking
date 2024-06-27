@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { SearchBar } from '../Searcher/Searcher';
 const HeadImage = () => (
-    <img src="head.png" alt="Head" className='head' />
+    <p className='head'></p> 
   );
   
 
@@ -13,7 +13,7 @@ const HeadImage = () => (
 export const MainPageHeader = () => (
     <>
 
-  <HeadImage />
+  
 
   <nav  >
 
@@ -24,8 +24,9 @@ export const MainPageHeader = () => (
       <img src="language.png"alt="Language" className='language'/>
       <Link to="/register" className='register'>Register</Link>
       <Link to="/sign_in" className='signin'>Sign In<img src="signin.png" width="40" alt="SignIn" className="signin-icon" /></Link>
+     
     </div>
-   
+    <HeadImage />
   </nav>
    {/* <hr/>  */}
    <Outlet/>
