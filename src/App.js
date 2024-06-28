@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Footer } from './Footer/Footer.js';
+import { Footer } from './Components/Footer/Footer.js';
 
 import { Header } from './Header/Header.js';
-import { Nav } from './Home/Nav/Nav.js';
+import { Nav } from './Components/Nav/Nav.js';
 
 
-import { HotelPages } from './Home/Hotels/HotelsList.js';
-import hotelsArr from './Home/Hotels/hotels.json';
+import { HotelPages } from './Components/Hotels/HotelsList.js';
+import hotelsArr from './Components/Hotels/hotels.json';
 import { SearchBar } from './Searcher/Searcher.js';
 
 // import { NavS } from './SearchPage/Nav.js';
@@ -18,20 +18,20 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <Header></Header>
         <SearchBar></SearchBar>
-      </header>
+      </header> */}
 
-      <main>
+      {/* <main>
         <Nav></Nav>
-        {/* <NavS></NavS> */}
+        {/* <NavS></NavS>
         <HotelPages />
-      </main>
-
+      </main>  */}
+{/* 
       <footer>
-        <Footer></Footer>
-      </footer>
+      <Footer></Footer>
+      </footer> */}
     </div>
   );
 }

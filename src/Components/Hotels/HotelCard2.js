@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import hotelsArr from '../Hotels/hotels.json';
+import hotelsArr from './hotels.json';
 export const HotelCard = ({
     imagesArr,
     starsNum,

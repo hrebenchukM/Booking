@@ -1,5 +1,5 @@
 import React from "react";
-import hotelsArr from '../Hotels/hotels.json';
+import hotelsArr from './hotels.json';
 import { useParams } from "react-router-dom";
 import { Link,Outlet  } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

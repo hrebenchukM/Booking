@@ -1,13 +1,16 @@
 import React from "react";
+import reviewsArr from './reviews.json';
 import { ReviewCard } from "./ReviewCard";
 import './ReviewsStyles2.css';
-import reviewsArr from './reviews.json';
 
-export const ReviewsList = ({
-    reviewsArr
+export const Reviews = ({
+
 }) => {
     return (
-        <div className="reviews__list">
+        <section className="reviews">
+        <div className="container1">
+            <h3 className="reviews__title">reviews</h3>
+            <div className="reviews__list">
             {reviewsArr.map((review, index) => (
                 <ReviewCard
                     key={index}
@@ -19,5 +22,8 @@ export const ReviewsList = ({
                 />)
             )}
         </div>
+        </div>
+    </section>
+       
     )
 }
