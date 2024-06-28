@@ -1,14 +1,23 @@
-import React from 'react';
+import { Footer } from "../../Components/Footer/Footer";
+import {HeadImage} from "../../Components/HeadImg/HeadImg";
+import { Header } from "../../Components/Header/Header";
+import { SearchBar } from "../../Components/Searcher/Searcher";
 
 
+import "./Home.css";
 
-const Home = () => {
+export  function HomePage() {
   return (
-    
-   <p>Home page</p> 
-    
-
-  )
+    <div className="home">
+      <div className="photo-container">
+        <Header/>
+        <HeadImage />
+        <SearchBar/>
+        {/* <PropertyType />
+        <Explore />
+        <Featured /> */}
+        <Footer/>
+      </div>
+    </div>
+  );
 }
-
-export default Home

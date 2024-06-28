@@ -1,38 +1,27 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Footer } from './Components/Footer/Footer.js';
-
-import { Header } from './Header/Header.js';
-import { Nav } from './Components/Nav/Nav.js';
-
-
-import { HotelPages } from './Components/Hotels/HotelsList.js';
-import hotelsArr from './Components/Hotels/hotels.json';
-import { SearchBar } from './Searcher/Searcher.js';
-
-// import { NavS } from './SearchPage/Nav.js';
-// -----------------------
+import { HomePage } from './Pages/Home/Home';
+import { SearchResultPage } from './Pages/SearchResult/SearchResults';
+import { HotelDetailsPage } from './Pages/HotelDetails/HotelDetails';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
 
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <Header></Header>
-        <SearchBar></SearchBar>
-      </header> */}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route index element={<HomePage />} />
+        <Route path="/hotels" element={<SearchResultPage />} />
+        <Route path="/hotels/:id" element={<HotelDetailsPage />} />
+        {/* <Route path="*" element= {<NotFound />} />   */}
+      </Routes>
 
-      {/* <main>
-        <Nav></Nav>
-        {/* <NavS></NavS>
-        <HotelPages />
-      </main>  */}
-{/* 
-      <footer>
-      <Footer></Footer>
-      </footer> */}
-    </div>
+
+    </BrowserRouter>
+  </div>
   );
 }
 
