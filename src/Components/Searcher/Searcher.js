@@ -5,15 +5,68 @@ import { useState } from 'react';
 
 import { useNavigate } from "react-router-dom";
 
+export const formatDate = (dateString) => {
+    if (!dateString) return '';
+  
+    const dateObj = new Date(dateString);
+    const day = dateObj.getDate();
+    const month = dateObj.getMonth() + 1;
+    const year = dateObj.getFullYear();
+  
+    const formattedDay = day < 10 ? `0${day}` : `${day}`;
+    const formattedMonth = month < 10 ? `0${month}` : `${month}`;
+  
+    return `${formattedDay}.${formattedMonth}.${year}`;
+  };
+  
+export const Dates = ({ onDateChange }) => {
+    const [startDate, setStartDate] = useState(null);
+    const [endDate, setEndDate] = useState(null);
+  
+    const handleStartDateChange = (event) => {
+      const date = event.target.value;
+      setStartDate(date);
+      onDateChange(date, endDate);
+    };
+  
+    const handleEndDateChange = (event) => {
+      const date = event.target.value;
+      setEndDate(date);
+      onDateChange(startDate, date);
+    };
+    var today=new Date();
+    return (
+      <div className="date-range">
+       
+        <input
+          type="date"
+          id="startDate"
+          value={startDate}
+          onChange={handleStartDateChange}
+          min={`${today.getFullYear()}-${('0' + (today.getMonth() + 1)).slice(-2)}-${('0' + today.getDate()).slice(-2)}`}
+        />
+
+        <input
+          type="date"
+          id="endDate"
+          value={endDate}
+          onChange={handleEndDateChange}
+          min={startDate} 
+          
+        />
+      </div>
+    );
+  };
+  
+  
+
+
 export function SearchBar  (){
-    const [destination, setDestination] = useState("");
-    const [dates, setDates] = useState([
-      {
-        startDate: new Date(),
-        endDate: new Date(),
-        key: "selection",
-      },
-    ]);
+    const [location, setLocation] = useState("");
+  const [showLocation, setShowLocation] = useState(false);
+  
+
+
     const [openDetails, setOpenDetails] = useState(false);
     const [details, setDetails] = useState({
       adult: 1,
@@ -26,40 +79,112 @@ export function SearchBar  (){
         ...prev,
         [name]: operation === "i" ? details[name] + 1 : details[name] - 1,
       }));
+
+      setShowLocation(false);
+      setOpenDate(false);
+      setOpenDetails(false);
     };
   
     const onChangeHandler = (e) => {
       e.preventDefault();
-      setDestination(e.target.value);
+      setLocation(e.target.value);
+      setShowLocation(true);
+    setOpenDate(false);
+    setOpenDetails(false);
     };
   
     const navigate = useNavigate();
   
     const handleSearch = () => {
-      navigate("/hotels", { state: { destination, dates, details } });
+      navigate("/hotels", { state: { location, dates, details } });
     };
   
+
+
+      
+    const cities = ["Paris", "Rome", "Budapest", "Bucharest", "Sofia","Warsaw"];
+
+    const handleLocationSelect = (city) => {
+        setLocation(city);
+        setShowLocation(false); 
+      };
+    
+      
+
+
+
+
+      const [dates, setDates] = useState([
+        {
+          startDate:  "",
+          endDate: ""
+        
+        },
+      ]);
+    
+
+      const [openDate, setOpenDate] = useState(false);
+
+
+      const handleDateChange = (startDate, endDate) => {
+        setDates([{ startDate, endDate }]);
+       
+        setOpenDate(true); 
+        setOpenDetails(false);
+        setShowLocation(false);
+      };
+
+
+    
     return (
       <div className="search-bar-container-main">
         <div className="search-bar-container">
           <div className="search-bar-input-container">
-            <ion-icon name="airplane-sharp"></ion-icon>
+          <img src='airplane.png' width={24}></img>
             <input
               className="search-bar-input"
               type="text"
               placeholder="Where are you going?"
               onChange={onChangeHandler}
-              value={destination}
+              value={location}
+              onClick={() => setShowLocation(!showLocation)}
             />
-          </div>
-          <div className="search-bar-date">
-            <ion-icon name="calendar-sharp"></ion-icon>
-            <div className="search-bar-stay-time">
-              {`${dates[0].startDate.toLocaleDateString()} to ${dates[0].endDate.toLocaleDateString()}`}
+
+           {showLocation && (
+            <div className='options'>
+            {cities.map((city, index) => (
+              <p className='option-item' key={index} onClick={() => handleLocationSelect(city)}>
+                {city}
+                <img src='logo.png' width={15} className='logo' alt="City logo" />
+              </p>
+            ))}
             </div>
+        )}
+        </div>
+          
+<div className='search-bar-date-container'>
+<div className="search-bar-date">
+<img src='cal.png' width={24} alt="Calendar icon" />
+          <div
+            onClick={() => setOpenDate(!openDate)}
+            className="search-bar-stay-time"
+          >
+             {dates[0].startDate ? formatDate(dates[0].startDate) : " Check in "}
+              - 
+              {dates[0].endDate ? formatDate(dates[0].endDate) : " Check out"} 
+            
           </div>
+          {openDate && (
+            <div className='options'>
+            <Dates onDateChange={handleDateChange} />
+            </div>
+          )}
+        </div>
+        </div>
+
+        
           <div className="search-bar-details-container">
-            <ion-icon name="person-sharp"></ion-icon>
+          <img src='adul.png'  width={24}></img>
             <div
               onClick={() => setOpenDetails(!openDetails)}
               className="search-bar-details"
@@ -85,6 +210,11 @@ export function SearchBar  (){
                     </button>
                   </div>
                 </div>
+
+
+
+
+
                 <div className="option-item">
                   <span className="option-text">Children</span>
                   <div className="option">
@@ -104,6 +234,11 @@ export function SearchBar  (){
                     </button>
                   </div>
                 </div>
+
+
+
+
+
                 <div className="option-item">
                   <span className="option-text">Room</span>
                   <div className="option">
@@ -122,12 +257,20 @@ export function SearchBar  (){
                       +
                     </button>
                   </div>
+                  
                 </div>
+                
+
+
+           
               </div>
+              
             )}
+            <img src='strel.png'  width={24}></img>
           </div>
+         
           <div onClick={handleSearch} className="search-bar-search-btn">
-            <ion-icon name="search"></ion-icon>
+          <img src='search.png' ></img>
           </div>
         </div>
       </div>
