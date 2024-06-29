@@ -241,11 +241,11 @@
 {
   
 position: absolute;
-left: 37.93%;
+left: 100%;
 right: 70.47%;
-top: 34.75%;
+top: 0.75%;
 bottom: 20.31%;
-height: 5%;
+height: 100%;
 border: 1px solid #DDDDDD;
 border-radius: 10px;
 }

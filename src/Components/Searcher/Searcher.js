@@ -161,9 +161,11 @@ export function SearchBar  (){
             ))}
             </div>
         )}
+        <span className='i'></span>
         </div>
-          <span className='i'></span>
+        
 <div className='search-bar-date-container'>
+
 <div className="search-bar-date">
 <img src='cal.png' width={24} alt="Calendar icon" />
           <div
@@ -181,9 +183,10 @@ export function SearchBar  (){
             </div>
           )}
         </div>
+        <span className='i' ></span>
         </div>
 
-        <span className='i' style={{ left: '53.30%' }}></span>
+      
 
           <div className="search-bar-details-container">
           <img src='adul.png'  width={24}></img>
