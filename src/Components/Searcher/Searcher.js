@@ -44,6 +44,7 @@ export const Dates = ({ onDateChange }) => {
           value={startDate}
           onChange={handleStartDateChange}
           min={`${today.getFullYear()}-${('0' + (today.getMonth() + 1)).slice(-2)}-${('0' + today.getDate()).slice(-2)}`}
+          className='date-input'
         />
 
         <input
@@ -52,7 +53,7 @@ export const Dates = ({ onDateChange }) => {
           value={endDate}
           onChange={handleEndDateChange}
           min={startDate} 
-          
+          className='date-input'
         />
       </div>
     );
@@ -161,7 +162,7 @@ export function SearchBar  (){
             </div>
         )}
         </div>
-          
+          <span className='i'></span>
 <div className='search-bar-date-container'>
 <div className="search-bar-date">
 <img src='cal.png' width={24} alt="Calendar icon" />
@@ -182,7 +183,8 @@ export function SearchBar  (){
         </div>
         </div>
 
-        
+        <span className='i' style={{ left: '53.30%' }}></span>
+
           <div className="search-bar-details-container">
           <img src='adul.png'  width={24}></img>
             <div
