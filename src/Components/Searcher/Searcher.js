@@ -193,7 +193,8 @@ export function SearchBar  (){
             <div
               onClick={() => setOpenDetails(!openDetails)}
               className="search-bar-details"
-            >{`${details.adult} adult, ${details.children} children, ${details.room} room`}</div>
+            >
+                {`${details.adult} adult, ${details.children} children, ${details.room} room`}</div>
             {openDetails && (
               <div className="options">
                 <div className="option-item">
