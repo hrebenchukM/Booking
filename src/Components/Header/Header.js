@@ -14,10 +14,14 @@ export const Header = () => {
       </Link>
       <div className="other-container">
        
-        <img src="language.png"alt="Language" className='language'/>
-          <>
+           <img src="language.png"alt="Language" className='language'/>
+            <>
+            <Link
+              to="/register"
+              style={{ textDecoration: "inherit", color: "inherit" }}
+            >
             <div className="register-button">Register</div>
-
+            </Link>
 
             <Link
               to="/login"

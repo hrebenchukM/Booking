@@ -6,17 +6,17 @@ import { Header } from "../../Components/Header/Header";
 import { SearchBar } from "../../Components/Searcher/Searcher";
 
 
-import "./Home.css";
+import "./Register.css";
 
-export  function HomePage() {
+export  function Register () {
   return (
-    <div className="home">
-      <div className="photo-container">
-        <Header/>
+    <div className="register">
+      <div className="register-container">
+        {/* <Header/>
         <HeadImage />
         <SearchBar/>
     
-        <Footer/>
+        <Footer/> */}
       </div>
     </div>
   );

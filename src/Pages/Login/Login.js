@@ -6,17 +6,17 @@ import { Header } from "../../Components/Header/Header";
 import { SearchBar } from "../../Components/Searcher/Searcher";
 
 
-import "./Home.css";
+import "./Login.css";
 
-export  function HomePage() {
+export  function Login () {
   return (
-    <div className="home">
-      <div className="photo-container">
-        <Header/>
+    <div className="login">
+      <div className="login-container">
+        {/* <Header/>
         <HeadImage />
         <SearchBar/>
     
-        <Footer/>
+        <Footer/> */}
       </div>
     </div>
   );

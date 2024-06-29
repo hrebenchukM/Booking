@@ -8,7 +8,6 @@ export  function HotelDetailsPage() {
     <div className="">
       <div className="">
         <Header/>
-        <HeadImage></HeadImage>
         <Footer/>
       </div>
     </div>
