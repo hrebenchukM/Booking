@@ -1,67 +1,52 @@
-.rect
+
+.login-container:hover
 {
+  transform: scale(1.01); 
+}
 
-position: absolute;
-width: 380px;
-height: 92px;
-left: 770px;
-top: 2346px;
 
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
 
 }
-.register-container
-{
-
-position: absolute;
-width: 336px;
-height: 64px;
-left: 22px;
-top: 14px;
-
-
-}
-.register-button
-{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px;
-gap: 10px;
-
-position: absolute;
-width: 256px; 
-height: 64px;
-left: calc(50% - 656px/2);
-top: calc(50% - 64px/2);
-border: none;
-
+.login-button {
+ 
+  width: 236px;
+  height: 64px;
+  color: white;
+  font-size: 19px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  outline: none;
+  border: none;
 background: #581ADB;
-
 box-shadow: 0px 0px 10px rgba(88, 26, 219, 0.35), 0px 0px 43px rgba(88, 26, 219, 0.37);
 border-radius: 60px;
+
 }
 
-.rect:hover {
-    transform: scale(1.01); 
-  }
-  
+.login-button:hover {
+  cursor: pointer;
+}
+
 .txt
 {
   
 
-width: 147px;
-height: 11px;
 
 font-family: 'Nunito Sans';
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 22px;
-
 display: flex;
 align-items: center;
-
+justify-content: center;
 color: #FFFFFF;
 
 
@@ -76,7 +61,7 @@ flex-grow: 0;
 position: absolute;
 width: 24px;
 height: 24px;
-left: calc(50% - 24px/2 - 356px);
+left: calc(50% - 24px/2 - 156px);
 top: calc(50% - 24px/2);
 
 }
@@ -84,9 +69,11 @@ top: calc(50% - 24px/2);
 
 .icon-flagg
 {
-position: absolute;
-width: 24px;
-height: 24px;
-left: calc(50% - 24px/2 - 44px);
-top: calc(50% - 24px/2);
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: calc(50% - 24px/2 + 156px);
+  top: calc(50% - 24px/2);
+  
+  
 }

@@ -4,19 +4,26 @@ import infoArr from './Info.json';
 
 export function Info() {
   return (
-    <div>
-          <h2 className="header2">{infoArr.header}</h2>
-    <div className="info-container">
-      <div className={infoArr.imageClass}></div>
-      <div className={infoArr.textClass}>
-        <div className='textinfo'>
-          {infoArr.paragraphs.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+<div>
+  <h2 className="info-text">{infoArr.header}</h2>
+  <div className="informations-container">
+  <div className={infoArr.imageClass}></div>
+  <div className='info-container'>
+    <div className='info-name'>
+    {infoArr.paragraphs.map((paragraph, index) => (
+      <div key={index}>
+        <div >
+          <p>{paragraph}</p>
         </div>
       </div>
+    ))}
     </div>
     </div>
+  </div>
+</div>
 
+
+
+    
   );
 }

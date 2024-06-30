@@ -7,7 +7,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ErrorPage } from './Pages/Error/Error';
 import { Register } from './Pages/Register/Registet';
 import { Login } from './Pages/Login/Login';
-
+import { SecurePayment } from './Pages/SecurePayment/SecurePayment';
+import { RelevantInfo } from './Pages/RelevantInfo/RelevantInfo';
+import { EasyBooking } from './Pages/EasyBooking/EasyBooking';
 function App() {
 
 
@@ -21,8 +23,13 @@ function App() {
         <Route path="/hotels/:id" element={<HotelDetailsPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="*" element= {<ErrorPage />} />  
+         <Route path="easy_booking" element={<EasyBooking/> } />
+         <Route path="secure_payment" element={<SecurePayment />} />
+         <Route path="relevant_information" element={<RelevantInfo/>} />
+         <Route path="*" element= {<ErrorPage />} />  
       </Routes>
+
+
     </BrowserRouter>
   </div>
   );

@@ -1,20 +1,43 @@
 
-.contAbout {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  height: 250px;
-  position: relative;
-  width: 100%;
-  top:550px;
-
-  margin: 0 auto;
+ .safe-container {
+  margin: 0px 10px;
 }
 
-.header1 {
 
+.rectangles-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  position: relative;
+  width: 100%;
+  
+}
 
+.rectangle-container {
+  position: relative;
+  border: 1px solid #DDDDDD;
+  border-radius: 13px;
+  margin: 20px;
+  margin-top: 5px;
+  width: 208px;
+  height: 208px;
+  text-align: center; 
+}
+
+.rectangle-img {
+  width: 100%;
+  height: 100%;
+ 
+  object-fit: cover;
+  
+}
+.safe-text {
+  display: flex;
+  margin: 15px;
+  margin-top: 50px;
+  justify-content: center;
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -22,38 +45,18 @@
   line-height: 22px;
   text-transform: uppercase;
   color: #717171;
-  top:550px;
-position: relative;
-display: flex;
- left: 48%;
+  
 }
 
-
-
-
-
-.rectangle {
-
-
-  border: 1px solid #DDDDDD;
-  border-radius: 13px;
-  width: 208px;
-  height: 208px;
-  margin: 20px;
-  margin-top: 30px;
+.icon1, .icon2, .icon3, .icon4, .icon5 {
+  width: 30px;
+  height: 30px;
+  margin: 30px;
 }
 
-.cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-   margin-right: 20px;
-   margin-left: 20px;
-}
+.rectangle-name {
+  position: absolute;
 
-
-.textAbout {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -62,57 +65,75 @@ display: flex;
   text-align: center;
   letter-spacing: -0.01em;
   color: #717171;
-  
+  justify-content: center;
+  margin: 10px; 
 }
 
-.rectangle:hover .textAbout {
-  color: #222222;
-}
 
-.rectangle:hover .icon1 {
+
+.rectangle-container:hover .icon1 {
   content: url('/public/about1_.png');
 }
-.icon1, .icon2, .icon3, .icon4, .icon5 {
-  width: 30px;
-  height: 30px;
-  margin-top: 10px;
-}
 
-.rectangle:hover .icon2 {
+
+.rectangle-container:hover .icon2 {
   content: url('/public/about2_.png');
 }
 
 
 
-
-.rectangle:hover .icon3 {
+.rectangle-container:hover .icon3 {
   content: url('/public/about3_.png');
 }
 
 
 
 
-.rectangle:hover .icon4 {
+.rectangle-container:hover .icon4 {
   content: url('/public/about4_.png');
 }
 
 
 
 
-.rectangle:hover .icon5{
+.rectangle-container:hover .icon5{
   content: url('/public/about5_.png');
 }
 
 
 
-@media (max-width: 768px) {
-  .rectangle {
-    width: calc(50% - 40px);
+
+.rectangle-container:hover .rectangle-name  {
+  color: #222222;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .rectangle-img {
+    width: 700px;
+    height: 290px;
+  }
+  .safe-text {
+    margin: 0px;
+    justify-content: center;
   }
 }
 
-@media (max-width: 480px) {
-  .rectangle {
-    width: calc(100% - 40px); 
+@media (max-width: 1435px) {
+  .rectangle-img {
+    width: 300px;
   }
 }
+
+@media (max-width: 500px) {
+  .rectangle-img {
+    width: 265px;
+  }
+}
+

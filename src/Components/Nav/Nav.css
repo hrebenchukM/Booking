@@ -1,19 +1,33 @@
-.easybooking
-{
-position: absolute;
-width: 97.28px;
-height: 48px;
-left: 493px;
-top: 360px;
 
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    position: relative;
+    width: 100%; 
+  }
+  .nav-title {
+    width: 100%; 
+    display: flex; 
+    font-size: 40px;
+    font-weight: 600;
 
-}
-
+    justify-content: center;
+  }
+  .easybooking, .securepayment, .relevantinformation {
+    display: flex; 
+    margin: 75px; 
+    position: relative; 
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+  }
+  
 .easy-icon{
 
 position: absolute;
-left: 36.84%;
-right: 37.89%;
 top: 0%;
 bottom: 50%;
 background-image: url('/public/easy.png'); 
@@ -29,8 +43,7 @@ background-size:cover;
 {
 
 position: absolute;
-left: 0%;
-right: 0%;
+
 top: 77.08%;
 bottom: 0%;
 
@@ -52,25 +65,12 @@ color: #717171;
 color: #222222;
 
 }
-.securepayment
-{
-
-
-position: absolute;
-width: 118.78px;
-height: 48px;
-left: 669px;
-top: 360px;
-
-
-}
 
 .secure_text
 {
 
 position: absolute;
-left: 0%;
-right: 0%;
+
 top: 77.08%;
 bottom: 0%;
 
@@ -94,11 +94,8 @@ color: #717171;
 
 .secure-icon
 {
-
-
 position: absolute;
-left: 39.65%;
-right: 39.66%;
+
 top: 0%;
 bottom: 50%;
 background-image: url('/public/secure.png'); 
@@ -109,25 +106,14 @@ background-size:cover;
     background-size:cover; 
 }
 
-.relevantinformation
-{
 
-position: absolute;
-width: 153.6px;
-height: 48px;
-left: 852px;
-top: 360px;
-
-
-}
 
 .info_text
 {
 
 
 position: absolute;
-left: 0%;
-right: 0%;
+
 top: 77.08%;
 bottom: 0%;
 
@@ -148,10 +134,8 @@ color: #717171;
 }
 .info-icon
 {
-
 position: absolute;
-left: 42%;
-right: 42%;
+
 top: 0%;
 bottom: 50%;
 background-image: url('/public/info.png');

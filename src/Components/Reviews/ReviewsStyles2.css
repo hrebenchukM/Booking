@@ -8,8 +8,7 @@
   .reviews__list {
     display: flex;
     gap: 40px;
-    top: 470px; 
-  
+   
     margin: 0;
     padding: 0;
     position: relative;
@@ -29,12 +28,7 @@
     text-transform: uppercase;
     text-align: center;
     color: rgb(113, 113, 113);
-    margin-bottom: 32px;
-    top: 450px; 
-  
-  
-    
-    margin: 0;
+    margin: 5;
     padding: 0;
     position: relative;
     font-family: inherit;

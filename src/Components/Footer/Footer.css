@@ -1,52 +1,8 @@
-/* .list {
-    list-style-type: none;
-    box-sizing: border-box;
-    position: relative;
-    width: 100%;
-    max-width: 1317px;
-    height: auto;
-    margin: 0 auto;
-    background: #FFFFFF;
-    border-top: 1px solid #DDDDDD;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    top: 1372px;
-  }
-  
-  .column {
-    box-sizing: border-box;
-    width: calc(20% - 16px);
-    margin-right: 16px;
-    margin-bottom: 16px;
-  }
-  
-  .column:nth-child(5) {
-    margin-right: 0;
-  }
-  
-  .nav {
-    color: #717171;
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .nav:hover {
-    color: rgb(160, 161, 162);
-  }
-  
-   */
 
 
    .footer-container {
     margin: auto;
-    margin-top: 200px;
+    margin-top: 500px;
     bottom: 0px;
     height: auto;
     background-color:rgb(250, 247, 247);
