@@ -1,7 +1,9 @@
 import React from 'react';
-import './HotelCard.css';
+import './HotelCards.css';
 
-const HotelCard = ({ hotel }) => {
+const HotelCards = ({ hotel }) => {
+  if (!hotel) return null; 
+
   return (
     <div className="hotel-card">
       <img src={hotel.image} alt={hotel.name} className="hotel-image" />
@@ -17,4 +19,4 @@ const HotelCard = ({ hotel }) => {
   );
 };
 
-export default HotelCard;
+export default HotelCards;
