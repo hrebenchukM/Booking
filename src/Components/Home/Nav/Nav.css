@@ -1,0 +1,147 @@
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    position: relative;
+    width: 100%; 
+  }
+  .nav-title {
+    width: 100%; 
+    display: flex; 
+    font-size: 40px;
+    font-weight: 600;
+
+    justify-content: center;
+  }
+  .easybooking, .securepayment, .relevantinformation {
+    display: flex; 
+    margin: 75px; 
+    position: relative; 
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.easy-icon{
+
+position: absolute;
+top: 0%;
+bottom: 50%;
+background-image: url('/public/easy.png'); 
+background-size:cover; 
+
+}
+.easybooking:hover .easy-icon {
+    background-image: url('/public/easy2.png'); 
+    background-size:cover; 
+}
+
+.easy_text
+{
+
+position: absolute;
+
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+
+color: #717171;
+
+
+}
+
+.easybooking:hover .easy_text {
+color: #222222;
+
+}
+
+.secure_text
+{
+
+position: absolute;
+
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+display: flex;
+align-items: center;
+
+
+color: #717171;
+
+
+}
+.securepayment:hover .secure_text {
+    color: #222222;
+}
+
+.secure-icon
+{
+position: absolute;
+
+top: 0%;
+bottom: 50%;
+background-image: url('/public/secure.png'); 
+background-size:cover; 
+}
+.securepayment:hover .secure-icon {
+    background-image: url('/public/secure2.png'); 
+    background-size:cover; 
+}
+
+
+
+.info_text
+{
+
+
+position: absolute;
+
+top: 77.08%;
+bottom: 0%;
+
+font-family: 'Nunito Sans',sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: center;
+
+color: #717171;
+
+
+}
+.relevantinformation:hover .info_text {
+    color: #222222;
+}
+.info-icon
+{
+position: absolute;
+
+top: 0%;
+bottom: 50%;
+background-image: url('/public/info.png');
+background-size:cover; 
+}
+.relevantinformation:hover .info-icon {
+    background-image: url('/public/info2.png'); 
+    background-size:cover; 
+}

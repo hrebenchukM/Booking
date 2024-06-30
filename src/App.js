@@ -1,70 +1,33 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Footer } from './Footer/Footer.js';
-
-//import { RegBtn } from './Home/button/regBtn';
-//import { Info } from './Home/Info/info';
-//import { About } from './Home/About/About';
-
-import { Header } from './Header/Header.js';
-//import { Nav } from './Home/Nav/Nav';
-
-import HotelCards from './SearchPage/SearchCard/HotelCards.js';
-import HotelList2 from './SearchPage/SearchCard/HotelList2.js';
-
-// branch hotels and reviews
-//import { ReviewsList } from './Searcher/Searcher.js';
-//import { HotelPages } from './Home/Hotels/HotelsList.js';
-//import hotelsArr from './Home/Hotels/hotels.json';
-//import reviewsArr from './Home/Reviews/reviews.json';
-
-
-// -----------------------
-
+import { HomePage } from './Pages/Home/Home';
+import { SearchResultPage } from './Pages/SearchResult/SearchResults';
+import { HotelDetailsPage } from './Pages/HotelDetails/HotelDetails';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ErrorPage } from './Pages/Error/Error';
+import { SecurePayment } from './Pages/SecurePayment/SecurePayment';
+import { RelevantInfo } from './Pages/RelevantInfo/RelevantInfo';
+import { EasyBooking } from './Pages/EasyBooking/EasyBooking';
 function App() {
-  
+
+
   return (
     <div className="App">
-      <header className="App-header">
-
-      <Header></Header>
-
-      </header>
-     
-
-
-      <main>
-      {/* <Nav></Nav>
-      
-      <section className="hotels">
-        <div className="container1">
-          <HotelPages cardsArr={hotelsArr} />
-        </div>
-      </section>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route index element={<HomePage />} />
+        <Route path="/hotels" element={<SearchResultPage />} />
+        <Route path="/hotels/:id" element={<HotelDetailsPage />} />
+         <Route path="easy_booking" element={<EasyBooking/> } />
+         <Route path="secure_payment" element={<SecurePayment />} />
+         <Route path="relevant_information" element={<RelevantInfo/>} />
+         <Route path="*" element= {<ErrorPage />} />  
+      </Routes>
 
 
-      
-      <section className="reviews">
-        <div className="container1">
-          <h3 className="reviews__title">reviews</h3>
-          <ReviewsList reviewsArr={reviewsArr} />
-        </div>
-      </section>
-
-      <About/>
-      <Info />
-      <RegBtn  />  */}
-      <HotelList2 hotels={hotels} />
-  
-      </main>
-    
-      
-
-      <footer>
-        <Footer></Footer>
-      </footer>
-    </div>
+    </BrowserRouter>
+  </div>
   );
 }
 
