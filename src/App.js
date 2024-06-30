@@ -10,8 +10,8 @@ import { Footer } from './Footer/Footer.js';
 import { Header } from './Header/Header.js';
 //import { Nav } from './Home/Nav/Nav';
 
-import HotelCards from './SearchPage/HotelCards.js';
-import HotelList2 from './SearchPage/HotelList2';
+import HotelCards from './SearchPage/SearchCard/HotelCards.js';
+import HotelList2 from './SearchPage/SearchCard/HotelList2.js';
 
 // branch hotels and reviews
 //import { ReviewsList } from './Searcher/Searcher.js';
