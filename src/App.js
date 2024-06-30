@@ -5,8 +5,6 @@ import { SearchResultPage } from './Pages/SearchResult/SearchResults';
 import { HotelDetailsPage } from './Pages/HotelDetails/HotelDetails';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ErrorPage } from './Pages/Error/Error';
-import { Register } from './Pages/Register/Registet';
-import { Login } from './Pages/Login/Login';
 import { SecurePayment } from './Pages/SecurePayment/SecurePayment';
 import { RelevantInfo } from './Pages/RelevantInfo/RelevantInfo';
 import { EasyBooking } from './Pages/EasyBooking/EasyBooking';
@@ -21,8 +19,6 @@ function App() {
         <Route index element={<HomePage />} />
         <Route path="/hotels" element={<SearchResultPage />} />
         <Route path="/hotels/:id" element={<HotelDetailsPage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
          <Route path="easy_booking" element={<EasyBooking/> } />
          <Route path="secure_payment" element={<SecurePayment />} />
          <Route path="relevant_information" element={<RelevantInfo/>} />
