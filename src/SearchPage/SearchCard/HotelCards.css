@@ -1,0 +1,60 @@
+.hotel-card {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 20px;
+}
+
+.hotel-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.hotel-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.hotel-rating,
+.hotel-reviews,
+.hotel-price,
+.hotel-distance {
+  margin-bottom: 5px;
+}
+
+.choose-button {
+  background-color: #6200ee;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.choose-button:hover {
+  background-color: #3700b3;
+}
+
+@media (max-width: 768px) {
+  .hotel-card {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .hotel-image {
+    width: 100%;
+    height: auto;
+  }
+}
