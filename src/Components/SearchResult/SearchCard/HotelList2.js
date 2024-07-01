@@ -1,14 +1,17 @@
 import React from 'react';
-import HotelCards from './HotelCards';
 
-const HotelList2 = ({ hotels }) => {
+import { SearchHotel } from './HotelCards';
+import hotelsArray from './hotelCards.json';
+
+export function HotelList2 ({hotels }) {
   return (
-    <div className="hotel-list">
-      {hotels.map(hotel => (
-        <HotelCards key={hotel.id} hotel={hotel} />
+    <div>
+      {hotelsArray.map(hotel => (
+        <SearchHotel key={hotel.id} hotel={hotel} starsNum={hotel.starsNum} />
+      
       ))}
     </div>
   );
 };
 
-export default HotelList2;
+
