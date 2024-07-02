@@ -1,5 +1,5 @@
 import React from 'react';
-import './regBtn.css'; // Подключение стилей
+import './regBtn.css';
 import { useState } from 'react';
 export  function  RegBtn (){
   const [isModalOpen, setIsModalOpen] = useState(false);
