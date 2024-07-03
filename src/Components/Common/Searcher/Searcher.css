@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     margin: -30px 10px 0px;
-    z-index: 2; 
+
   }
   
   .search-bar-container {
@@ -16,7 +16,7 @@
     color: rgb(34, 34, 34);
     width: fit-content;
     padding: 0px 25px;
-    z-index: 2; 
+    z-index: 200; 
     background-color:rgba(255, 255, 255, 1);
   }
   
@@ -34,7 +34,7 @@
       height: fit-content;
       padding: 10px 60px;
     }
-    .search-bar-date {
+    .search-bar-date-container {
       margin: 10px;
     }
     .search-bar-details-container {
@@ -116,7 +116,9 @@
   }
   
   .date {
-    z-index: 101;
+z-index: 150;
+    position: absolute;
+    top: 50px;
   }
   
   .search-bar-stay-time {
@@ -162,14 +164,10 @@
     cursor: pointer;
   }
   
-  .date {
-    position: absolute;
-    top: 50px;
-  }
   
   .options {
 
-    margin-left: 0px;
+    margin-left: 25px;
     position: absolute;
     top: 50px;
     background-color: rgb(255, 255, 255);
@@ -180,7 +178,7 @@
   
 
   .option-item {
-    width: 200px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -225,16 +223,6 @@
 
 
 
-
-  .date-input {
-    border: none;
-    outline: none;
-    color: #333; 
-    cursor: pointer;
-    font-family: "Nunito Sans", sans-serif;
-  text-align: center; 
-
-  }
 
 .i
 {

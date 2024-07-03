@@ -1,100 +1,80 @@
 import React from 'react';
-
 import './Searcher.css'
 import { useState } from 'react';
-
 import { useNavigate } from "react-router-dom";
 
-export const formatDate = (dateString) => {
-    if (!dateString) return '';
-  
-    const dateObj = new Date(dateString);
-    const day = dateObj.getDate();
-    const month = dateObj.getMonth() + 1;
-    const year = dateObj.getFullYear();
-  
-    const formattedDay = day < 10 ? `0${day}` : `${day}`;
-    const formattedMonth = month < 10 ? `0${month}` : `${month}`;
-  
-    return `${formattedDay}.${formattedMonth}.${year}`;
-  };
-  
-export const Dates = ({ onDateChange }) => {
-    const [startDate, setStartDate] = useState(null);
-    const [endDate, setEndDate] = useState(null);
-  
-    const handleStartDateChange = (event) => {
-      const date = event.target.value;
-      setStartDate(date);
-      onDateChange(date, endDate);
-    };
-  
-    const handleEndDateChange = (event) => {
-      const date = event.target.value;
-      setEndDate(date);
-      onDateChange(startDate, date);
-    };
-    var today=new Date();
-    return (
-      <div className="date-range">
-       
-        <input
-          type="date"
-          id="startDate"
-          value={startDate}
-          onChange={handleStartDateChange}
-          min={`${today.getFullYear()}-${('0' + (today.getMonth() + 1)).slice(-2)}-${('0' + today.getDate()).slice(-2)}`}
-          className='date-input'
-        />
 
-        <input
-          type="date"
-          id="endDate"
-          value={endDate}
-          onChange={handleEndDateChange}
-          min={startDate} 
-          className='date-input'
-        />
-      </div>
-    );
-  };
-  
-  
+import { DateRange } from "react-date-range";
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+
+export const formatDate = (dateString) => {
+  if (!dateString) return '';
+
+  const dateObj = new Date(dateString);
+  const day = dateObj.getDate();
+  const month = dateObj.getMonth() + 1;
+  const year = dateObj.getFullYear();
+
+  const formattedDay = day < 10 ? `0${day}` : `${day}`;
+  const formattedMonth = month < 10 ? `0${month}` : `${month}`;
+
+  return `${formattedDay}.${formattedMonth}.${year}`;
+};
 
 
 export function SearchBar  (){
-    const [location, setLocation] = useState("");
+  
+
+  const [openDate, setOpenDate] = useState(false);
+  const [location, setLocation] = useState("");
   const [showLocation, setShowLocation] = useState(false);
+  const cities = ["Paris", "Rome", "Budapest", "Bucharest", "Sofia","Warsaw"];
+
   
 
+  const [dates, setDates] = useState([
+    {
+      startDate:  new Date(),
+      endDate: new Date(),
+      key: "selection",
+    
+    },
+  ]);
 
-    const [openDetails, setOpenDetails] = useState(false);
-    const [details, setDetails] = useState({
-      adult: 1,
-      children: 0,
-      room: 1,
-    });
-  
-    const handleOption = (name, operation) => {
-      setDetails((prev) => ({
-        ...prev,
-        [name]: operation === "i" ? details[name] + 1 : details[name] - 1,
-      }));
 
-      setShowLocation(false);
-      setOpenDate(false);
-      setOpenDetails(false);
-    };
+
+  const [openDetails, setOpenDetails] = useState(false);
+  const [details, setDetails] = useState({
+    adult: 1,
+    children: 0,
+    room: 1,
+  });
+
   
-    const onChangeHandler = (e) => {
-      e.preventDefault();
-      setLocation(e.target.value);
-      setShowLocation(true);
+
+  const handleOption = (name, operation) => {
+    setDetails((prev) => ({
+      ...prev,
+      [name]: operation === "i" ? details[name] + 1 : details[name] - 1,
+    }));
+
+    setShowLocation(false);
     setOpenDate(false);
     setOpenDetails(false);
-    };
-  
-    const navigate = useNavigate();
+  };
+
+
+
+  const onChangeHandler = (e) => {
+    e.preventDefault();
+    setLocation(e.target.value);
+    setShowLocation(true);
+  setOpenDate(false);
+  setOpenDetails(false);
+  };
+
+  const navigate = useNavigate();
   
     const handleSearch = () => {
       navigate("/hotels", { state: { location, dates, details } });
@@ -102,9 +82,8 @@ export function SearchBar  (){
   
 
 
-      
-    const cities = ["Paris", "Rome", "Budapest", "Bucharest", "Sofia","Warsaw"];
 
+      
     const handleLocationSelect = (city) => {
         setLocation(city);
         setShowLocation(false); 
@@ -113,26 +92,9 @@ export function SearchBar  (){
       
 
 
-
-
-      const [dates, setDates] = useState([
-        {
-          startDate:  "",
-          endDate: ""
-        
-        },
-      ]);
-    
-
-      const [openDate, setOpenDate] = useState(false);
-
-
-      const handleDateChange = (startDate, endDate) => {
-        setDates([{ startDate, endDate }]);
-       
-        setOpenDate(true); 
-        setOpenDetails(false);
-        setShowLocation(false);
+      const handleDateChange = (item) => {
+        setDates([item.selection]);
+        setOpenDate(false); 
       };
 
 
@@ -182,9 +144,11 @@ export function SearchBar  (){
             
           </div>
           {openDate && (
-            <div className='options'>
-            <Dates onDateChange={handleDateChange} />
-            </div>
+            <DateRange
+            onChange={handleDateChange} 
+              ranges={dates}
+              className="date"
+            />
           )}
         </div>
         <span className='i' ></span>

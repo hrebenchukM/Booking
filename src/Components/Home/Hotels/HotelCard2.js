@@ -93,13 +93,11 @@ export const HotelCard = ({
                     </div>
                 </section>
             </div>
+            <Link to={`/hotels/${id}`} style={{ textDecoration: 'none'}}>
             <h4 className="hotel__title">
-            <Link to={`/hotels/${id}`} style={{ textDecoration: 'none', color: '#007bff' }}>
               {hotelName} | {cityName} | {countryName}
-            </Link>
-
-        
             </h4>
+            </Link>
             <div className="hotel__stars">
                 {starsArr.map((_, index) => (<div key={index} className="hotel__stars-star"></div>))}
             </div>
