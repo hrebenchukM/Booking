@@ -1,0 +1,111 @@
+
+
+ .navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 600;
+    justify-content: space-between;
+    color: rgb(33, 33, 33);
+    margin: 10px;
+  }
+  
+  .logo {
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 33px;
+    display: block;
+    margin-left: 50px;
+    font-weight: 800;
+  }
+  
+  @media (max-width: 800px) {
+    .logo {
+      font-size: 20px;
+      margin-left: 0px;
+      justify-content: center;
+    }
+    .navbar {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .other-container {
+      margin-top: 25px;
+      margin-right: 0px;
+      justify-content: center;
+      max-width: 400px;
+    }
+  }
+  
+  
+  .other-container {
+    margin-right: 20px;
+    font-size: 15px;
+    display: flex;
+    width: 600px;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 18px;
+    gap: 20px;
+  }
+
+  .language {
+ 
+    position: relative;
+    width: 32px;
+    height: 32px;
+    
+    }
+    
+  .navbar-login-button:hover {
+    cursor: pointer;
+  }
+  .navbar-login-button {
+    color: #222222;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 20px 10px 16px;
+    display: flex;
+    align-items: center; 
+    z-index: 0;
+}
+
+.navbar-login-button-icon {
+    width: 24px;
+    height: 24px;
+    background: #717171;
+    border-radius: 60px;
+    margin: 0; 
+    margin-left: 10px;
+    flex: none;
+    order: 1;
+    z-index: 1;
+}
+
+
+  
+  
+  .register-button:hover {
+    cursor: pointer;
+
+  }
+.register-button
+{
+    color: #222222;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 16px;
+    gap: 10px;
+}
+
