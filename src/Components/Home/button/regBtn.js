@@ -1,5 +1,5 @@
 import React from 'react';
-import './regBtn.css'; // Подключение стилей
+import './regBtn.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
