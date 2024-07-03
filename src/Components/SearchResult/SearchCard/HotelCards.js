@@ -14,7 +14,10 @@ for (let i = 1; i <= starsNum; i++) {
 }
   return (
     <div className="hotel-card">
-      <img src={hotel.image} alt="" className="hotel-image" />
+      {/* <img src={hotel.image} alt="" className="hotel-image" /> */}
+      <img src={`/SearchResult/HotelList2/${hotel.image}`} alt="" className="hotel-image" />
+
+
       <div>
         <div className="hotel-description">
           <h1 className="hotel-name">{hotel.name}</h1>
@@ -26,13 +29,20 @@ for (let i = 1; i <= starsNum; i++) {
           </div>
         
           <div className="hotel-distance">
-          <img src='popular.png'width={'24px'}></img>
+            
+          {/* <img src='popular.png'width={'24px'}></img> */}
+          <img src={`/SearchResult/HotelList2/popular.png`} width="24px" alt="Popular" />
+
           <p  style={{color:'rgba(113, 113, 113, 1)'}}>popular</p>
 
-          <img src='center.png'width={'24px'}></img>
+          {/* <img src='center.png'width={'24px'}></img> */}
+          <img src={`/SearchResult/HotelList2/center.png`} width="24px" alt="Popular" />
+
           <p  style={{color:'rgba(113, 113, 113, 1)'}}>city center</p>
 
-          <img src='comfortable.png'width={'24px'}></img>
+          {/* <img src='comfortable.png'width={'24px'}></img> */}
+          <img src={`/SearchResult/HotelList2/comfortable.png`} width="24px" alt="Popular" />
+
           <p  style={{color:'rgba(113, 113, 113, 1)'}}>comfortable</p>
           </div>
         </div>
@@ -44,7 +54,10 @@ for (let i = 1; i <= starsNum; i++) {
           railway station {hotel.stationDistance} km
           </span>
           <span className="hotel-things">
-          see on map <img src='strelka.png' className='vector'></img>
+          see on map 
+          {/* <img src='strelka.png' className='vector'></img> */}
+          <img src={`/SearchResult/HotelList2/strelka.png`} className='vector' />
+
           </span>
           <p className="hotel-details" style={{color:'rgba(113, 113, 113, 1)'}}>{hotel.description}</p>
 

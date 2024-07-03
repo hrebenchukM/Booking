@@ -30,12 +30,12 @@
 position: absolute;
 top: 0%;
 bottom: 50%;
-background-image: url('/public/sup.png');  
+background-image: url('/public/SearchResult/Nav2/sup.png');  
 background-size:cover; 
 
 }
 .easybooking:hover .easy-icon {
-    background-image: url('/public/sup2.png'); 
+    background-image:url('/public/SearchResult/Nav2/sup2.png');  
     background-size:cover; 
 }
 
@@ -98,11 +98,11 @@ position: absolute;
 
 top: 0%;
 bottom: 50%;
-background-image: url('/public/match.png');
+background-image: url('/public/SearchResult/Nav2/match.png');  
 background-size:cover; 
 }
 .securepayment:hover .secure-icon {
-    background-image: url('/public/match2.png');
+    background-image: url('/public/SearchResult/Nav2/match2.png');
     background-size:cover; 
 }
 
@@ -138,10 +138,10 @@ position: absolute;
 
 top: 0%;
 bottom: 50%;
-background-image: url('/public/hotels.png');
+background-image: url('/public/SearchResult/Nav2/hotels.png');
 background-size:cover; 
 }
 .relevantinformation:hover .info-icon {
-    background-image: url('/public/hotels2.png'); 
+    background-image: url('/public/SearchResult/Nav2/hotels2.png');
     background-size:cover; 
 }

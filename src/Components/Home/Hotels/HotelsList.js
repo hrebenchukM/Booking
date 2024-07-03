@@ -10,17 +10,21 @@ export const HotelsList = () => (
             <div className="container1">
             <div className="hotels__list">
                 {hotelsArr.map((hotel, index) => (
-                    <Link key={index} to={`/hotels/${hotel.id}`}   style={{ textDecoration: 'none', color: '#007bff' }}>
-                       <HotelCard
-                                        imagesArr={hotel.imagesArr}
-                                        starsNum={hotel.starsNum}
-                                        hotelName={hotel.hotelName}
-                                        cityName={hotel.cityName}
-                                        countryName={hotel.countryName}
-                                        distanceFromCenter={hotel.distanceFromCenter}
-                                        nightCost={hotel.nightCost}
-                                    />
-                    </Link>
+                   
+                 
+                   <HotelCard
+                     key={index}
+                     id={hotel.id}
+                     imagesArr={hotel.imagesArr}
+                     starsNum={hotel.starsNum}
+                     hotelName={hotel.hotelName}
+                     cityName={hotel.cityName}
+                     countryName={hotel.countryName}
+                     distanceFromCenter={hotel.distanceFromCenter}
+                     nightCost={hotel.nightCost}
+                   />
+                
+                   
                 ))}
             </div>
             </div>

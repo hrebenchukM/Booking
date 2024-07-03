@@ -141,7 +141,9 @@ export function SearchBar  (){
       <div className="search-bar-container-main">
         <div className="search-bar-container">
           <div className="search-bar-input-container">
-          <img src='airplane.png' width={24}></img>
+          {/* <img src='airplane.png' width={24}></img> */}
+          <img src="/Common/Searcher/airplane.png" width={24} />
+
             <input
               className="search-bar-input"
               type="text"
@@ -156,7 +158,8 @@ export function SearchBar  (){
             {cities.map((city, index) => (
               <p className='option-item' key={index} onClick={() => handleLocationSelect(city)}>
                 {city}
-                <img src='logo.png' width={15} className='logo' alt="City logo" />
+                {/* <img src='logo.png' width={15} className='logo' alt="City logo" /> */}
+                <img src="/Common/Searcher/logo.png" width={24}className='logo' alt="City logo"  />
               </p>
             ))}
             </div>
@@ -167,7 +170,8 @@ export function SearchBar  (){
 <div className='search-bar-date-container'>
 
 <div className="search-bar-date">
-<img src='cal.png' width={24} alt="Calendar icon" />
+<img src='/Common/Searcher/cal.png' width={24} alt="Calendar icon" />
+
           <div
             onClick={() => setOpenDate(!openDate)}
             className="search-bar-stay-time"
@@ -189,7 +193,7 @@ export function SearchBar  (){
       
 
           <div className="search-bar-details-container">
-          <img src='adul.png'  width={24}></img>
+          <img src='/Common/Searcher/adul.png'  width={24}></img>
             <div
               onClick={() => setOpenDetails(!openDetails)}
               className="search-bar-details"
@@ -272,11 +276,11 @@ export function SearchBar  (){
               </div>
               
             )}
-            <img src='strel.png'  width={24}></img>
+            <img src='/Common/Searcher/strel.png'  width={24}></img>
           </div>
          
           <div onClick={handleSearch} className="search-bar-search-btn">
-          <img src='search.png' ></img>
+          <img src='/Common/Searcher/search.png' ></img>
           </div>
         </div>
       </div>

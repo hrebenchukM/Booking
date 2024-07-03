@@ -5,7 +5,7 @@ import "./HeadImg.css";
 export  function HeadImage() {
   const data = [
     {
-      src: "/head.png",
+      src: "/Home/HeadImg/head.png",
       alt: "",
     }
   ];

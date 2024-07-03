@@ -72,32 +72,32 @@
 
 
 .rectangle-container:hover .icon1 {
-  content: url('/public/about1_.png');
+  content: url('/public/Home/about/about1_.png');
 }
 
 
 .rectangle-container:hover .icon2 {
-  content: url('/public/about2_.png');
+  content: url('/public/Home/about/about2_.png');
 }
 
 
 
 .rectangle-container:hover .icon3 {
-  content: url('/public/about3_.png');
+  content: url('/public/Home/about/about3_.png');
 }
 
 
 
 
 .rectangle-container:hover .icon4 {
-  content: url('/public/about4_.png');
+  content: url('/public/Home/about/about4_.png');
 }
 
 
 
 
 .rectangle-container:hover .icon5{
-  content: url('/public/about5_.png');
+  content: url('/public/Home/about/about5_.png');
 }
 
 

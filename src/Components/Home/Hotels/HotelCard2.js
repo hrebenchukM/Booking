@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import hotelsArr from './hotels.json';
+
+import { Link } from "react-router-dom";
+
 export const HotelCard = ({
     imagesArr,
     starsNum,
@@ -8,6 +11,7 @@ export const HotelCard = ({
     countryName,
     distanceFromCenter,
     nightCost,
+    id
 }) => {
     const starsArr = [];
     for (let i = 1; i <= starsNum; i++) {
@@ -42,11 +46,11 @@ export const HotelCard = ({
             >
                 {!isHotelFavourite ? (
                     // <img src="./star.svg" alt="" className="hotel__favourite-star" />
-                    <img src={process.env.PUBLIC_URL + '/star.svg'} alt="" className="hotel__favourite-star" />
+                    <img src={'/Home/HotelList/'  + '/star.svg'} alt="" className="hotel__favourite-star" />
 
                 ) : (
                     // <img src="./black-star-icon.svg" alt="" className="hotel__favourite-star" />
-                    <img src={process.env.PUBLIC_URL + '/black-star-icon.svg'} alt="" className="hotel__favourite-star" />
+                    <img src={'/Home/HotelList/'  + '/black-star-icon.svg'} alt="" className="hotel__favourite-star" />
 
                 )}
             </button>
@@ -64,7 +68,7 @@ export const HotelCard = ({
                             return (
                                 <article className={position} key={imageIndex}>
                                     {/* <img src={imageSrc} alt="Hotel" className='hotel__image' /> */}
-                                    <img src={process.env.PUBLIC_URL + '/' + imageSrc} alt="Hotel" className='hotel__image' />
+                                    <img src={'/Home/HotelList/' + imageSrc} alt="Hotel" className='hotel__image' />
 
                                 </article>
                             );
@@ -90,7 +94,11 @@ export const HotelCard = ({
                 </section>
             </div>
             <h4 className="hotel__title">
-                {hotelName} | {cityName} | {countryName}
+            <Link to={`/hotels/${id}`} style={{ textDecoration: 'none', color: '#007bff' }}>
+              {hotelName} | {cityName} | {countryName}
+            </Link>
+
+        
             </h4>
             <div className="hotel__stars">
                 {starsArr.map((_, index) => (<div key={index} className="hotel__stars-star"></div>))}

@@ -18,7 +18,9 @@ export  function  RegBtn (){
     return (
         <div>
             <div className='login-container'>
-        <img src="12345.png" width={30} className='icon-flag'></img>
+        {/* <img src="12345.png" width={30} className='icon-flag'></img> */}
+           <img src="/Home/regBtn/12345.png" width={30} className='icon-flag'></img>
+        
 
             <Link
               to="/register"
@@ -27,7 +29,8 @@ export  function  RegBtn (){
             <p className='txt'>Register an account</p>
           </button></Link>
        
-        <img src="6789.png" width={30} className='icon-flagg'></img>
+        {/* <img src="6789.png" width={30} className='icon-flagg'></img> */}
+            <img src="/Home/regBtn/6789.png" width={30} className='icon-flagg'></img>
       </div>
         </div>
     );

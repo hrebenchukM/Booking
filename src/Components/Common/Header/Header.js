@@ -14,7 +14,9 @@ export const Header = () => {
       </Link>
       <div className="other-container">
             
-           <img src="language.png"alt="Language" className='language'/>
+           {/* <img src="language.png"alt="Language" className='language'/> */}
+           <img src="/Common/Header/language.png"alt="Language" className='language'/>
+
             <>
             <Link
               to="/register"
@@ -28,7 +30,10 @@ export const Header = () => {
               style={{ textDecoration: "inherit", color: "inherit" }}
             >
               <div className="navbar-login-button">Sign In
-              <img src="signin.png" width="40" alt="SignIn" className="navbar-login-button-icon" />
+              {/* <img src="signin.png" width="40" alt="SignIn" className="navbar-login-button-icon" /> */}
+              <img src="/Common/Header/signin.png"alt="SignIn" width="40" className='navbar-login-button-icon'/>
+
+         
               </div>
             </Link>
           </>

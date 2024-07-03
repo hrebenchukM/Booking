@@ -11,7 +11,8 @@ export function About() {
     {AboutArr.map((item, index) => (
           <div className="rectangle-container" key={index}>
             <div className="rectangle-img">
-            <img src={item.imgSrc} width={30} className={item.imgClass} alt={item.alt}></img>
+            {/* <img src={item.imgSrc} width={30} className={item.imgClass} alt={item.alt}></img> */}
+            <img src={`/Home/About/${item.imgSrc}`} width={30} className={item.imgClass} alt={item.alt}></img>
             <p className="rectangle-name">{item.text}</p>
             </div>
           </div>
