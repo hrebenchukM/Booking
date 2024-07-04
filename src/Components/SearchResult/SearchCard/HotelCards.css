@@ -55,23 +55,32 @@ line-height: 22px;
 .choose-button:hover {
   cursor: pointer;
 }
-
 .hotel-price {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  position: absolute;
-  bottom: 60px;
-  justify-content: center;
-  right: 30px;
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 27px;
-  align-items: center;
   color: #581ADB;
-  
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+}
+
+.hotel-price .price-label {
+  font-weight: 400;
+  color: black;
+  display: block; 
+}
+
+.hotel-price .price-value {
+  color: #581ADB;
+  font-weight: 700;
+  display: block;
+
+
 }
 
 .hotel-details-container {
@@ -94,24 +103,21 @@ white-space: nowrap;
 .vector{
 /* Vector */
 width: 20px;
-margin: 10px;
+margin: 8px;
 color: #222222;
 }
 .hotel-distance {
 
-
-  margin-top: -20px;
   margin-left: 15px;
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   background: #FFFFFF;
   display: flex;
   align-items: center; 
-  flex-wrap: wrap;
-  
+
 }
 
 .hotel-distance img {
@@ -126,15 +132,17 @@ color: #222222;
 .hotel-details {
   display: flex;
   text-align: left;
-  width: 350px;
-  font-size: 17px;
+  width: 345px;
+  height: 56px;
+  font-size: 16px;
   font-weight: 300;
   flex-wrap: wrap;
+  line-height: 24px;
   
 }
 
 .hotel-description {
-  margin: 10px;
+  margin: 8px;
   text-align: left;
 }
 .hotel-rating{
@@ -151,19 +159,62 @@ text-align: center;
 
 }
 
-.hotel-rating p{
-
+.hotel-rating p {
   width: 48px;
   height: 48px;
   border: 1px solid #581ADB;
-  border-radius: 60px;
+  border-radius: 50%; 
   font-family: 'Nunito Sans';
   font-style: normal;
   line-height: 27px;
   color: #581ADB;
   margin-right: 0px;
-  
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
 }
+
+.hotel__stars {
+  display: flex;
+ 
+}
+
+.hotel__stars-star {
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-image: url('/public/Home/HotelList/hotel__star.png');
+  background-position: center;
+  background-size: 11.5px 11px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1300px) {
   .hotel-card {
     width: 700px;
@@ -188,50 +239,116 @@ text-align: center;
   }
 }
 
+
+
+
+
 @media (max-width: 720px) {
+  .hotel-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+width: 398px;
+height: 792px;
+
+  }
+
   .hotel-image {
-    width: 220px;
-    height: auto;
+    width: 398px;
+    height: 320px;
+    margin-bottom: 10px;
+
+width: 398px;
+height: 320px;
+
+
+border-radius: 13px 13px 0px 0px;
+
   }
-  .hotel-name {
-    font-size: 25px;
-  }
-  .hotel-distance {
-    font-size: 18px;
-    max-width: 190px;
-  }
+
   .hotel-details-container {
-    max-width: 120px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
   }
-  .choose-button {
-    left: 5px;
-    right: none;
+
+  .hotel-distance {
+    font-size: 16px;
+    max-width: 119px;
+    text-align: center;
+    margin-bottom: 10px;
+
+height: 88px;
+
+
+
   }
+
   .hotel-details {
-    max-width: 230px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
   }
+
+  .choose-button {
+    width: 175px;
+    margin-bottom: 10px;
+  }
+
   .hotel-price {
-    left: 8px;
-    right: none;
-    color: white;
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .hotel-things {
+    font-size: 12px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .hotel-name
+  {
+
+width: 122px;
+height: 14px;
+
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+display: flex;
+align-items: center;
+
+color: #222222;
+
+
   }
 }
+
 
 @media (max-width: 400px) {
   .hotel-distance {
-    flex-direction: row;
-    font-size: 15px;
+    font-size: 13px;
+    display: flex;
+    align-items: center; 
   }
-  
 
-.hotel-distance img {
-  width: 15px; 
-}
+  .hotel-distance img {
+    width: 15px;
+    margin-right: 5px; 
+  }
   .hotel-card {
-    height: 400px;
+    height: 792px;
+    width: 398px;
   }
   .hotel-image{
-    height: 400px;
+    height: 320px;
+    width: 398px;
   }
   .choose-button {
     left: 5px;
@@ -249,20 +366,18 @@ text-align: center;
     bottom: 10px;
     color: white;
   }
-}
-
-
-.hotel__stars {
-  display: flex;
+  .hotel-description
+  {
+    font-size: 12px;
+   
+  }
+  .hotel-things
+  {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  .choose-button {
  
+  }
 }
 
-.hotel__stars-star {
-  width: 16px;
-  height: 16px;
-  display: block;
-  background-image: url('/public/Home/HotelList/hotel__star.png');
-  background-position: center;
-  background-size: 11.5px 11px;
-  background-repeat: no-repeat;
-}

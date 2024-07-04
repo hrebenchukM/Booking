@@ -48,9 +48,8 @@ for (let i = 1; i <= starsNum; i++) {
         </div>
         <div className="hotel-details-container">
          <span className="hotel-things">
-          airport {hotel.airportDistance} km 
-          </span>
-          <span className="hotel-things">
+          airport {hotel.airportDistance} km ,
+       
           railway station {hotel.stationDistance} km
           </span>
           <span className="hotel-things">
@@ -78,13 +77,14 @@ for (let i = 1; i <= starsNum; i++) {
 
         
           <span className="hotel-price">
-          <div style={{ color: 'black', fontWeight:'400' }}>
-            prices from
-          </div>
-           <div style={{ color: '#581ADB', fontWeight:'700' }}>
-           {hotel.price}$
-           </div>
-          </span>
+  <div className="price-label">
+    prices from
+  </div>
+  <div className="price-value">
+    {hotel.price}$
+  </div>
+</span>
+
 
 
           <Link to={`/hotels/${hotel.id}`}>
