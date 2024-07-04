@@ -8,6 +8,7 @@ import { ErrorPage } from './Pages/Error/Error';
 import { SecurePayment } from './Pages/SecurePayment/SecurePayment';
 import { RelevantInfo } from './Pages/RelevantInfo/RelevantInfo';
 import { EasyBooking } from './Pages/EasyBooking/EasyBooking';
+import { Nearby } from './Components/SearchResult/Nearby';
 function App() {
 
 
