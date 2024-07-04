@@ -8,7 +8,7 @@ const Nearby = () => {
       <h2>WHAT'S NEARBY</h2>
       <div className="nearby-grid">
         <div className="nearby-column">
-          <h3>Attractions</h3>
+          <h3><img src="/SearchResult/Nearby/Attractions.png" alt="Attractions Icon" className="icon" /> Attractions</h3>
           <ul>
             <li><Link to="/attraction/1">Park Yunist - 2 km</Link></li>
             <li><Link to="/attraction/2">Сквер Павла Шклярука - 1 km</Link></li>
@@ -23,20 +23,20 @@ const Nearby = () => {
           </ul>
         </div>
         <div className="nearby-column">
-          <h3>Attractions</h3>
+          <h3><img src="/SearchResult/Nearby/Attractions2.png" alt="Cafes Icon" className="icon" />Attractions</h3>
           <ul>
             <li><Link to="/attraction/11">Cafe/bar Бекерай SDOBA - 2 km</Link></li>
             <li><Link to="/attraction/12">Restaurant Shipinat - 1 km</Link></li>
             <li><Link to="/attraction/13">Restaurant Стронг Хаус - 2 km</Link></li>
           </ul>
-          <h3>Public transport</h3>
+          <h3> <img src="/SearchResult/Nearby/transport.png" alt="Public transport Icon" className="icon" />Public transport</h3>
           <ul>
             <li><Link to="/transport/1">Train Odessa-Mala - 16 km</Link></li>
             <li><Link to="/transport/2">Train Odessa Train Station - 11 km</Link></li>
           </ul>
         </div>
         <div className="nearby-column">
-          <h3>Beaches in the neighbourhood</h3>
+          <h3><img src="/SearchResult/Nearby/beaches.png" alt="Beaches Icon" className="icon" />Beaches in the neighbourhood</h3>
           <ul>
             <li><Link to="/beach/1">Arkadia Beach - 9 km</Link></li>
             <li><Link to="/beach/2">Station Velykoho Fontanu Beach - 8 km</Link></li>
@@ -44,7 +44,7 @@ const Nearby = () => {
             <li><Link to="/beach/4">SBU beach - 18 km</Link></li>
             <li><Link to="/beach/5">Malomu Fontani Beach - 19 km</Link></li>
           </ul>
-          <h3>Public transport</h3>
+          <h3><img src="/SearchResult/Nearby/transport2.png" alt="Airport Icon" className="icon" />Public transport</h3>
           <ul>
             <li><Link to="/transport/3">Kyiv International Airport - 16 km</Link></li>
           </ul>

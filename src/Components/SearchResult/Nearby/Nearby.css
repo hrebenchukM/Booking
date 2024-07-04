@@ -15,11 +15,19 @@
   
   .nearby-column {
     flex: 1;
-    min-width: 250px;
+    min-width: 300px; 
   }
   
   .nearby-column h3 {
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
+  }
+  
+  .nearby-column h3 .icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
   }
   
   .nearby-column ul {
@@ -40,13 +48,23 @@
     text-decoration: underline;
   }
   
+  @media (max-width: 1200px) {
+    .nearby-grid {
+      justify-content: space-between;
+    }
+  
+    .nearby-column {
+      flex: 1 1 45%; 
+    }
+  }
+  
   @media (max-width: 768px) {
     .nearby-grid {
       flex-direction: column;
     }
   
     .nearby-column {
-      min-width: 100%;
+      min-width: 100%; 
     }
   }
   
