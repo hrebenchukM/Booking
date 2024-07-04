@@ -8,3 +8,10 @@
     display: flex;
     flex-direction: column;
   }
+
+  
+@media (max-width: 1050px) {
+    .result-page {
+      flex-direction: column;
+    }
+}

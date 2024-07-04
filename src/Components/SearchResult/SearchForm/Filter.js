@@ -74,6 +74,7 @@ const SearchForm = ({
         value={rating.rating}
         checked={selectedRating === rating.rating}
         onChange={() => setSelectedRating(rating.rating)}
+         className="result-page-options-input"
       />
       <label>
         {`${rating.rating}+`}
@@ -95,6 +96,7 @@ const SearchForm = ({
         value={popular.name}
         checked={selectedPopular === popular.name}
         onChange={() => setSelectedPopular(popular.name)}
+         className="result-page-options-input"
       />
       <label>
         {popular.name}
@@ -115,6 +117,7 @@ const SearchForm = ({
         value={stars.stars}
         checked={selectedStars === stars.stars}
         onChange={() => setSelectedStars(stars.stars)}
+         className="result-page-options-input"
       />
       <label>
         {(() => {
@@ -148,6 +151,7 @@ const SearchForm = ({
         value={near.name}
         checked={selectedNear === near.name}
         onChange={() => setSelectedNear(near.name)}
+         className="result-page-options-input"
       />
       <label>
         {near.name}
@@ -175,6 +179,7 @@ const SearchForm = ({
         value={faculties.name}
         checked={selectedFaculties === faculties.name}
         onChange={() => setSelectedFaculties(faculties.name)}
+         className="result-page-options-input"
       />
       <label>
         {faculties.name}
@@ -194,6 +199,7 @@ const SearchForm = ({
         value={type.name}
         checked={selectedType === type.name}
         onChange={() => setSelectedType(type.name)}
+         className="result-page-options-input"
       />
       <label>
         {type.name}
@@ -215,6 +221,7 @@ const SearchForm = ({
         value={chain.name}
         checked={selectedChain === chain.name}
         onChange={() => setSelectedChain(chain.name)}
+         className="result-page-options-input"
       />
       <label>
         {chain.name}
