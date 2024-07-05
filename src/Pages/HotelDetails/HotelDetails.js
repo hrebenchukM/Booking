@@ -3,13 +3,11 @@ import React, { useState } from "react";
 import { Footer } from "../../Components/Common/Footer/Footer";
 import { Header } from "../../Components/Common/Header/Header";
 import "./HotelDetails.css";
-import { useLocation } from "react-router-dom";
 
 
 
 export  function HotelDetailsPage() {
-  const location = useLocation();
-  const hotelId = location.pathname.split("/")[2];
+
   const [slideIndex, setSlideIndex] = useState(0);
   const [open, setOpen] = useState(false);
 
