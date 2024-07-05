@@ -3,6 +3,7 @@
   .result-page {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   .search-result-search-item {
     display: flex;
