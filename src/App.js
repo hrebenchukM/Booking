@@ -9,6 +9,7 @@ import { SecurePayment } from './Pages/SecurePayment/SecurePayment';
 import { RelevantInfo } from './Pages/RelevantInfo/RelevantInfo';
 import { EasyBooking } from './Pages/EasyBooking/EasyBooking';
 import { Nearby } from './Components/SearchResult/Nearby';
+import { Rating } from './Components/SearchResult/Rating';
 function App() {
 
 
