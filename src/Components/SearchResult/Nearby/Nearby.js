@@ -4,7 +4,7 @@ import './Nearby.css';
 
 const Nearby = () => {
   return (
-    <div className="nearby">
+    <div className="Nearby">
       <h2>WHAT'S NEARBY</h2>
       <div className="nearby-grid">
         <div className="nearby-column">
@@ -29,7 +29,7 @@ const Nearby = () => {
             <li><Link to="/attraction/12">Restaurant Shipinat - 1 km</Link></li>
             <li><Link to="/attraction/13">Restaurant Стронг Хаус - 2 km</Link></li>
           </ul>
-          <h3> <img src="/SearchResult/Nearby/transport.png" alt="Public transport Icon" className="icon" />Public transport</h3>
+          <h3><img src="/SearchResult/Nearby/transport.png" alt="Public transport Icon" className="icon" />Public transport</h3>
           <ul>
             <li><Link to="/transport/1">Train Odessa-Mala - 16 km</Link></li>
             <li><Link to="/transport/2">Train Odessa Train Station - 11 km</Link></li>
