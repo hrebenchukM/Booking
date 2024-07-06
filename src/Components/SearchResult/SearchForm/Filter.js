@@ -8,9 +8,7 @@ const SearchForm = ({
 
   
   const [search, setSearch] = useState('');
-  const handleSearch = () => {
-    console.log('Searching...', search);
-  };
+ 
   const [selectedRating, setSelectedRating] = useState(null);
   const [selectedPopular, setSelectedPopular] = useState(null);
   const [selectedStars, setSelectedStars] = useState(null);
@@ -31,8 +29,11 @@ const SearchForm = ({
   return (
     <div className="result-page-search-container">
       <div className="result-page-options">
-        <p>Price</p>
-        <p>{minPrice}$night     |    {maxPrice}$night</p>
+      <label className="hlabel">Price</label>
+      <label className="clabel">
+      {minPrice}$night  
+      <span className="c">{maxPrice}$night</span>
+      </label>
         <input
           className="result-page-options-input"
           type="range"
@@ -45,6 +46,7 @@ const SearchForm = ({
           
           }}
         />
+        <span className="vec"></span>
       </div>
 
 
@@ -52,21 +54,24 @@ const SearchForm = ({
 
 
       <div className="result-page-options">
+        
         <input
         type="text"
         placeholder="Attractions nearby"
         value={search}
+        
         onChange={(e) => setSearch(e.target.value)
         }
-          className="result-page-options-input2"
-      />
-      <button onClick={handleSearch}></button>
+        className="result-page-options-input2"
+        />
+       <img src="./SearchResult/SearchForm/but.png" className="simg" ></img>
+       <span className="vec"></span>
       </div>
 
 
 
       <div className="result-page-options">
-  <label>Rating</label>
+      <label className="hlabel">Rating</label>
   {ratingOptions.map((rating) => (
     <div key={rating.rating} className="result-page-option-option">
       <input
@@ -82,13 +87,14 @@ const SearchForm = ({
       <span className="count">{rating.count}</span>
     </div>
   ))}
+  <span className="vec"></span>
 </div>
 
 
 
 
       <div className="result-page-options">
-  <label>Popular</label>
+      <label className="hlabel">Popular</label>
   {popularOptions.map((popular) => (
     <div key={popular.name} className="result-page-option-option">
       <input
@@ -104,12 +110,13 @@ const SearchForm = ({
       <span className="count">{popular.count}</span>
     </div>
   ))}
+  <span className="vec"></span>
 </div>
 
 
 
 <div className="result-page-options">
-  <label>Stars</label>
+  <label className="hlabel">Stars</label>
   {starsOptions.map((stars, index) => (
     <div key={index} className="result-page-option-option">
       <input
@@ -137,13 +144,14 @@ const SearchForm = ({
       <span className="count">{stars.count}</span>
     </div>
   ))}
+  <span className="vec"></span>
 </div>
 
 
            
 
 <div className="result-page-options">
-  <label>Near</label>
+<label className="hlabel">Near</label>
   {nearOptions.map((near) => (
     <div key={near.name} className="result-page-option-option">
       <input
@@ -159,6 +167,7 @@ const SearchForm = ({
       <span className="count">{near.count}</span>
     </div>
   ))}
+  <span className="vec"></span>
 </div>
 
 
@@ -171,7 +180,7 @@ const SearchForm = ({
 
 
 <div className="result-page-options">
-  <label>Faculties</label>
+<label className="hlabel">Faculties</label>
   {facultiesOptions.map((faculties) => (
     <div key={faculties.name} className="result-page-option-option">
       <input
@@ -187,11 +196,12 @@ const SearchForm = ({
       <span className="count">{faculties.count}</span>
     </div>
   ))}
+  <span className="vec"></span>
 </div>
 
 
 <div className="result-page-options">
-  <label>Type of hotel</label>
+<label className="hlabel">Type of hotel</label>
   {typeOptions.map((type) => (
     <div key={type.name} className="result-page-option-option">
       <input
@@ -207,13 +217,14 @@ const SearchForm = ({
       <span className="count">{type.count}</span>
     </div>
   ))}
+  <span className="vec"></span>
 </div>
 
 
 
 
 <div className="result-page-options">
-  <label>Chain hotels</label>
+<label className="hlabel">Chain hotels</label>
   {chainOptions.map((chain) => (
     <div key={chain.name} className="result-page-option-option">
       <input
@@ -230,6 +241,7 @@ const SearchForm = ({
     </div>
   ))}
 </div>
+
     </div>
   );
 };
