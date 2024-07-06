@@ -21,6 +21,7 @@ function App() {
          <Route path="my_profile" element={<MyProfile/> } />
          <Route path="*" element= {<ErrorPage />} />  
       </Routes>
+     
     </BrowserRouter>
   </div>
   );

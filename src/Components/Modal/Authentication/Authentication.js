@@ -4,11 +4,13 @@ import { Information } from "../Information/Information";
 
 export function Authentication  ({ setOpen }) {
   
+
+
   const [openModal1, setOpenModal1] = useState(false);
   const handleClick1 = () => {
     setOpenModal1(true);
+    
   };
-
   return (
     <div className="authentication">
       <div className="authentication-container">

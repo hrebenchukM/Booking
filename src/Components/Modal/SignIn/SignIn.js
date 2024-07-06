@@ -8,6 +8,7 @@ export function SignIn  ({ setOpen }) {
 
   const handleClick = () => {
     navigate("/");
+    setOpen(false);
   };
 
 

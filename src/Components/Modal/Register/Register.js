@@ -6,7 +6,6 @@ export function Register({ setOpen }) {
   const [openModal1, setOpenModal1] = useState(false);
   
   const handleClick1 = () => {
-  
     setOpenModal1(true); 
   };
 
