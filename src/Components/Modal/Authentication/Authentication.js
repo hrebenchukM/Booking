@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import "./Authentication.css";
+import { Information } from "../Information/Information";
+import { ModalManager } from "../ModalManager";
 
-export function Authentication  ({ setOpen }) {
+export function Authentication  ({ handleClose }) {
   
 
-  const [openModal1, setOpenModal1] = useState(false);
-  const handleClick1 = () => {
-    setOpenModal1(true);
-  };
 
   return (
     <div className="authentication">
       <div className="authentication-container">
-          <div className="authentication-close-icon"onClick={() => setOpen(false)}>
-             &#10095;
+          <div className="authentication-close-icon"onClick={() => handleClose(false)}>
+          <img src="./Modal/close.png" width={20} ></img>
           </div>
         <span className="authentication-main-text">Authentication </span>
         <div className="authentication-info-container" >
@@ -24,13 +22,13 @@ export function Authentication  ({ setOpen }) {
               ></input>
             </div>
           </div>
-          <div className="title">We have sent you an email with the code. 
+          <div className="titleA">We have sent you an email with the code. 
             Check your mail and enter the code for the authentication 
           </div>
         
     
-        <button onClick={handleClick1} className="authentication-button">
-          <span className="cont-text">Continue</span>
+        <button onClick={handleClose} className="authentication-button">
+          <span className="cont-textA">Continue</span>
         </button>
     
 
@@ -39,7 +37,7 @@ export function Authentication  ({ setOpen }) {
 
     
       </div>
-      {/* {openModal1 && < setOpen={setOpenModal1} />} */}
+    <ModalManager></ModalManager>
     </div>
   );
 };

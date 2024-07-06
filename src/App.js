@@ -24,8 +24,6 @@ function App() {
          <Route path="relevant_information" element={<RelevantInfo/>} />
          <Route path="*" element= {<ErrorPage />} />  
       </Routes>
-
-
     </BrowserRouter>
   </div>
   );

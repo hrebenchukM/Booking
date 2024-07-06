@@ -20,7 +20,7 @@ export function SignIn  ({ setOpen }) {
     <div className="signin">
       <div className="signin-container">
           <div className="signin-close-icon"onClick={() => setOpen(false)}>
-             &#10095;
+          <img src="./Modal/close.png" width={20} ></img>
           </div>
         <span className="signin-main-text">Sign In</span>
         <div className="signin-info-container" >

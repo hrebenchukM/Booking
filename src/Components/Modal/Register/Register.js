@@ -1,22 +1,17 @@
 import React, { useState } from "react";
 import "./Register.css";
 import { Authentication } from "../Authentication/Authentication";
+import { ModalManager } from "../ModalManager";
 
-export function Register  ({ setOpen }) {
+export function Register  ({ handleClose }) {
 
-
-  const [openModal1, setOpenModal1] = useState(false);
-  const handleClick1 = () => {
-    setOpenModal1(true);
-    
-  };
 
 
   return (
     <div className="registerM">
       <div className="registerM-container">
-          <div className="registerM-close-icon"onClick={() => setOpen(false)}>
-             &#10095;
+          <div className="registerM-close-icon"onClick={() => handleClose(false)}>
+          <img src="./Modal/close.png" width={20} ></img>
           </div>
         <span className="registerM-main-text">Register</span>
         <div className="registerM-info-container" >
@@ -27,9 +22,9 @@ export function Register  ({ setOpen }) {
               ></input>
             </div>
           </div>
-          <div className="title">*We will send you an email to confirm your 
+          <div className="titleReg">*We will send you an email to confirm your 
           email address
-        </div>
+          </div>
     
           <div className="registerM-info-container"style={{marginTop:'-5px'}}  >
             <div className="registerM">
@@ -47,17 +42,17 @@ export function Register  ({ setOpen }) {
               ></input>
             </div>
           </div>
-          <div className="title">*Get acquainted with our 
+          <div className="titleReg">*Get acquainted with our 
             <span style={{ color: 'rgba(88, 26, 219, 1)'}}>Privacy policy</span>
         </div>
-        <button onClick={handleClick1} className="registerM-button">
-          <span className="cont-text">Continue</span>
+        <button onClick={handleClose} className="registerM-button">
+          <span className="cont-textReg">Continue</span>
         </button>
       
 
         <button  className="registerM-button2">
         <img src="./Modal/google.png" width={24}></img>
-          <span className="text">
+          <span className="textReg">
                 Sign In with Google</span>
         </button>
 
@@ -65,18 +60,19 @@ export function Register  ({ setOpen }) {
 
         <button  className="registerM-button2">
         <img src="./Modal/facebook.png" width={24}></img>
-          <span className="text">Sign In with Facebook</span>
+          <span className="textReg">Sign In with Facebook</span>
         </button>
 
         <button  className="registerM-button2">
         <img src="./Modal/apple.png" width={24}></img>
-          <span className="text">Sign In with Apple</span>
+          <span className="textReg">Sign In with Apple</span>
         </button>
 
 
     
       </div>
-      {openModal1 && <Authentication setOpen={setOpenModal1} />}
+     
+      <ModalManager></ModalManager>
     </div>
   );
 };

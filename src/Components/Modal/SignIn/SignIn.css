@@ -38,7 +38,7 @@
 
 width: 24px;
 height: 24px;
-border: 1px solid #717171;
+
 
   }
   
@@ -76,7 +76,8 @@ gap: 10px;
 width: 432px;
 height: 56px;
 
-background: #DDDDDD;
+color: rgba(255, 255, 255, 1);
+background: rgba(88, 26, 219, 1);
 border-radius: 60px;
 
   }
@@ -120,6 +121,8 @@ flex-grow: 0;
   
   .signin-button:hover {
     cursor: pointer;
+    background-color: rgba(221, 221, 221, 1);
+    color: rgba(113, 113, 113, 1);
   }
   
   .signin-button2:hover {
@@ -157,8 +160,6 @@ border-radius: 64px;
   }
   .cont-text 
   {
-  
-
 width: 67px;
 height: 11px;
 
@@ -171,14 +172,11 @@ line-height: 22px;
 display: flex;
 align-items: center;
 
-color: #717171;
-
-
 flex: none;
 order: 0;
 flex-grow: 0;
-
   }
+
 .text{
 
 font-family: 'Nunito Sans',sans-serif;
