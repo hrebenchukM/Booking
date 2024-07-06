@@ -1,0 +1,140 @@
+[
+    {
+      "title": "General",
+      "icon": "/assets/icons/general.png",
+      "items": [
+        "Shuttle service",
+        "Additional charge",
+        "Grocery deliveries",
+        "Minimarket on site",
+        "Designated smoking area",
+        "Air conditioning",
+        "Mosquito net",
+        "Wake-up service",
+        "Heating",
+        "Interconnected room(s) available",
+        "Lift",
+        "Family rooms",
+        "Barber/beauty shop",
+        "Airport shuttle",
+        "Additional charge",
+        "Non-smoking rooms",
+        "Wake up service/Alarm clock",
+        "Room service"
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "icon": "/assets/icons/accessibility.png",
+      "items": [
+        "Upper floors accessible by stairs only",
+        "Upper floors accessible by elevator"
+      ]
+    },
+    {
+      "title": "Languages spoken",
+      "icon": "/assets/icons/languages.png",
+      "items": [
+        "English",
+        "Russian",
+        "Ukrainian"
+      ]
+    },
+    {
+      "title": "Parking",
+      "icon": "/assets/icons/parking.png",
+      "items": ["Parking garage"]
+    },
+    {
+      "title": "Reception services",
+      "icon": "/assets/icons/reception.png",
+      "items": [
+        "Fire extinguishers",
+        "CCTV outside property",
+        "CCTV in common areas",
+        "Smoke alarms",
+        "Security alarm",
+        "Key card access",
+        "24-hour security",
+        "Safety deposit box"
+      ]
+    },
+    {
+      "title": "Cleaning services",
+      "icon": "/assets/icons/cleaning.png",
+      "items": [
+        "Daily housekeeping",
+        "Laundry",
+        "Additional charge"
+      ]
+    },
+    {
+      "title": "Entertainment and family services",
+      "icon": "/assets/icons/entertainment.png",
+      "items": ["Kids' outdoor play equipment"]
+    },
+    {
+      "title": "Safety & security",
+      "icon": "/assets/icons/safety.png",
+      "items": [
+        "Invoice provided",
+        "Private check-in/check-out",
+        "Concierge service",
+        "Luggage storage",
+        "Express check-in/check-out",
+        "24-hour front desk"
+      ]
+    },
+    {
+      "title": "Bathroom",
+      "icon": "/assets/icons/bathroom.png",
+      "items": [
+        "Toilet paper",
+        "Towels",
+        "Slippers",
+        "Private bathroom",
+        "Toilet",
+        "Free toiletries",
+        "Hairdryer",
+        "Shower"
+      ]
+    },
+    {
+      "title": "Bedroom",
+      "icon": "/assets/icons/bedroom.png",
+      "items": ["Linen"]
+    },
+    {
+      "title": "Kitchen",
+      "icon": "/assets/icons/kitchen.png",
+      "items": ["Electric kettle"]
+    },
+    {
+      "title": "Room Amenities",
+      "icon": "/assets/icons/amenities.png",
+      "items": ["Clothes rack"]
+    },
+    {
+      "title": "Pets",
+      "icon": "/assets/icons/pets.png",
+      "items": ["Pets are allowed. No extra charges"]
+    },
+    {
+      "title": "Media & Technology",
+      "icon": "/assets/icons/media.png",
+      "items": [
+        "Flat-screen TV",
+        "Cable channels"
+      ]
+    },
+    {
+      "title": "Food & Drinks",
+      "icon": "/assets/icons/food.png",
+      "items": ["Coffee house on site"]
+    },
+    {
+      "title": "Internet",
+      "icon": "/assets/icons/internet.png",
+      "items": ["Internet access available"]
+    }
+]
