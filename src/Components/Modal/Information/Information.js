@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import "./Information.css";
 import { AllDone } from "../AllDone/AllDone";
-import { ModalManager } from "../ModalManager";
 
-export function Information  ({ handleClose }) {
+export function Information  ({ setOpen }) {
 
 
+  const [openModal1, setOpenModal1] = useState(false);
+  const handleClick1 = () => {
+    setOpenModal1(true);
+    
+  };
 
   const options = ["Yes","No"];
-
-  
   const [selectedOption, setSelectedOption] = useState(null);
 
   return (
     <div className="infor">
       <div className="infor-container">
-          <div className="infor-close-icon"onClick={() => handleClose(false)}>
+          <div className="infor-close-icon"onClick={() => setOpen(false)}>
           <img src="./Modal/close.png" width={20} ></img>
           </div>
         <span className="infor-main-text">Information</span>
@@ -70,7 +72,7 @@ export function Information  ({ handleClose }) {
       </div>
     </div>
     
-        <button onClick={handleClose} className="infor-button">
+        <button onClick={handleClick1} className="infor-button">
           <span className="cont-textInfo">Continue</span>
         </button>
     
@@ -83,7 +85,7 @@ export function Information  ({ handleClose }) {
 
     
       </div>
-     <ModalManager></ModalManager>
+     {openModal1 && <AllDone setOpen={setOpenModal1} />}
     </div>
   );
 };

@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "./Authentication.css";
 import { Information } from "../Information/Information";
-import { ModalManager } from "../ModalManager";
 
-export function Authentication  ({ handleClose }) {
+export function Authentication  ({ setOpen }) {
   
-
+  const [openModal1, setOpenModal1] = useState(false);
+  const handleClick1 = () => {
+    setOpenModal1(true);
+  };
 
   return (
     <div className="authentication">
       <div className="authentication-container">
-          <div className="authentication-close-icon"onClick={() => handleClose(false)}>
+          <div className="authentication-close-icon"onClick={() => setOpen(false)}>
           <img src="./Modal/close.png" width={20} ></img>
           </div>
         <span className="authentication-main-text">Authentication </span>
@@ -27,7 +29,7 @@ export function Authentication  ({ handleClose }) {
           </div>
         
     
-        <button onClick={handleClose} className="authentication-button">
+        <button onClick={handleClick1} className="authentication-button">
           <span className="cont-textA">Continue</span>
         </button>
     
@@ -37,7 +39,7 @@ export function Authentication  ({ handleClose }) {
 
     
       </div>
-    <ModalManager></ModalManager>
+      {openModal1 && <Information setOpen={setOpenModal1} />}
     </div>
   );
 };

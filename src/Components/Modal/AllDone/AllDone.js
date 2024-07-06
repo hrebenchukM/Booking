@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import "./AllDone.css";
 import { useNavigate } from "react-router-dom";
 
-export function AllDone  ({ handleClose }) {
+export function AllDone  ({ setOpen }) {
     const navigate = useNavigate();
 
     const handleClick = () => {
-      navigate("/profile");
+      navigate("/my_profile");
     };
     const handleClick1 = () => {
         navigate("/");
+        setOpen(false);
       };
     
   
@@ -19,7 +20,7 @@ export function AllDone  ({ handleClose }) {
   return (
     <div className="done">
       <div className="done-container">
-          <div className="done-close-icon"onClick={() => handleClose(false)}>
+          <div className="done-close-icon"onClick={() => setOpen(false)}>
           <img src="./Modal/close.png" width={20} ></img>
           </div>
         <span className="done-main-text">All done!</span>
