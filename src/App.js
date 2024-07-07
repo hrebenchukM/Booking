@@ -7,8 +7,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ErrorPage } from './Pages/Error/Error';
 import { MyProfile } from './Pages/MyProfile/MyProfile';
 
-function App() {
 
+function App() {
 
   return (
     <div className="App">
@@ -23,7 +23,9 @@ function App() {
       </Routes>
      
     </BrowserRouter>
-  </div>
+
+</div>
+
   );
 }
 

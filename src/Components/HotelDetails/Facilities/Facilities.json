@@ -1,7 +1,7 @@
 [
     {
       "title": "General",
-      "icon": "/assets/icons/general.png",
+      "icon": "general.png",
       "items": [
         "Shuttle service",
         "Additional charge",
@@ -24,8 +24,28 @@
       ]
     },
     {
+      "title": "Parking",
+      "icon": "parking.png",
+      "items": ["Parking garage"]
+    },
+    {
+      "title": "Bathroom",
+      "icon": "bathroom.png",
+      "items": [
+        "Toilet paper",
+        "Towels",
+        "Slippers",
+        "Private bathroom",
+        "Toilet",
+        "Free toiletries",
+        "Hairdryer",
+        "Shower"
+      ]
+    },
+    
+    {
       "title": "Accessibility",
-      "icon": "/assets/icons/accessibility.png",
+      "icon": "accessibility.png",
       "items": [
         "Upper floors accessible by stairs only",
         "Upper floors accessible by elevator"
@@ -33,21 +53,17 @@
     },
     {
       "title": "Languages spoken",
-      "icon": "/assets/icons/languages.png",
+      "icon": "languages.png",
       "items": [
         "English",
         "Russian",
         "Ukrainian"
       ]
     },
-    {
-      "title": "Parking",
-      "icon": "/assets/icons/parking.png",
-      "items": ["Parking garage"]
-    },
+   
     {
       "title": "Reception services",
-      "icon": "/assets/icons/reception.png",
+      "icon": "reception.png",
       "items": [
         "Fire extinguishers",
         "CCTV outside property",
@@ -61,7 +77,7 @@
     },
     {
       "title": "Cleaning services",
-      "icon": "/assets/icons/cleaning.png",
+      "icon": "cleaning.png",
       "items": [
         "Daily housekeeping",
         "Laundry",
@@ -70,12 +86,12 @@
     },
     {
       "title": "Entertainment and family services",
-      "icon": "/assets/icons/entertainment.png",
+      "icon": "entertainment.png",
       "items": ["Kids' outdoor play equipment"]
     },
     {
       "title": "Safety & security",
-      "icon": "/assets/icons/safety.png",
+      "icon": "safety.png",
       "items": [
         "Invoice provided",
         "Private check-in/check-out",
@@ -85,43 +101,30 @@
         "24-hour front desk"
       ]
     },
-    {
-      "title": "Bathroom",
-      "icon": "/assets/icons/bathroom.png",
-      "items": [
-        "Toilet paper",
-        "Towels",
-        "Slippers",
-        "Private bathroom",
-        "Toilet",
-        "Free toiletries",
-        "Hairdryer",
-        "Shower"
-      ]
-    },
+   
     {
       "title": "Bedroom",
-      "icon": "/assets/icons/bedroom.png",
+      "icon": "bedroom.png",
       "items": ["Linen"]
     },
     {
       "title": "Kitchen",
-      "icon": "/assets/icons/kitchen.png",
+      "icon": "kitchen.png",
       "items": ["Electric kettle"]
     },
     {
       "title": "Room Amenities",
-      "icon": "/assets/icons/amenities.png",
+      "icon": "amenities.png",
       "items": ["Clothes rack"]
     },
     {
       "title": "Pets",
-      "icon": "/assets/icons/pets.png",
+      "icon": "pets.png",
       "items": ["Pets are allowed. No extra charges"]
     },
     {
       "title": "Media & Technology",
-      "icon": "/assets/icons/media.png",
+      "icon": "media.png",
       "items": [
         "Flat-screen TV",
         "Cable channels"
@@ -129,12 +132,12 @@
     },
     {
       "title": "Food & Drinks",
-      "icon": "/assets/icons/food.png",
+      "icon": "food.png",
       "items": ["Coffee house on site"]
     },
     {
       "title": "Internet",
-      "icon": "/assets/icons/internet.png",
+      "icon": "internet.png",
       "items": ["Internet access available"]
     }
 ]
