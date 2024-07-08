@@ -102,20 +102,15 @@
 
 @media (max-width: 768px) {
   .reviews__list {
-    display: flex;
-    flex-wrap: wrap;
+  
     overflow-x: auto;
  
   }
 
   .reviews__list .review {
-    flex: 0 0 auto; 
-    width: 50%; 
-    padding: 0 5px;
-    box-sizing: border-box; 
+   
   }
- .reviews__list--desktop
-  {
-display: none;
+  .reviews__list--desktop {
+    display: none; 
   }
 }

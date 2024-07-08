@@ -19,11 +19,11 @@ export const ReviewsList = ({
     };
 
     return (
-        <div className="reviews__list">
-            <div className="reviews__slider">
+        <div className="reviews__listhotel">
+            <div className="reviews__sliderhotel">
            
-                <div className="reviews__slider-content">
-                    <div className="reviews__slide reviews__slide--active">
+                <div className="reviews__slider-contenthotel">
+                    <div className="reviews__slidehotel reviews__slide--activehotel">
                         <ReviewCard
                             avatar={reviewsArr[slideIndex].avatar}
                             reviewerName={reviewsArr[slideIndex].reviewerName}
@@ -34,8 +34,8 @@ export const ReviewsList = ({
                     </div>
                 </div>
             
-                <button className="reviews__slider-btn reviews__slider-btn--prev" onClick={() => handleSlide('left')}>&#10094;</button>
-                <button className="reviews__slider-btn reviews__slider-btn--next" onClick={() => handleSlide('right')}>&#10095;</button>
+                <button className="reviews__slider-btnhotel reviews__slider-btn--prevhotel" onClick={() => handleSlide('left')}>&#10094;</button>
+                <button className="reviews__slider-btnhotel reviews__slider-btn--nexthotel" onClick={() => handleSlide('right')}>&#10095;</button>
             </div>
         </div>
     );
