@@ -31,7 +31,7 @@ export const HotelCard = ({
         }
     }, [currentIndex, imagesArr]);
 
-    useEffect(() => {//to automatically switch photos every 5 seconds
+    useEffect(() => {
         let slider = setInterval(() => setCurrentIndex((prevState) => prevState + 1), 5000);
         return () => {
             clearInterval(slider);
@@ -39,18 +39,18 @@ export const HotelCard = ({
     }, [currentIndex]);
 
     return (
-        <div className="hotel">
+        <div className="hotelHome">
             <button 
                className={`hotel__favourite ${isHotelFavourite ? 'hotel__favourite--active' : ''}`}
                 onClick={() => setIsHotelFavourite(!isHotelFavourite)}
             >
                 {!isHotelFavourite ? (
-                    // <img src="./star.svg" alt="" className="hotel__favourite-star" />
-                    <img src={'/Home/HotelList/'  + '/star.svg'} alt="" className="hotel__favourite-star" />
+                
+                    <img src={'/Home/HotelList/'  + '/star.svg'} alt="" className="hotel__favourite-starbest" />
 
                 ) : (
-                    // <img src="./black-star-icon.svg" alt="" className="hotel__favourite-star" />
-                    <img src={'/Home/HotelList/'  + '/black-star-icon.svg'} alt="" className="hotel__favourite-star" />
+                   
+                    <img src={'/Home/HotelList/'  + '/black-star-icon.svg'} alt="" className="hotel__favourite-starbest" />
 
                 )}
             </button>
@@ -67,7 +67,7 @@ export const HotelCard = ({
 
                             return (
                                 <article className={position} key={imageIndex}>
-                                    {/* <img src={imageSrc} alt="Hotel" className='hotel__image' /> */}
+                                  
                                     <img src={'/Home/HotelList/' + imageSrc} alt="Hotel" className='hotel__image' />
 
                                 </article>

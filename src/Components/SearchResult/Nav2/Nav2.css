@@ -16,7 +16,7 @@
 
     justify-content: center;
   }
-  .easybooking, .securepayment, .relevantinformation {
+  .suppliers, .match, .hotelsnav {
     display: flex; 
     margin: 75px; 
     position: relative; 
@@ -25,7 +25,7 @@
     justify-content: center;
   }
   
-.easy-icon{
+.sup-icon{
 
 position: absolute;
 top: 0%;
@@ -34,12 +34,12 @@ background-image: url('/public/SearchResult/Nav2/sup.png');
 background-size:cover; 
 
 }
-.easybooking:hover .easy-icon {
+.suppliers:hover .sup-icon {
     background-image:url('/public/SearchResult/Nav2/sup2.png');  
     background-size:cover; 
 }
 
-.easy_text
+.sup_text
 {
 
 position: absolute;
@@ -61,12 +61,12 @@ color: #717171;
 
 }
 
-.easybooking:hover .easy_text {
+.suppliers:hover .sup_text {
 color: #222222;
 
 }
 
-.secure_text
+.match_text
 {
 
 position: absolute;
@@ -88,11 +88,11 @@ color: #717171;
 
 
 }
-.securepayment:hover .secure_text {
+.match:hover .match_text {
     color: #222222;
 }
 
-.secure-icon
+.match-icon
 {
 position: absolute;
 
@@ -101,14 +101,14 @@ bottom: 50%;
 background-image: url('/public/SearchResult/Nav2/match.png');  
 background-size:cover; 
 }
-.securepayment:hover .secure-icon {
+.match:hover .match-icon {
     background-image: url('/public/SearchResult/Nav2/match2.png');
     background-size:cover; 
 }
 
 
 
-.info_text
+.hotelsnav_text
 {
 
 
@@ -129,10 +129,10 @@ color: #717171;
 
 
 }
-.relevantinformation:hover .info_text {
+.hotelsnav:hover .hotelsnav_text {
     color: #222222;
 }
-.info-icon
+.hotelsnav-icon
 {
 position: absolute;
 
@@ -141,7 +141,20 @@ bottom: 50%;
 background-image: url('/public/SearchResult/Nav2/hotels.png');
 background-size:cover; 
 }
-.relevantinformation:hover .info-icon {
+.hotelsnav:hover .hotelsnav-icon {
     background-image: url('/public/SearchResult/Nav2/hotels2.png');
     background-size:cover; 
+}
+
+
+@media (max-width: 768px) {
+ 
+  .suppliers, .match, .hotelsnav {
+    display: none; 
+  }
+
+  .suppliers, .match, .hotelsnav {
+    margin: 30px;
+  }
+
 }

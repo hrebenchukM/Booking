@@ -134,7 +134,7 @@ const SearchForm = ({
               <img
                 key={i}
                 src="/SearchResult/SearchForm/star.png"
-                className="stars-icon"
+                className="stars-icon-search"
               />
             );
           }

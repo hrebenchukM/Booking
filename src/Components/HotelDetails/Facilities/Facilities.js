@@ -38,7 +38,7 @@ export function Facilities() {
           )
         ))}
       </div>
-      {!showAdditionalCategories && (
+      {!showSpecCategories && (
         <button className="show-more-button" onClick={showAll}>
           Show all facilities
         </button>

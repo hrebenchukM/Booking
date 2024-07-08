@@ -4,10 +4,9 @@ import { Footer } from "../../Components/Common/Footer/Footer";
 import { Header } from "../../Components/Common/Header/Header";
 import "./HotelDetails.css";
 import hotelsArr from '../../Components/HotelDetails/Hotel/hotels.json';
-import { Hotel } from "../../Components/HotelDetails/Hotel";
 import Rating from "../../Components/HotelDetails/Rating/Rating";
 import { Facilities } from "../../Components/HotelDetails/Facilities/Facilities";
-
+import { Hotel } from "../../Components/HotelDetails/Hotel/Hotel";
 
 export  function HotelDetailsPage() {
   const hotel = hotelsArr[0];

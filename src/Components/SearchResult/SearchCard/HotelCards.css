@@ -101,7 +101,6 @@ color: #222222;
 white-space: nowrap;
 }
 .vector{
-/* Vector */
 width: 20px;
 margin: 8px;
 color: #222222;
@@ -175,12 +174,12 @@ text-align: center;
   text-align: center;
 }
 
-.hotel__stars {
+.hotel__stars_search {
   display: flex;
  
 }
 
-.hotel__stars-star {
+.hotel__stars_search-star {
   width: 16px;
   height: 16px;
   display: block;

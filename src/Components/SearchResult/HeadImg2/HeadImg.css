@@ -31,3 +31,11 @@
     z-index: 1;
   }
   
+
+  
+  @media (max-width: 800px) {
+    .container {
+      height: 130px !important; 
+    }
+  }
+  

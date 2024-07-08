@@ -20,23 +20,7 @@
     font-weight: 800;
   }
   
-  @media (max-width: 800px) {
-    .logo {
-      font-size: 20px;
-      margin-left: 0px;
-      justify-content: center;
-    }
-    .navbar {
-      flex-direction: column;
-      justify-content: center;
-    }
-    .other-container {
-      margin-top: 25px;
-      margin-right: 0px;
-      justify-content: center;
-      max-width: 400px;
-    }
-  }
+
   
   
   .other-container {
@@ -58,10 +42,7 @@
     
     }
     
-  .navbar-login-button:hover {
-    cursor: pointer;
-  }
-  .navbar-login-button {
+  .navbar-login-button  {
     color: #222222;
     background: #FFFFFF;
     border: 1px solid #DDDDDD;
@@ -89,13 +70,6 @@
 
 }
 
-
-  
-  
-  .register-button:hover {
-    cursor: pointer;
-
-  }
 .register-button
 {
     color: #222222;
@@ -108,5 +82,87 @@
     line-height: 22px;
     padding: 10px 16px;
     gap: 10px;
+}
+
+
+
+.navbar-login-button:hover, .register-button:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (min-width: 801px) {
+  .account-button {
+    display: none;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .navbar-login-button, .register-button {
+    display: none;
+  }
+
+  .account-button
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px 40px 10px 16px;
+gap: 10px;
+isolation: isolate;
+width: 120px;
+height: 32px;
+
+background: #FFFFFF;
+border: 1px solid #DDDDDD;
+border-radius: 30px;
+}
+
+
+  .logo {
+    font-size: 20px;
+    margin-left: 0px;
+width: 167px;
+height: 33px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+display: flex;
+align-items: center;
+color: #222222;
+
+
+  }
+
+  .other-container {
+    margin-left: 30px;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+
+  .navbar-account-button-icon
+  {
+  width: 24px;
+  height: 24px;
+  background: #717171;
+  border-radius: 60px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+  
+  }
+  .account-button:hover {
+    cursor: pointer;
+  }
 }
 

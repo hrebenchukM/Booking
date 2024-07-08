@@ -145,3 +145,15 @@ background-size:cover;
     background-image: url('/public/Home/Nav/info2.png'); 
     background-size:cover; 
 }
+
+
+@media (max-width: 768px) {
+  .easy_text, .secure_text, .info_text {
+    display: none; 
+  }
+
+  .easybooking, .securepayment, .relevantinformation {
+    margin: 30px;
+  }
+
+}

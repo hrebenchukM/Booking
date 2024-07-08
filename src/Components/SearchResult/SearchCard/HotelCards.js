@@ -22,8 +22,8 @@ for (let i = 1; i <= starsNum; i++) {
         <div className="hotel-description">
           <h1 className="hotel-name">{hotel.name}</h1>
           <div className='hotel-distance'>
-          <div className="hotel__stars">
-                {starsArr.map((_, index) => (<div key={index} className="hotel__stars-star"></div>))}
+          <div className="hotel__stars_search">
+                {starsArr.map((_, index) => (<div key={index} className="hotel__stars_search-star"></div>))}
           </div>
           
           </div>

@@ -25,6 +25,9 @@ export const formatDate = (dateString) => {
 
 export function SearchBar  (){
   
+  const [showAll, setShowAll] = useState(false);
+
+
 
   const [openDate, setOpenDate] = useState(false);
   const [location, setLocation] = useState("");
@@ -103,7 +106,7 @@ export function SearchBar  (){
       <div className="search-bar-container-main">
         <div className="search-bar-container">
           <div className="search-bar-input-container">
-          {/* <img src='airplane.png' width={24}></img> */}
+       
           <img src="/Common/Searcher/airplane.png" width={24} />
 
             <input
@@ -120,8 +123,7 @@ export function SearchBar  (){
             {cities.map((city, index) => (
               <p className='option-item' key={index} onClick={() => handleLocationSelect(city)}>
                 {city}
-                {/* <img src='logo.png' width={15} className='logo' alt="City logo" /> */}
-                <img src="/Common/Searcher/logo.png" width={24}className='logo' alt="City logo"  />
+                <img src="/Common/Searcher/logo.png" width={24}className='logoCity' alt="City logo"  />
               </p>
             ))}
             </div>
@@ -243,9 +245,15 @@ export function SearchBar  (){
             <img src='/Common/Searcher/strel.png'  width={24}></img>
           </div>
          
-          <div onClick={handleSearch} className="search-bar-search-btn">
-          <img src='/Common/Searcher/search.png' ></img>
-          </div>
+      
+        <div onClick={() => setShowAll(!showAll)} className="search-bar-toggle-btn">
+          <img src='/Common/Searcher/toogle.png' width={48} />
+        </div>
+
+       
+        <div onClick={handleSearch} className="search-bar-search-btn">
+          <img src='/Common/Searcher/search.png' alt="Search icon" />
+        </div>
         </div>
       </div>
     );
