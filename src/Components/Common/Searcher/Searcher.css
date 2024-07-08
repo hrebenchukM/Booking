@@ -31,7 +31,7 @@
     font-weight: 500;
     margin-right: 40px;
     position: relative;
-    
+    z-index: 150;
    
   }
   .search-bar-date-container
@@ -215,12 +215,28 @@ border-radius: 10px;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 500px) {
   .search-bar-container {
     padding: 0px;
     max-width: 398px;
   }
 }
+
 
 @media (max-width: 870px) {
 .logoCity
@@ -257,6 +273,33 @@ border-radius: 60px;
   border: none;
 border-radius: 0px;
 }
+.search-bar-container.active {
+  flex-direction: column;
+  padding: 10px 60px;
+  max-width: 300px;
+  height: 110px;
+}
+
+.search-bar-date-container.active{
+  margin-left: 10px;
+  display: flex;
+}
+.search-bar-details-container.active {
+  margin-left: 20px;
+  display: flex;
+}
+.search-bar-search-btn.active
+{
+  display: flex;
+  margin-top: -90px;
+  margin-left: 150px;
+  width: 10px;
+}
+.search-bar-toggle-btn.active
+{
+  display: none;
+
+}
 }
 
 
@@ -265,4 +308,5 @@ border-radius: 0px;
 .search-bar-toggle-btn {
   display: none; 
 }
+
 }

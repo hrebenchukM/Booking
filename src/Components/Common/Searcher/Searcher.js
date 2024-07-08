@@ -26,7 +26,10 @@ export const formatDate = (dateString) => {
 export function SearchBar  (){
   
   const [showAll, setShowAll] = useState(false);
-
+  const handleToggleClick = () => {
+    setShowAll(!showAll);
+  };
+  
 
 
   const [openDate, setOpenDate] = useState(false);
@@ -104,7 +107,7 @@ export function SearchBar  (){
     
     return (
       <div className="search-bar-container-main">
-        <div className="search-bar-container">
+    <div className={`search-bar-container ${showAll ? 'active' : ''}`}>
           <div className="search-bar-input-container">
        
           <img src="/Common/Searcher/airplane.png" width={24} />
@@ -131,7 +134,7 @@ export function SearchBar  (){
         <span className='i'></span>
         </div>
         
-<div className='search-bar-date-container'>
+<div className={`search-bar-date-container ${showAll ? 'active' : ''}`}>
 
 <div className="search-bar-date">
 <img src='/Common/Searcher/cal.png' width={24} alt="Calendar icon" />
@@ -158,7 +161,8 @@ export function SearchBar  (){
 
       
 
-          <div className="search-bar-details-container">
+<div className={`search-bar-details-container ${showAll ? 'active' : ''}`}>
+
           <img src='/Common/Searcher/adul.png'  width={24}></img>
             <div
               onClick={() => setOpenDetails(!openDetails)}
@@ -246,12 +250,13 @@ export function SearchBar  (){
           </div>
          
       
-        <div onClick={() => setShowAll(!showAll)} className="search-bar-toggle-btn">
-          <img src='/Common/Searcher/toogle.png' width={48} />
-        </div>
+          <div onClick={handleToggleClick} className={`search-bar-toggle-btn ${showAll ? 'active' : ''}`}>
+        <img src='/Common/Searcher/toogle.png' width={48} />
+       </div>
+
 
        
-        <div onClick={handleSearch} className="search-bar-search-btn">
+        <div onClick={handleSearch} className={`search-bar-search-btn ${showAll ? 'active' : ''}`}>
           <img src='/Common/Searcher/search.png' alt="Search icon" />
         </div>
         </div>

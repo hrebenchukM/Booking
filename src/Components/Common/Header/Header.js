@@ -22,6 +22,7 @@ export const Header = () => {
    setOpenModal2(!openModal2);
   };
 
+
   return (
     <div className="navbar">
       <Link
@@ -40,8 +41,7 @@ export const Header = () => {
           </button>
           <button onClick={handleAccountClick} className="account-button">
             Account
-            <img src="/Common/Header/signin.png" alt="SignIn" width="40" className='navbar-account-button-icon' />
-            </button>
+            <img src="/Common/Header/signin.png"alt="SignIn" width="40" className='navbar-account-button-icon' ></img></button>
         </>
         {openModal1 && <Register setOpen={setOpenModal1} />}
         {openModal2 && <SignIn setOpen={setOpenModal2} />}
