@@ -18,7 +18,7 @@ export const HotelsList = () => {
     <section className="hotels">
       <div className="container1">
         <div  className="hotels__list swiper-container">
-        <Swiper spaceBetween={20}>
+        <Swiper spaceBetween={10} slidesPerView={'auto'}>
             {hotelsArr.map((hotel, index) => (
               <SwiperSlide key={index} className="swiper-slide">
                 <HotelCard

@@ -115,25 +115,28 @@
 
 
 @media (max-width: 1200px) {
-  .rectangle-img {
-    width: 700px;
-    height: 290px;
-  }
   .safe-text {
-    margin: 0px;
+    margin: 10px;
     justify-content: center;
   }
+
+
 }
 
-@media (max-width: 1435px) {
-  .rectangle-img {
-    width: 300px;
+@media (max-width: 768px) {
+  .rectangles-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content: flex-start;
+    gap: 10px; 
+  }
+
+  .rectangle-container {
+    width: 100%; 
+    margin: 0; 
+  }
+  .rectangle-container:last-child {
+    grid-column: span 2;
+    
   }
 }
-
-@media (max-width: 500px) {
-  .rectangle-img {
-    width: 265px;
-  }
-}
-

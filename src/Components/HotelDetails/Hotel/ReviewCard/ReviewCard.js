@@ -1,5 +1,5 @@
 import React from "react";
-import './Review.css';
+import './ReviewsStyles2.css';
 
 export const ReviewCard = ({
     avatar,

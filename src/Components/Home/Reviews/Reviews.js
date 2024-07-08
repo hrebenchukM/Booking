@@ -21,7 +21,7 @@ export const Reviews = ({
             <h3 className="reviews__title">reviews</h3>
             <div  className="reviews__list swiper-container">
 
-            <Swiper spaceBetween={20}>
+            <Swiper spaceBetween={40} slidesPerView={'auto'}>
             {reviewsArr.map((review, index) => (
                   <SwiperSlide key={index} className="swiper-slide">
                 <ReviewCard
