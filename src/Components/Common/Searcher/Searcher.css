@@ -31,7 +31,7 @@
     font-weight: 500;
     margin-right: 40px;
     position: relative;
-    z-index: 150;
+    z-index: 200;
    
   }
   .search-bar-date-container
@@ -44,6 +44,7 @@
     font-weight: 500;
     margin-right: 40px;
     position: relative;
+    z-index: 200;
   }
   .search-bar-details-container {
     display: flex;
@@ -56,7 +57,7 @@
     position: relative;
     margin-right: 40px;
     white-space: nowrap;
-    z-index: 100;
+    z-index: 200;
   }
   .search-bar-input {
     border: none;
@@ -93,7 +94,7 @@
   }
   
   .date {
-z-index: 150;
+z-index: 1;
     position: absolute;
     top: 50px;
   }

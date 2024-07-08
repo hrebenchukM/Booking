@@ -145,14 +145,31 @@ background-size:cover;
     background-image: url('/public/SearchResult/Nav2/hotels2.png');
     background-size:cover; 
 }
+.sup_n, .match_n, .hotelsnav_n
+{
 
+  position: absolute;
+margin-top: 80px;
+  font-family: 'Nunito Sans',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  
+  color: #717171;
+}
 
 @media (max-width: 768px) {
  
-  .suppliers, .match, .hotelsnav {
+  .sup_text, .match_text, .hotelsnav_text {
     display: none; 
   }
-
+  .sup_n, .match_n, .hotelsnav_n
+  {
+  margin-top: 30px;
+  }
   .suppliers, .match, .hotelsnav {
     margin: 30px;
   }

@@ -14,7 +14,7 @@ for (let i = 1; i <= starsNum; i++) {
 }
   return (
     <div className="hotel-card">
-      {/* <img src={hotel.image} alt="" className="hotel-image" /> */}
+    
       <img src={`/SearchResult/HotelList2/${hotel.image}`} alt="" className="hotel-image" />
 
 
@@ -30,20 +30,24 @@ for (let i = 1; i <= starsNum; i++) {
         
           <div className="hotel-distance">
             
-          {/* <img src='popular.png'width={'24px'}></img> */}
+         <div className='pimg'>
           <img src={`/SearchResult/HotelList2/popular.png`} width="24px" alt="Popular" />
 
           <p  style={{color:'rgba(113, 113, 113, 1)'}}>popular</p>
+          </div>
 
-          {/* <img src='center.png'width={'24px'}></img> */}
+          <div className='pimg'>
           <img src={`/SearchResult/HotelList2/center.png`} width="24px" alt="Popular" />
 
           <p  style={{color:'rgba(113, 113, 113, 1)'}}>city center</p>
+          </div>
 
-          {/* <img src='comfortable.png'width={'24px'}></img> */}
+          <div className='pimg'>
           <img src={`/SearchResult/HotelList2/comfortable.png`} width="24px" alt="Popular" />
 
           <p  style={{color:'rgba(113, 113, 113, 1)'}}>comfortable</p>
+          </div>
+
           </div>
         </div>
         <div className="hotel-details-container">
@@ -54,7 +58,7 @@ for (let i = 1; i <= starsNum; i++) {
           </span>
           <span className="hotel-things">
           see on map 
-          {/* <img src='strelka.png' className='vector'></img> */}
+         
           <img src={`/SearchResult/HotelList2/strelka.png`} className='vector' />
 
           </span>
@@ -67,23 +71,23 @@ for (let i = 1; i <= starsNum; i++) {
            <p>
             {hotel.rating}
           </p>
-           <div  style={{color:'rgba(113, 113, 113, 1)',border:'0px',fontSize:'16px',margin:'25px'}}>
+           <div>
             reviews 
-         <span style={{display:'block'}}> {hotel.reviews}</span>
+            <span style={{display:'block'}}> {hotel.reviews}</span>
           </div>
           </span>
 
 
 
         
-          <span className="hotel-price">
-  <div className="price-label">
-    prices from
-  </div>
-  <div className="price-value">
-    {hotel.price}$
-  </div>
-</span>
+           <span className="hotel-price">
+           <div className="price-label">
+           prices from
+           </div>
+            <div className="price-value">
+            {hotel.price}$
+            </div>
+            </span>
 
 
 
@@ -92,8 +96,12 @@ for (let i = 1; i <= starsNum; i++) {
               <p>CHOOSE</p>
             </div>
           </Link>
+
+
+
+
         </div>
       </div>
-      </div>
+    </div>
   );
 };

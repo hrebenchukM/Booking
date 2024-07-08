@@ -16,6 +16,17 @@ const SearchForm = ({
   const [selectedFaculties, setSelectedFaculties] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
   const [selectedChain, setSelectedChain] = useState(null);
+
+
+
+
+  const [showAll, setShowAll] = useState(null);
+
+  const handleToggleClick = (all) => {
+    setShowAll(showAll === all ? null : all);
+  };
+
+
   const {
     ratingOptions,
     popularOptions,
@@ -27,8 +38,9 @@ const SearchForm = ({
   } = options;
 
   return (
-    <div className="result-page-search-container">
-      <div className="result-page-options">
+    <div className={`result-page-search-container${showAll ? 'active' : ''}`}>
+     
+      <div className={`result-page-options ${showAll ? 'active' : ''}`}>
       <label className="hlabel">Price</label>
       <label className="clabel">
       {minPrice}$night  
@@ -53,7 +65,7 @@ const SearchForm = ({
 
 
 
-      <div className="result-page-options">
+      <div className={`result-page-options ${showAll ? 'active' : ''}`}>
         
         <input
         type="text"
@@ -70,7 +82,8 @@ const SearchForm = ({
 
 
 
-      <div className="result-page-options">
+      
+      <div className={`result-page-options ${showAll ? 'active' : ''}`}>
       <label className="hlabel">Rating</label>
   {ratingOptions.map((rating) => (
     <div key={rating.rating} className="result-page-option-option">
@@ -93,7 +106,8 @@ const SearchForm = ({
 
 
 
-      <div className="result-page-options">
+      
+<div className={`result-page-options ${showAll ? 'active' : ''}`}>
       <label className="hlabel">Popular</label>
   {popularOptions.map((popular) => (
     <div key={popular.name} className="result-page-option-option">
@@ -115,7 +129,7 @@ const SearchForm = ({
 
 
 
-<div className="result-page-options">
+<div className={`result-page-options ${showAll ? 'active' : ''}`}>
   <label className="hlabel">Stars</label>
   {starsOptions.map((stars, index) => (
     <div key={index} className="result-page-option-option">
@@ -150,7 +164,7 @@ const SearchForm = ({
 
            
 
-<div className="result-page-options">
+<div className={`result-page-options ${showAll ? 'active' : ''}`}>
 <label className="hlabel">Near</label>
   {nearOptions.map((near) => (
     <div key={near.name} className="result-page-option-option">
@@ -179,7 +193,7 @@ const SearchForm = ({
 
 
 
-<div className="result-page-options">
+<div className={`result-page-options ${showAll ? 'active' : ''}`}>
 <label className="hlabel">Faculties</label>
   {facultiesOptions.map((faculties) => (
     <div key={faculties.name} className="result-page-option-option">
@@ -200,7 +214,7 @@ const SearchForm = ({
 </div>
 
 
-<div className="result-page-options">
+<div className={`result-page-options ${showAll ? 'active' : ''}`}>
 <label className="hlabel">Type of hotel</label>
   {typeOptions.map((type) => (
     <div key={type.name} className="result-page-option-option">
@@ -223,7 +237,7 @@ const SearchForm = ({
 
 
 
-<div className="result-page-options">
+<div className={`result-page-options ${showAll ? 'active' : ''}`}>
 <label className="hlabel">Chain hotels</label>
   {chainOptions.map((chain) => (
     <div key={chain.name} className="result-page-option-option">
@@ -242,7 +256,20 @@ const SearchForm = ({
   ))}
 </div>
 
-    </div>
+
+
+
+
+
+
+<div onClick={handleToggleClick} className={`filter-toggle-btn ${showAll ? 'active' : ''}`}>
+       Filter
+        <img src='/SearchResult/SearchForm/mob.png' width={24} className={`toggle-icon${showAll?'active':''}`}/>
+ </div>
+
+
+</div>
+   
   );
 };
 
