@@ -178,14 +178,14 @@ bottom: -20px;
 
 
 
-  @media (min-width: 900px) {
+  @media (min-width: 700px) {
     .filter-toggle-btn
     {
       display: none;
     }
   }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
 
   .result-page-options.active
   {
@@ -196,6 +196,7 @@ bottom: -20px;
   }
   .result-page-search-container {
     width: fit-content;
+border: none;
   }
   
 .filter-toggle-btn.active 
