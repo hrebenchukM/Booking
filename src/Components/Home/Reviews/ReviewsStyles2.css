@@ -1,81 +1,121 @@
-
 .reviews {
-    margin-top: 66px;
-    width: 100%;
-  
+  margin-top: 66px;
+  width: 100%;
+}
+
+.reviews__list {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto; 
+  padding-bottom: 20px;
+}
+
+.reviews__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(113, 113, 113);
+  margin: 5px 0;
+  padding: 0;
+  position: relative;
+  font-family: inherit;
+}
+
+.review {
+  width: 100%;
+  padding: 27px 32px;
+  border: 1px solid rgb(148, 208, 180);
+  border-radius: 13px;
+}
+
+.review__info {
+  display: flex;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.review__info-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review__avatar {
+  display: block;
+  height: 48px;
+  width: 48px;
+  margin-right: 16px;
+}
+
+.review__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.82px;
+  color: rgb(34, 34, 34);
+}
+
+.review__hotel-name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  color: rgb(113, 113, 113);
+}
+
+.review__date {
+  font-size: 16px;
+  align-self: flex-start;
+  font-weight: 400;
+  line-height: 21.82px;
+  white-space: nowrap;
+  color: rgb(113, 113, 113);
+  margin-left: auto;
+}
+
+
+
+.container1 {
+  box-sizing: content-box;
+  max-width: 1244px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-decoration: none;
+
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+  .container1 {
+    padding: 0 120px;
   }
-  
+  .swiper-container
+  {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 768px) {
   .reviews__list {
     display: flex;
-    gap: 40px;
-   
-    margin: 0;
-    padding: 0;
-    position: relative;
-    font-family: inherit;
+    flex-wrap: wrap;
+    overflow-x: auto;
+ 
   }
-  .reviews__title {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21.82px;
-    text-transform: uppercase;
-    text-align: center;
-    color: rgb(113, 113, 113);
-    margin: 5;
-    padding: 0;
-    position: relative;
-    font-family: inherit;
-  }
-  
-  @media screen and (max-width: 1000px) {
-    .reviews__list {
-      flex-direction: column;
-    }
-  }
-  
 
-/* card */
-  .review {
-    width: 100%;
-    padding: 27px 32px;
-    border: 1px solid rgb(148, 208, 180);
-    border-radius: 13px;
+  .reviews__list .review {
+    flex: 0 0 auto; 
+    width: 50%; 
+    padding: 0 5px;
+    box-sizing: border-box; 
   }
-  .review__info {
-    display: flex;
-    margin-bottom: 32px;
-    align-items: center;
+ .reviews__list--desktop
+  {
+display: none;
   }
-  .review__info-text {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .review__avatar {
-    display: block;
-    height: 48px;
-    width: 48px;
-    margin-right: 16px;
-  }
-  .review__title {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21.82px;
-    color: rgb(34, 34, 34);
-  }
-  .review__hotel-name {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21.82px;
-    color: rgb(113, 113, 113);
-  }
-  .review__date {
-    font-size: 16px;
-    align-self: flex-start;
-    font-weight: 400;
-    line-height: 21.82px;
-    white-space: nowrap;
-    color: rgb(113, 113, 113);
-    margin-left: auto;
-  }
+}

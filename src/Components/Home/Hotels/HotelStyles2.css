@@ -1,5 +1,5 @@
-HotelCard.css
-.hotelHome {
+
+.hotel {
   position: relative;
   width: 100%;
   max-width: 275px;
@@ -9,30 +9,19 @@ HotelCard.css
   overflow: hidden;
   height: 100%;
   text-decoration: none;
-}
 
+  
+}
 
 * {
   box-sizing: border-box;
 }
 
 
-.container1 {
-  box-sizing: content-box;
-  max-width: 1244px;
-  padding: 0 20px;
-  margin: 0 auto;
-  text-decoration: none;
 
-}
-@media screen and (min-width: 1200px) {
-  .container1 {
-    padding: 0 120px;
-  }
-}
 
 .hotel__favourite {
-
+position: absolute;
 width: 24px;
 height: 24px;
   display: flex;
@@ -41,7 +30,7 @@ height: 24px;
   justify-content: center;
   align-items: center;
   z-index: 100;
-position: absolute;
+
   border: none;
   top: 16px;
   left: 16px;
@@ -63,7 +52,7 @@ position: absolute;
 }
 
 
-.hotel__favourite-starbest {
+.hotel__favourite-star {
   display: block;
   width: 12px;
   opacity: 1; 
@@ -170,29 +159,6 @@ position: absolute;
 }
 
 
-
-
-
-
-.hotels__list {
-  width: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 45px;
-  -moz-column-gap: 32px;
-  column-gap: 32px;
-  overflow-x: auto;
-
-  margin: 0;
-  padding: 0;
-  position: relative;
-  font-family: inherit;
-  
-  justify-content: center;
-}
-
 .hotel__image {
   display: block;
   width: 100%;
@@ -247,8 +213,75 @@ position: absolute;
 
 
 
+
+
+
+
+.container1 {
+  box-sizing: content-box;
+  max-width: 1244px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-decoration: none;
+
+}
+
+.hotels__list {
+  width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 45px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  overflow-x: auto;
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: inherit;
+  
+  justify-content: center;
+
+
+
+}
+
 .hotels {
   width: 100%;
- 
   text-decoration: none;
+ 
 }
+
+@media screen and (min-width: 768px) {
+  .container1 {
+    padding: 0 120px;
+  }
+  .swiper-container
+  {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .hotels__list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+  }
+
+  .hotels__list .hotel {
+    flex: 0 0 auto; 
+    width: 50%; 
+    padding: 0 5px;
+    box-sizing: border-box; 
+  }
+ .hotels__list--desktop
+  {
+display: none;
+  }
+}
+
