@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import reviewsArr from '../../Home/Reviews/reviews.json';
 import './ReviewsList.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,15 +14,29 @@ import 'swiper/css';
 export const ReviewsList = ({
 
 }) => {
-    return (
+ 
+    const [showAllRevMob, setShowAllRevMob] = useState(false);
+    const [showAllRevDesk, setShowAllRevDesk] = useState(false);
+
+
+
+    const showAllMobile = () => {
+        setShowAllRevMob(true);
+    };
+
+    const showAllDesktop = () => {
+        setShowAllRevDesk(true);
+    };
+
+    const limitedReviewsMob = showAllRevMob ? reviewsArr.slice(0, 9) : reviewsArr.slice(0, 3);
+    const limitedReviewsComp = showAllRevDesk ? reviewsArr : reviewsArr.slice(0, 9);
+     return (
         <section className="reviews">
         <div className="container1">
-            <h3 className="reviews__title">reviews</h3>
-            <div  className="reviews__list swiper-container">
-
-            <Swiper spaceBetween={40} slidesPerView={'auto'}>
-            {reviewsArr.map((review, index) => (
-                  <SwiperSlide key={index} className="swiper-slide">
+            <h3 className="reviews__title">comments</h3>
+            <div  className="reviews__list mobile">
+            {limitedReviewsMob.map((review, index) => (
+                
                 <ReviewCard
                     key={index}
                     avatar={review.avatar}
@@ -31,15 +45,19 @@ export const ReviewsList = ({
                     daysAgoNum={review.daysAgoNum}
                     text={review.text}
                 />
-             </SwiperSlide>
+            
             ))}
-            </Swiper>
+            {!showAllRevMob && (
+        <button className="show-more-button-rev" onClick={showAllMobile}>
+          Show all reviews
+        </button>
+          )}
            </div>
 
 
            <div className="reviews__list reviews__list--desktop">
 
-            {reviewsArr.map((review, index) => (
+            {limitedReviewsComp.map((review, index) => (
                 
                 <ReviewCard
                     key={index}
@@ -53,13 +71,14 @@ export const ReviewsList = ({
             ))}
           
            </div>
-
-           <div className="p-container">
+           {!showAllRevDesk && (
+           <div className="p-container" onClick={showAllDesktop}>
              <div className="p">
                 more
                 <img src="/HotelDetails/Reviews/more.png" width={24} className="p-icon"></img>
              </div>
            </div>
+           )}
         </div>
     </section>
 
