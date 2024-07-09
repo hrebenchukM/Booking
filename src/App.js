@@ -6,14 +6,12 @@ import { HotelDetailsPage } from './Pages/HotelDetails/HotelDetails';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ErrorPage } from './Pages/Error/Error';
 import { MyProfile } from './Pages/MyProfile/MyProfile';
-import FAQ from './Components/HotelDetails/Faqs';
 
 
 function App() {
 
   return (
     <div className="App">
-      <FAQ />
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />

@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './FAQ.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const faqData = [
   { question: "Common question", answer: "Answer to common question 1." },
@@ -30,10 +28,7 @@ const FAQ = () => {
           <div key={index} className="faq-item">
             <div className="faq-question" onClick={() => toggleFAQ(index)}>
               {item.question}
-              <FontAwesomeIcon
-                icon={activeIndex === index ? faChevronUp : faChevronDown}
-                className="faq-icon"
-              />
+      
             </div>
             {activeIndex === index && <div className="faq-answer">{item.answer}</div>}
           </div>

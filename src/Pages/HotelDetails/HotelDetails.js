@@ -10,6 +10,8 @@ import { Hotel } from "../../Components/HotelDetails/Hotel/Hotel";
 import { NearBy } from "../../Components/HotelDetails/Nearby/Nearby";
 import { Important } from "../../Components/HotelDetails/Important/Important";
 import { ReviewsList } from "../../Components/HotelDetails/Reviews/ReviewsList";
+import FAQ from "../../Components/HotelDetails/Faqs/FAQ";
+
 export  function HotelDetailsPage() {
   const hotel = hotelsArr[0];
   return (
@@ -30,6 +32,7 @@ export  function HotelDetailsPage() {
     <Important></Important>
     <NearBy></NearBy>
     <ReviewsList></ReviewsList>
+    <FAQ></FAQ>
     <Footer></Footer>
     
     </div>
