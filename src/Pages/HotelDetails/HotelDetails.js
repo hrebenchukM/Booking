@@ -11,6 +11,7 @@ import { NearBy } from "../../Components/HotelDetails/Nearby/Nearby";
 import { Important } from "../../Components/HotelDetails/Important/Important";
 import { ReviewsList } from "../../Components/HotelDetails/Reviews/ReviewsList";
 import FAQ from "../../Components/HotelDetails/Faqs/FAQ";
+import { HotelsList3 } from "../../Components/HotelDetails/Hotels/HotelsList";
 
 export  function HotelDetailsPage() {
   const hotel = hotelsArr[0];
@@ -26,13 +27,14 @@ export  function HotelDetailsPage() {
       nightCost={hotel.nightCost}
       description={hotel.description}
       features={hotel.features}
-    />
+      />
     <Rating></Rating>
     <Facilities></Facilities>
     <Important></Important>
     <NearBy></NearBy>
     <ReviewsList></ReviewsList>
     <FAQ></FAQ>
+    <HotelsList3></HotelsList3>
     <Footer></Footer>
     
     </div>
