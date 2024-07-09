@@ -1,9 +1,8 @@
 import React from "react";
-import reviewsArr from './reviews.json';
-import { ReviewCard } from "./ReviewCard";
-import './Reviews.css';
+import reviewsArr from '../../Home/Reviews/reviews.json';
+import './ReviewsList.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { ReviewCard } from "../../Home/Reviews/ReviewCard";
 
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
@@ -12,10 +11,9 @@ import 'swiper/css';
 
 
 
-export const Reviews = ({
+export const ReviewsList = ({
 
 }) => {
-    const limitedReviews = reviewsArr.slice(0, 3);
     return (
         <section className="reviews">
         <div className="container1">
@@ -23,7 +21,7 @@ export const Reviews = ({
             <div  className="reviews__list swiper-container">
 
             <Swiper spaceBetween={40} slidesPerView={'auto'}>
-            {limitedReviews.map((review, index) => (
+            {reviewsArr.map((review, index) => (
                   <SwiperSlide key={index} className="swiper-slide">
                 <ReviewCard
                     key={index}
@@ -41,7 +39,7 @@ export const Reviews = ({
 
            <div className="reviews__list reviews__list--desktop">
 
-            {limitedReviews.map((review, index) => (
+            {reviewsArr.map((review, index) => (
                 
                 <ReviewCard
                     key={index}

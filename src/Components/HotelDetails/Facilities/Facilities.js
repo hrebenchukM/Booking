@@ -20,7 +20,6 @@ export function Facilities() {
       <h2 className='facilities-title'>FACILITIES</h2>
       <div className="facilities-container">
         {facilities.map((category, index) => (
-          (!showSpecCategories && ['General', 'Parking', 'Languages spoken', 'Cleaning services', 'Reception services', 'Bathroom'].includes(category.title)) || (
             <div className="facilities-texts" key={index}>
               <div className='category-title'>
                 <img src={`/HotelDetails/Facilities/${category.icon}`} className="icon" alt={`${category.title} icon`} />
@@ -35,8 +34,7 @@ export function Facilities() {
                 ))}
               </div>
             </div>
-          )
-        ))}
+          ))}
       </div>
       {!showSpecCategories && (
         <button className="show-more-button" onClick={showAll}>
@@ -46,3 +44,4 @@ export function Facilities() {
     </div>
   );
 }
+// ['General', 'Parking', 'Languages spoken', 'Cleaning services', 'Reception services', 'Bathroom'].includes(category.title)

@@ -1,0 +1,59 @@
+[
+    {
+      "title": "Attractions",
+      "icon": "Attractions.png",
+      "items": [
+        "Park Yunist",
+        "Сквер Павла Шклярука",
+        "Сквер героичной обороны Одеси",
+        "Міжрейсова база моряків",
+        "Школа-интернат № 91 для глухонимих дітей",
+        "Український науковий центр екології моря",
+        "Сквер героїв-летчиків",
+        "Скелердом",
+        "Стадион ОНЮА",
+        "Botanical Garden"
+      ]
+    },
+   
+    
+    {
+      "title": "Attractions",
+      "icon": "Attractions2.png",
+      "items": [
+        "Cafe/bar Бекерай SDOBA",
+        "Restaurant Shipinat",
+        "Restaurant Стронг Хаус"
+      ]
+    },
+    {
+      "title": "Public transport",
+      "icon": "transport.png",
+      "items": [
+        "Train Odessa-Mala",
+        "Train Odessa Train Station"
+      ]
+    },
+   
+  
+    {
+      "title": "Beaches in the neighbourhood",
+      "icon": "beaches.png",
+      "items": [
+        "Arkadia Beach",
+        "Station Velykoho Fontanu Beach",
+        "Chayka",
+        "SBU beach",
+        "Malomu Fontani Beach"
+    ]
+    },
+   
+    
+    {
+      "title": "Public transport",
+      "icon": "transport2.png",
+      "items": [
+        "Kyiv International Airport"
+      ]
+    }
+  ]

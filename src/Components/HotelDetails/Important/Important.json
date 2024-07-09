@@ -1,0 +1,33 @@
+[
+    {
+      "left": "10%",
+      "imgSrc": "important1.png",
+      "imgClass": "icon1",
+      "text": "Check-in time from 15:00 to 23:00"
+    },
+    {
+      "left": "26%",
+      "imgSrc": "important2.png",
+      "imgClass": "icon2",
+      "text": "Maximum number of extra beds 1"
+    },
+    {
+      "left": "42%",
+      "imgSrc": "important3.png",
+      "imgClass": "icon3",
+      "text": "City center 45 m"
+    },
+    {
+      "left": "58%",
+      "imgSrc": "important4.png",
+      "imgClass": "icon4",
+      "text": "Train station 356 m Airport 543 m"
+    },
+    {
+      "left": "74%",
+      "imgSrc": "important5.png",
+      "imgClass": "icon5",
+      "text": "Pets are allowed No extra charge"
+    }
+  ]
+  

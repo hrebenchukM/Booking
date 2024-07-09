@@ -85,14 +85,19 @@ color: #717171;
 
 
 
-@media (max-width: 500px) {
+@media (min-width: 700px) {
+  .show-more-button
+  {
+    display: none;
+  }
+}
+
+
+@media (max-width: 700px) {
 
   .facilities-texts {
     margin: 5px; 
   }
-
-}
-@media (max-width: 750px) {
   .facilities-container {
     margin: 20px;
     column-gap: 0px;
@@ -107,4 +112,6 @@ color: #717171;
     display: block;
   }
 }
+
+
 
