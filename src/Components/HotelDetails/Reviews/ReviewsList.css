@@ -26,12 +26,15 @@
     margin: 0 auto;
     text-decoration: none;
   }
-  
+
   @media screen and (min-width: 500px) {
     .container1 {
       padding: 0 120px;
     }
     .swiper-container {
+      display: none;
+    }
+    .p{
       display: none;
     }
   }
@@ -52,6 +55,10 @@
     .reviews__list--desktop {
       display: none;
     }
+    .p-container
+    {
+      display: none;
+    }
   }
   
   @media (min-width: 1000px) {
@@ -60,5 +67,28 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
     }
+    .p-container
+    {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    .p{
+        width: 555px; 
+        border-top: 1px solid #DDDDDD;
+        display: flex;
+        margin: 15px;
+        margin-top: 50px;
+        justify-content: center;
+        color: rgba(88, 26, 219, 1);
+        flex-direction: column;
+      }
+      .p-icon
+      {
+      display: flex;
+      position: absolute;
+left: calc(50% - 24px/2 - 0.5px);
+   margin-top: 40px;
+      }
   }
   

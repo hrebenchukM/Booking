@@ -1,7 +1,7 @@
 import React from "react";
 import hotelsArr from './hotels.json';
 import { HotelCard } from "./HotelCard2.js";
-import './HotelStyles2.css';
+import './HotelsList.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 

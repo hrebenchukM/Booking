@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import hotelsArr from './hotels.json';
-import './HotelStyles2.css';
+import './HotelCard.css';
 import { Link } from "react-router-dom";
 
 export const HotelCard = ({

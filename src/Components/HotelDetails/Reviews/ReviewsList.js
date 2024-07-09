@@ -51,11 +51,15 @@ export const ReviewsList = ({
                 />
             
             ))}
-      
+          
            </div>
 
-
-
+           <div className="p-container">
+             <div className="p">
+                more
+                <img src="/HotelDetails/Reviews/more.png" width={24} className="p-icon"></img>
+             </div>
+           </div>
         </div>
     </section>
 
