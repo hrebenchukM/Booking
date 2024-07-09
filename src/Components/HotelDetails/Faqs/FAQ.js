@@ -28,7 +28,7 @@ const FAQ = () => {
           <div key={index} className="faq-item">
             <div className="faq-question" onClick={() => toggleFAQ(index)}>
               {item.question}
-               <img src='/HotelDetails/Faqs/tel.png' className='faq-icon'></img>
+               <img src='/HotelDetails/Faqs/tel.png'   className={`faq-icon ${activeIndex === index ? 'open' : ''}`}></img>
             </div>
             {activeIndex === index && <div className="faq-answer">{item.answer}</div>}
           </div>
