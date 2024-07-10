@@ -1,0 +1,68 @@
+[
+    {
+        "image": "./images/hotel--1.png",
+        "title": "Suite with a queen-size bed",
+        "bedsDiscription": "queen-sized bed 1 | double bed 1", 
+        "maxGuestsCount": "3", 
+        "features": [{
+            "icon": "./images/wifi_icon.svg",
+            "text": "free wi-fi"
+        }, {
+            "icon": "./images/bath_icon.svg",
+            "text": "bath"
+        }, {
+            "icon": "./images/pool_icon.svg",
+            "text": "private pool"
+        }],
+        "nightCost": 85,
+        "isCancellationFree": true
+    },
+    {
+        "image": "./images/hotel--2.png",
+        "title": "Suite with a queen-size bed",
+        "bedsDiscription": "queen-sized bed 1 | double bed 1", 
+        "maxGuestsCount": "3", 
+        "features": [{
+            "icon": "./images/wifi_icon.svg",
+            "text": "free wi-fi"
+        }, {
+            "icon": "./images/bath_icon.svg",
+            "text": "bath"
+        }, {
+            "icon": "./images/pool_icon.svg",
+            "text": "private pool"
+        }],
+        "nightCost": 85,
+        "isCancellationFree": true
+    },
+    {
+        "image": "./images/hotel--3.png",
+        "title": "Standart room",
+        "bedsDiscription": "queen-sized bed 1 | double bed 1", 
+        "maxGuestsCount": "3", 
+        "features": [{
+            "icon": "./images/wifi_icon.svg",
+            "text": "free wi-fi"
+        }, {
+            "icon": "./images/bath_icon.svg",
+            "text": "bath"
+        }],
+        "nightCost": 62,
+        "isCancellationFree": true
+    },
+    {
+        "image": "./images/hotel--4.png",
+        "title": "Standart room",
+        "bedsDiscription": "queen-sized bed 1 | double bed 1", 
+        "maxGuestsCount": "3", 
+        "features": [{
+            "icon": "./images/wifi_icon.svg",
+            "text": "free wi-fi"
+        }, {
+            "icon": "./images/bath_icon.svg",
+            "text": "bath"
+        }],
+        "nightCost": 65,
+        "isCancellationFree": true
+    }
+]
