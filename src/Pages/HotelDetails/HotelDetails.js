@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Footer } from "../../Components/Common/Footer/Footer";
 import { Header } from "../../Components/Common/Header/Header";
@@ -12,7 +11,7 @@ import { Important } from "../../Components/HotelDetails/Important/Important";
 import { ReviewsList } from "../../Components/HotelDetails/Reviews/ReviewsList";
 import FAQ from "../../Components/HotelDetails/Faqs/FAQ";
 import { HotelsList3 } from "../../Components/HotelDetails/Hotels/HotelsList";
-
+import { RoomsList } from "../../Components/HotelDetails/RoomList/RoomList";
 export  function HotelDetailsPage() {
   const hotel = hotelsArr[0];
   return (
@@ -31,6 +30,7 @@ export  function HotelDetailsPage() {
     <Rating></Rating>
     <Facilities></Facilities>
     <Important></Important>
+    <RoomsList></RoomsList>
     <NearBy></NearBy>
     <ReviewsList></ReviewsList>
     <FAQ></FAQ>

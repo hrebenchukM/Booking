@@ -1,0 +1,68 @@
+[
+    {
+        "image": "hotel--1.png",
+        "title": "Suite with a queen-size bed",
+        "bedsDiscription": "queen-sized bed 1 | double bed 1", 
+        "maxGuestsCount": "3", 
+        "features": [{
+            "icon": "wifi_icon.svg",
+            "text": "free wi-fi"
+        }, {
+            "icon": "bath_icon.svg",
+            "text": "bath"
+        }, {
+            "icon": "pool_icon.svg",
+            "text": "private pool"
+        }],
+        "nightCost": 85,
+        "isCancellationFree": true
+    },
+    {
+        "image": "hotel--2.png",
+        "title": "Suite with a queen-size bed",
+        "bedsDiscription": "queen-sized bed 1 | double bed 1", 
+        "maxGuestsCount": "3", 
+        "features": [{
+            "icon": "wifi_icon.svg",
+            "text": "free wi-fi"
+        }, {
+            "icon": "bath_icon.svg",
+            "text": "bath"
+        }, {
+            "icon": "pool_icon.svg",
+            "text": "private pool"
+        }],
+        "nightCost": 85,
+        "isCancellationFree": true
+    },
+    {
+        "image": "hotel--3.png",
+        "title": "Standart room",
+        "bedsDiscription": "queen-sized bed 1 | double bed 1", 
+        "maxGuestsCount": "3", 
+        "features": [{
+            "icon": "wifi_icon.svg",
+            "text": "free wi-fi"
+        }, {
+            "icon": "bath_icon.svg",
+            "text": "bath"
+        }],
+        "nightCost": 62,
+        "isCancellationFree": true
+    },
+    {
+        "image": "hotel--4.png",
+        "title": "Standart room",
+        "bedsDiscription": "queen-sized bed 1 | double bed 1", 
+        "maxGuestsCount": "3", 
+        "features": [{
+            "icon": "wifi_icon.svg",
+            "text": "free wi-fi"
+        }, {
+            "icon": "bath_icon.svg",
+            "text": "bath"
+        }],
+        "nightCost": 65,
+        "isCancellationFree": true
+    }
+]
