@@ -16,7 +16,8 @@ export function Hotel({
     cityName,
     nightCost,
     description,
-    features
+    features,
+    starsNum
 }) {
     const [slideIndex, setSlideIndex] = useState(0);
 
@@ -32,9 +33,20 @@ export function Hotel({
         setSlideIndex(newSlideIndex);
     };
 
+
+    const starsArr = [];
+for (let i = 1; i <= starsNum; i++) {
+    starsArr.push(i);
+}
     return (
         <section className="details-hotelA">
-            <span className="hotel-title">Tourist Hotel</span>
+           <span className="hotel-title">
+    {starsArr.map((_, index) => (
+        <div key={index} className="hotel__stars_search-star"></div>
+    ))}
+</span>
+
+            <span className="hotel-title "style={{ marginTop: '0px' }}>Tourist Hotel</span>
             <span className="hotel-text-number">(380) 555-0103</span>
 
             <div className="details-container details-hotel__container">

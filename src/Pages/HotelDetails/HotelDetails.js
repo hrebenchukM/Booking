@@ -26,6 +26,7 @@ export  function HotelDetailsPage() {
       nightCost={hotel.nightCost}
       description={hotel.description}
       features={hotel.features}
+      starsNum={hotel.starsNum}
       />
     <Rating></Rating>
     <Facilities></Facilities>
