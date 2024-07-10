@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 import './Hotel.css';
 import reviewsArr from '../../Home/Reviews/reviews.json';
 import { ReviewsList } from './ReviewsList/ReviewsList';
-export function Hotel  ({
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
+import 'swiper/css';
+
+export function Hotel({
     imagesArr,
     adress,
     adressLink,
@@ -10,7 +17,7 @@ export function Hotel  ({
     nightCost,
     description,
     features
-}){
+}) {
     const [slideIndex, setSlideIndex] = useState(0);
 
     const handleSlide = (direction) => {
@@ -27,13 +34,8 @@ export function Hotel  ({
 
     return (
         <section className="details-hotelA">
-             <span className="hotel-title">
-             Tourist Hotel
-            </span>
-            <span className="hotel-text-number">
-            (380) 555-0103
-            </span>
-
+            <span className="hotel-title">Tourist Hotel</span>
+            <span className="hotel-text-number">(380) 555-0103</span>
 
             <div className="details-container details-hotel__container">
                 <div className="details-hotel__images">
@@ -45,9 +47,9 @@ export function Hotel  ({
                             &#10095;
                         </button>
                     </div>
-                    <div className="details-hotel__box">
+                    <div className="details-hotel__box details-hotel__box--desctop">
                         <img
-                            src={"/HotelDetails/Hotel/"+imagesArr[slideIndex]}
+                            src={"/HotelDetails/Hotel/" + imagesArr[slideIndex]}
                             alt=""
                             className="details-hotel__image--main"
                         />
@@ -62,11 +64,24 @@ export function Hotel  ({
                             )
                         ))}
                     </div>
+                    <div className="details-hotel__box details-hotel__box--mobile">
+                        <img src={"/HotelDetails/Hotel/" + imagesArr[0]} alt="" className="hotel__image--main" />
+                        <Swiper spaceBetween={50} slidesPerView={2}>
+                            {imagesArr.slice(1).map((image, index) => (
+                                <SwiperSlide key={index}>
+                                    <img src={"/HotelDetails/Hotel/" + image} alt="" className="hotel__image" />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
+
                 <div className="details-hotel__info">
                     <div className="details-hotel__info-top">
                         <div className="details-hotel__info-box">
-                            <h4 className="details-hotel__cost">{nightCost}$ <span className="details-hotel__cost-thin details-hotel__cost--gray">per night</span></h4>
+                            <h4 className="details-hotel__cost">
+                                {nightCost}$ <span className="details-hotel__cost-thin details-hotel__cost--gray">per night</span>
+                            </h4>
                             <a href={`${adressLink}`} className="details-hotel__location">{`${adress} | ${cityName}`}</a>
                         </div>
                         <button className='details-hotel__button' type="button">Book</button>
@@ -75,17 +90,17 @@ export function Hotel  ({
                     <div className="details-hotel__features">
                         {features.map((feature, index) => (
                             <div key={index} className="details-hotel__feature">
-                                <img src={"/HotelDetails/Hotel/"+feature.icon} alt="" className="details-hotel__feature-img" />
+                                <img src={"/HotelDetails/Hotel/" + feature.icon} alt="" className="details-hotel__feature-img" />
                                 <p className="details-hotel__feature-text">{feature.text}</p>
                             </div>
                         ))}
                     </div>
                     <hr className="details-hotel__info-line" />
                     <div className="details-hotel__reviews">
-                    <ReviewsList reviewsArr={reviewsArr} />
+                        <ReviewsList reviewsArr={reviewsArr} />
                     </div>
                 </div>
             </div>
         </section>
     );
-};
+}

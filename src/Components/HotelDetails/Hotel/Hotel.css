@@ -276,9 +276,15 @@ margin-bottom: 20px;
 .details-hotel__slider--arrow--left,
 .details-hotel__slider--arrow--right {
 
-width: 20px;
-height: 20px;
- 
+display: none;
+}
+.details-hotel__box--desctop
+{
+  display: none;
+}
+.hotel__image--main {
+  width: 100%;
+  margin-bottom: 32px;
 }
 
 }
@@ -288,6 +294,10 @@ height: 20px;
   .details-hotel__image {
     width: 150px;
   }
+  .details-hotel__box--mobile
+{
+    display: none;
+}
 
 }
 @media screen and (min-width: 1200px) {

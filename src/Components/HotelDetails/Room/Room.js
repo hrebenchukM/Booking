@@ -12,8 +12,9 @@ export function Room  ({
 })  {
     return (
         <div className="room">
-            <div className="container room__container">
-                <img src={/HotelDetails/Rooms/${image}} className='room__image' />
+            <div className="room__container">
+                <img src={`/HotelDetails/Rooms/${image}`} className='room__image' />
+              
                 <div className="room__info">
                     <h3 className="room__title">{title}</h3>
                     <p className="room__text room__text--gray room__text--with-icon room__text--with-icon-bed">Bed: <span className='room__text--ml-34'>{bedsDiscription}</span></p>
@@ -21,7 +22,7 @@ export function Room  ({
                     <div className="room__features">
                         {features.map((feature) => (
                             <div className="room__feature">
-                                <img src={/HotelDetails/Rooms/${feature.icon}}  className="room__feature-img" />
+                                <img src={`/HotelDetails/Rooms/${feature.icon}`}  className="room__feature-img" />
                                 <p className="room__text room__text--gray">{feature.text}</p>
                             </div>
                         ))}

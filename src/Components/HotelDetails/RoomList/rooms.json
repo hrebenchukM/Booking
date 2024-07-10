@@ -1,6 +1,6 @@
 [
     {
-        "image": "hotel--1.png",
+        "image": "paris1.jpg",
         "title": "Suite with a queen-size bed",
         "bedsDiscription": "queen-sized bed 1 | double bed 1", 
         "maxGuestsCount": "3", 
@@ -18,7 +18,7 @@
         "isCancellationFree": true
     },
     {
-        "image": "hotel--2.png",
+        "image": "paris2.webp",
         "title": "Suite with a queen-size bed",
         "bedsDiscription": "queen-sized bed 1 | double bed 1", 
         "maxGuestsCount": "3", 
@@ -36,7 +36,7 @@
         "isCancellationFree": true
     },
     {
-        "image": "hotel--3.png",
+        "image": "paris3.webp",
         "title": "Standart room",
         "bedsDiscription": "queen-sized bed 1 | double bed 1", 
         "maxGuestsCount": "3", 
@@ -51,7 +51,7 @@
         "isCancellationFree": true
     },
     {
-        "image": "hotel--4.png",
+        "image": "paris4.webp",
         "title": "Standart room",
         "bedsDiscription": "queen-sized bed 1 | double bed 1", 
         "maxGuestsCount": "3", 
