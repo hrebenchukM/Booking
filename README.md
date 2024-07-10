@@ -1,14 +1,3 @@
-^Home page^
-1header
-2.footer
-3.card
-4.review
-5.searchString
-6.regBtn
-7.about
-8.info
-9.nav
-
 
 
 
