@@ -34,7 +34,7 @@ export const ReviewsList = ({
         <section className="reviews">
         <div className="container1">
             <h3 className="reviews__title">comments</h3>
-            <div  className="reviews__list mobile">
+            <div  className="reviews__list-details mobile">
             {limitedReviewsMob.map((review, index) => (
                 
                 <ReviewCard
@@ -55,7 +55,7 @@ export const ReviewsList = ({
            </div>
 
 
-           <div className="reviews__list reviews__list--desktop">
+           <div className="reviews__list-details reviews__list--desktop">
 
             {limitedReviewsComp.map((review, index) => (
                 

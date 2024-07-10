@@ -4,7 +4,7 @@
     
   }
   
-  .reviews__list {
+  .reviews__list-details {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
@@ -41,14 +41,14 @@
   }
   
   @media (max-width: 1000px) and (min-width: 600px) {
-    .reviews__list {
+    .reviews__list-details {
       flex-direction: column;
     }
   }
   
   @media (max-width: 500px) {
     
-  .reviews__list {
+  .reviews__list-details {
     margin: 20px;
     gap: 0px;
   }
@@ -57,7 +57,7 @@
       display: flex;
       justify-content: center;
     }
-    .reviews__list {
+    .reviews__list-details {
       overflow-x: auto;
     }
     .container1 {
