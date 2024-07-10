@@ -1,0 +1,435 @@
+.hotel-card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  width: 880px;
+  height: 320px;
+  color: rgb(42, 42, 42);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 12px 3px rgba(90, 90, 90, 0.26);
+  border-radius: 6px;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  font-size: 16px;
+}
+
+.hotel-image {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  align-items: center;
+}
+
+.hotel-name {
+
+  color: rgb(14, 14, 14);
+  margin-left: 15px;
+}
+
+
+.choose-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  background: #581ADB;
+border-radius: 100px;
+  box-shadow: 0px 2px 12px 3px rgba(0, 0, 0, 0.104);
+  width: 175px;
+  height: 45px;
+color: #FFFFFF;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-transform: uppercase;
+
+}
+
+.choose-button:hover {
+  cursor: pointer;
+}
+.hotel-price {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #581ADB;
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+}
+
+.hotel-price .price-label {
+  font-weight: 400;
+  color: black;
+  display: block; 
+}
+
+.hotel-price .price-value {
+  color: #581ADB;
+  font-weight: 700;
+  display: block;
+
+
+}
+
+.hotel-details-container {
+  margin-left: 28px;
+  width: 250px;
+  text-align: left;
+}
+
+.hotel-things {
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+display: flex;
+align-items: start;
+color: #222222;
+white-space: nowrap;
+}
+.vector{
+width: 20px;
+margin: 8px;
+color: #222222;
+}
+.hotel-distance {
+
+  margin-left: 15px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center; 
+
+}
+
+.hotel-distance img {
+  width: 24px; 
+  margin-right: 5px; 
+}
+.hotel-distance p {
+  margin-right: 10px; 
+}
+
+
+.hotel-details {
+  display: flex;
+  text-align: left;
+  width: 345px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 300;
+  flex-wrap: wrap;
+  line-height: 24px;
+  
+}
+
+.hotel-description {
+  margin: 8px;
+  text-align: left;
+}
+.hotel-rating{
+  display: flex;
+  position: absolute;
+  padding: 3px;
+  top: 1px;
+  color: white;
+  font-weight: 400;
+  right: 8px;
+  font-size: 20px;
+text-align: center;
+
+
+}
+.pimg
+{
+  margin-right: 0px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+}
+.hotel-rating p {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #581ADB;
+  border-radius: 50%;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  line-height: 27px;
+  color: #581ADB;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-rating div 
+{
+  color:rgba(113, 113, 113, 1);
+  border:0px;
+  font-size:16px;
+  margin: 25px;
+}
+.hotel__stars_search {
+  display: flex;
+ 
+}
+
+.hotel__stars_search-star {
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-image: url('/public/Home/HotelList/hotel__star.png');
+  background-position: center;
+  background-size: 11.5px 11px;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+  .hotel-card {
+    width: 700px;
+  }
+  .hotel-name {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .hotel-card {
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 915px) and   (min-width: 720px){
+  .hotel-card {
+    width: fit-content;
+    height: fit-content;
+  }
+  .hotel-price {
+    left: 8px;
+    right: none;
+    background-color: rgba(143, 141, 141, 0.5); 
+    display: inline-block; 
+    padding: 5px; 
+    color: white; 
+    width: fit-content;
+  }
+  .hotel-details
+  {
+    margin-left: -15px;
+  }
+}
+
+
+
+
+
+@media (max-width: 720px) {
+  .hotel-card {
+    display: flex;
+    flex-direction: column;
+width: 398px;
+height: 792px;
+
+  }
+
+  .hotel-image {
+    width: 398px;
+    height: 320px;
+    margin-bottom: 10px;
+border-radius: 13px 13px 0px 0px;
+
+  }
+
+
+
+ 
+  .hotel-name
+  {
+
+width: 122px;
+height: 14px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+
+display: flex;
+color: #222222;
+  }
+  
+ 
+
+  .hotel-details-container {
+    width: 100%;
+   
+  }
+
+  .hotel-distance {
+display: flex;
+flex-direction: column;
+margin-right: 270px;
+  }
+
+.hotel__stars_search
+{
+  margin-top: 0px;
+  margin-right: 35px;
+}
+  .pimg img {
+    width: 15px;
+
+  }
+
+  .pimg
+{
+  display: flex; 
+  justify-content: center; 
+  text-align: start;
+  align-items: center;
+}
+  .pimg p
+  {
+
+width: 56px;
+height: 11px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 12px;
+align-items: center;
+white-space: nowrap;
+color: #717171;
+margin: 10px;
+  }
+  .hotel-card {
+    height: 792px;
+    width: 398px;
+  }
+  .hotel-image{
+    height: 320px;
+    width: 398px;
+  }
+  .choose-button {
+
+width: 112px;
+height: 40px;
+left: calc(50% - 100px/2);
+
+
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+background: #581ADB;
+border-radius: 100px;
+
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 22px;
+
+display: flex;
+align-items: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+
+    right: none;
+  }
+
+  .hotel-price {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+    right: 150px;
+  }
+  
+
+ 
+  .hotel-rating {
+    position: absolute;
+ 
+    margin-top: 300px;
+    color: white;
+    flex-direction: column;
+  }
+  
+  .hotel-rating div
+  {
+    margin:-10px;
+  }
+  .hotel-description
+  {
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
+  .hotel-things
+  {
+    font-size: 16px;
+    flex-wrap: nowrap;
+   width: fit-content;
+
+  }
+  .hotel-details
+  {
+     text-align: start;
+     font-size: 16px;
+  }
+
+}
+

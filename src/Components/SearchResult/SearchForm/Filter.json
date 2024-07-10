@@ -1,0 +1,56 @@
+{
+    "ratingOptions": [
+      { "rating": 9, "count": 5 },
+      { "rating": 8, "count": 15 },
+      { "rating": 7, "count": 25 },
+      { "rating": 6, "count": 35 }
+    ],
+    "popularOptions": [
+      { "name": "City center", "count": 10 },
+      { "name": "Popular places", "count": 20 },
+      { "name": "Best rating", "count": 30 }
+    ],
+    "starsOptions": [
+      { "stars": 5, "count": 10 },
+      { "stars": 4, "count": 20 },
+      { "stars": 3, "count": 30 },
+      { "stars": 2, "count": 40 },
+      { "stars": 1, "count": 50 }
+    ],
+    "nearOptions": [
+      { "name": "Metro", "count": 10 },
+      { "name": "Airport", "count": 20 },
+      { "name": "Station", "count": 30 }
+    ],
+    "facultiesOptions": [
+      { "name": "Wi-Fi", "count": 10 },
+      { "name": "Restaurants", "count": 20 },
+      { "name": "24/7", "count": 30 },
+      { "name": "Food in the hotel", "count": 30 },
+      { "name": "Bar", "count": 30 },
+      { "name": "Children's area", "count": 30 }
+    ],
+    "typeOptions": [
+      { "name": "Motel", "count": 10 },
+      { "name": "Resort", "count": 20 },
+      { "name": "Inn", "count": 30 },
+      { "name": "All-suite", "count": 30 },
+      { "name": "Conference centre", "count": 30 },
+      { "name": "Extended stay", "count": 30 },
+      { "name": "Boutique", "count": 30 },
+      { "name": "Bunkhous", "count": 30 },
+      { "name": "Bed and breakfest", "count": 30 }
+    ],
+    "chainOptions": [
+      { "name": "Sapphire Suites", "count": 10 },
+      { "name": "Ocean View Hotel", "count": 20 },
+      { "name": "Sunflower Resort", "count": 30 },
+      { "name": "Starlight Lodge", "count": 30 },
+      { "name": "Paradise Plaza", "count": 30 },
+      { "name": "Golden Sands Inn", "count": 30 },
+      { "name": "Moonlight Manor", "count": 30 },
+      { "name": "Sunset Suites", "count": 30 },
+      { "name": "Skyline Hotel", "count": 30 }
+    ]
+  }
+  

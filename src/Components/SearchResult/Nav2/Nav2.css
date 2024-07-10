@@ -16,7 +16,7 @@
 
     justify-content: center;
   }
-  .easybooking, .securepayment, .relevantinformation {
+  .suppliers, .match, .hotelsnav {
     display: flex; 
     margin: 75px; 
     position: relative; 
@@ -25,21 +25,21 @@
     justify-content: center;
   }
   
-.easy-icon{
+.sup-icon{
 
 position: absolute;
 top: 0%;
 bottom: 50%;
-background-image: url('/public/sup.png');  
+background-image: url('/public/SearchResult/Nav2/sup.png');  
 background-size:cover; 
 
 }
-.easybooking:hover .easy-icon {
-    background-image: url('/public/sup2.png'); 
+.suppliers:hover .sup-icon {
+    background-image:url('/public/SearchResult/Nav2/sup2.png');  
     background-size:cover; 
 }
 
-.easy_text
+.sup_text
 {
 
 position: absolute;
@@ -61,12 +61,12 @@ color: #717171;
 
 }
 
-.easybooking:hover .easy_text {
+.suppliers:hover .sup_text {
 color: #222222;
 
 }
 
-.secure_text
+.match_text
 {
 
 position: absolute;
@@ -88,27 +88,27 @@ color: #717171;
 
 
 }
-.securepayment:hover .secure_text {
+.match:hover .match_text {
     color: #222222;
 }
 
-.secure-icon
+.match-icon
 {
 position: absolute;
 
 top: 0%;
 bottom: 50%;
-background-image: url('/public/match.png');
+background-image: url('/public/SearchResult/Nav2/match.png');  
 background-size:cover; 
 }
-.securepayment:hover .secure-icon {
-    background-image: url('/public/match2.png');
+.match:hover .match-icon {
+    background-image: url('/public/SearchResult/Nav2/match2.png');
     background-size:cover; 
 }
 
 
 
-.info_text
+.hotelsnav_text
 {
 
 
@@ -129,19 +129,49 @@ color: #717171;
 
 
 }
-.relevantinformation:hover .info_text {
+.hotelsnav:hover .hotelsnav_text {
     color: #222222;
 }
-.info-icon
+.hotelsnav-icon
 {
 position: absolute;
 
 top: 0%;
 bottom: 50%;
-background-image: url('/public/hotels.png');
+background-image: url('/public/SearchResult/Nav2/hotels.png');
 background-size:cover; 
 }
-.relevantinformation:hover .info-icon {
-    background-image: url('/public/hotels2.png'); 
+.hotelsnav:hover .hotelsnav-icon {
+    background-image: url('/public/SearchResult/Nav2/hotels2.png');
     background-size:cover; 
+}
+.sup_n, .match_n, .hotelsnav_n
+{
+
+  position: absolute;
+margin-top: 80px;
+  font-family: 'Nunito Sans',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  
+  color: #717171;
+}
+
+@media (max-width: 768px) {
+ 
+  .sup_text, .match_text, .hotelsnav_text {
+    display: none; 
+  }
+  .sup_n, .match_n, .hotelsnav_n
+  {
+  margin-top: 30px;
+  }
+  .suppliers, .match, .hotelsnav {
+    margin: 30px;
+  }
+
 }

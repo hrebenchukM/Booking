@@ -5,7 +5,7 @@ import "./HeadImg.css";
 export  function HeadImage2() {
   const data = [
     {
-      src: "/head2.png",
+      src: "/SearchResult/HeadImg2/head2.png",
       alt: "",
     }
   ];

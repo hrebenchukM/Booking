@@ -1,39 +1,56 @@
 import React from "react";
 import hotelsArr from './hotels.json';
-import { useParams } from "react-router-dom";
-import { Link,Outlet  } from 'react-router-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './HotelStyles2.css';
 import { HotelCard } from "./HotelCard2.js";
+import './HotelsList.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Reviews } from "../Reviews/Reviews.js";
-import reviewsArr from '../Reviews/reviews.json';
 
-import{RegBtn} from '../button/regBtn.js'
-import{Info} from '../Info/info.js'
-import{About} from '../About/About.js'
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
 
-export const HotelsList = () => (
- 
-  <section className="hotels">
-            <div className="container1">
-            <div className="hotels__list">
-                {hotelsArr.map((hotel, index) => (
-                    <Link key={index} to={`/hotels/${hotel.id}`}   style={{ textDecoration: 'none', color: '#007bff' }}>
-                       <HotelCard
-                                        imagesArr={hotel.imagesArr}
-                                        starsNum={hotel.starsNum}
-                                        hotelName={hotel.hotelName}
-                                        cityName={hotel.cityName}
-                                        countryName={hotel.countryName}
-                                        distanceFromCenter={hotel.distanceFromCenter}
-                                        nightCost={hotel.nightCost}
-                                    />
-                    </Link>
-                ))}
-            </div>
-            </div>
-        </section>
+import 'swiper/css';
 
-);
 
+
+export const HotelsList = () => {
+
+  return (
+    <section className="hotels">
+      <div className="container1">
+        <div  className="hotels__list swiper-container">
+        <Swiper spaceBetween={10} slidesPerView={'auto'}>
+            {hotelsArr.map((hotel, index) => (
+              <SwiperSlide key={index} className="swiper-slide">
+                <HotelCard
+                  id={hotel.id}
+                  imagesArr={hotel.imagesArr}
+                  starsNum={hotel.starsNum}
+                  hotelName={hotel.hotelName}
+                  cityName={hotel.cityName}
+                  countryName={hotel.countryName}
+                  distanceFromCenter={hotel.distanceFromCenter}
+                  nightCost={hotel.nightCost}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+          <div className="hotels__list hotels__list--desktop">
+            {hotelsArr.map((hotel, index) => (
+              <HotelCard
+                key={index}
+                id={hotel.id}
+                imagesArr={hotel.imagesArr}
+                starsNum={hotel.starsNum}
+                hotelName={hotel.hotelName}
+                cityName={hotel.cityName}
+                countryName={hotel.countryName}
+                distanceFromCenter={hotel.distanceFromCenter}
+                nightCost={hotel.nightCost}
+              />
+            ))}
+          </div>
+      </div>
+    </section>
+  );
+};

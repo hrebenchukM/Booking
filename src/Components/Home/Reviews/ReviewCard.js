@@ -1,5 +1,6 @@
 import React from "react";
-import reviewsArr from './reviews.json';
+import './ReviewCard.css';
+
 export const ReviewCard = ({
     avatar,
     reviewerName,
@@ -10,7 +11,7 @@ export const ReviewCard = ({
     return (
         <div className="review">
             <div className="review__info">
-                <img src={avatar} alt="" className="review__avatar" />
+                <img src={"/Home/Reviews/"+avatar} alt="" className="review__avatar" />
                 <div className="review__info-text">
                     <h3 className="review__title">
                         {reviewerName}

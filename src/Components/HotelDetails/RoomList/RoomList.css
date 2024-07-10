@@ -1,0 +1,26 @@
+.rooms__list {
+  flex-direction: column;
+  display: flex;
+  width: fit-content;
+  gap: 32px;
+ margin-left: 150px;
+ justify-content: center;
+}
+.rooms__list-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.82px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgb(113, 113, 113);
+  margin-bottom: 32px;
+  margin: 10px;
+}
+  
+@media screen and (max-width: 700px) {
+  .rooms__list {
+
+   margin-left: 15px;
+   justify-content: center;
+  }
+}

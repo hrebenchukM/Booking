@@ -30,12 +30,12 @@
 position: absolute;
 top: 0%;
 bottom: 50%;
-background-image: url('/public/easy.png'); 
+background-image: url('/public/Home/Nav/easy.png'); 
 background-size:cover; 
 
 }
 .easybooking:hover .easy-icon {
-    background-image: url('/public/easy2.png'); 
+    background-image: url('/public/Home/Nav/easy2.png'); 
     background-size:cover; 
 }
 
@@ -98,11 +98,11 @@ position: absolute;
 
 top: 0%;
 bottom: 50%;
-background-image: url('/public/secure.png'); 
+background-image: url('/public/Home/Nav/secure.png'); 
 background-size:cover; 
 }
 .securepayment:hover .secure-icon {
-    background-image: url('/public/secure2.png'); 
+    background-image:url('/public/Home/Nav/secure2.png'); 
     background-size:cover; 
 }
 
@@ -138,10 +138,22 @@ position: absolute;
 
 top: 0%;
 bottom: 50%;
-background-image: url('/public/info.png');
+background-image:url('/public/Home/Nav/info.png'); 
 background-size:cover; 
 }
 .relevantinformation:hover .info-icon {
-    background-image: url('/public/info2.png'); 
+    background-image: url('/public/Home/Nav/info2.png'); 
     background-size:cover; 
+}
+
+
+@media (max-width: 768px) {
+  .easy_text, .secure_text, .info_text {
+    display: none; 
+  }
+
+  .easybooking, .securepayment, .relevantinformation {
+    margin: 30px;
+  }
+
 }

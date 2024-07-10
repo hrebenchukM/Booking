@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "imagesArr": ["./hotel__1.svg", "./hotel__2.svg", "./hotel__3.svg", "./hotel__4.svg", "./hotel__5.svg"],
+        "imagesArr": ["./hotel__1.png", "./hotel__2.png", "./hotel__3.png", "./hotel__4.png", "./hotel__5.png"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "imagesArr": ["./hotel__2.svg", "./hotel__3.svg", "./hotel__4.svg", "./hotel__5.svg", "./hotel__6.svg"],
+        "imagesArr": ["./hotel__2.png", "./hotel__3.png", "./hotel__4.png", "./hotel__5.png", "./hotel__6.png"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "imagesArr": ["./hotel__3.svg", "./hotel__4.svg", "./hotel__5.svg", "./hotel__6.svg", "./hotel__7.svg"],
+        "imagesArr": ["./hotel__3.png", "./hotel__4.png", "./hotel__5.png", "./hotel__6.png", "./hotel__7.png"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "imagesArr": ["./hotel__4.svg", "./hotel__5.svg", "./hotel__6.svg", "./hotel__7.svg", "./hotel__8.svg"],
+        "imagesArr": ["./hotel__4.png", "./hotel__5.png", "./hotel__6.png", "./hotel__7.png", "./hotel__8.png"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "imagesArr": ["./hotel__5.svg", "./hotel__6.svg", "./hotel__7.svg", "./hotel__8.svg", "./hotel__1.svg"],
+        "imagesArr": ["./hotel__5.png", "./hotel__6.png", "./hotel__7.png", "./hotel__8.png", "./hotel__1.png"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "imagesArr": ["./hotel__6.svg", "./hotel__7.svg", "./hotel__8.svg", "./hotel__1.svg", "./hotel__2.svg"],
+        "imagesArr": ["./hotel__6.png", "./hotel__7.png", "./hotel__8.png", "./hotel__1.png", "./hotel__2.png"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -61,7 +61,7 @@
     },
     {
         "id": 7,
-        "imagesArr": ["./hotel__7.svg", "./hotel__8.svg", "./hotel__1.svg", "./hotel__2.svg", "./hotel__3.svg"],
+        "imagesArr": ["./hotel__7.png", "./hotel__8.png", "./hotel__1.png", "./hotel__2.png", "./hotel__3.png"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "imagesArr": ["./hotel__8.svg", "./hotel__1.svg", "./hotel__2.svg", "./hotel__3.svg", "./hotel__4.svg"],
+        "imagesArr": ["./hotel__8.png", "./hotel__1.png", "./hotel__2.png", "./hotel__3.png", "./hotel__4.png"],
         "starsNum": 4,
         "hotelName": "Hotel name",
         "cityName": "City",

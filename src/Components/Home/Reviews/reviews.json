@@ -4,7 +4,7 @@
         "reviewerName": "Name",
         "hotelName": "Hotel name",
         "daysAgoNum": 12,
-        "text": "Lorem ipsum dolor sit amet consectetur. Viverra ultricies enim interdum fermentu tor. Facilisis nulla eun. Ac netus tincidunt arcu er sed."
+        "text": "Lorem ipsum dolor sit amet consectetur. Viverra ultricies enim interdum fermentu tor."
     },
     {
         "avatar": "./avatar-2.png",
@@ -19,5 +19,84 @@
         "hotelName": "Hotel name",
         "daysAgoNum": 12,
         "text": "Viverra ultricies enim interdum fermentu tor. Facilisis nulla eun. Ac netus tincidunt."
+    },
+
+
+
+
+
+
+
+    {
+        "avatar": "./avatar-4.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 12,
+        "text": "Lorem ipsum dolor sit amet consectetur. Viverra ultricies enim interdum fermentu tor."
+    },
+    {
+        "avatar": "./avatar-5.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 19,
+        "text": "Lorem ipsum dolor sit amet consectetur.  Facilisis nulla eun. Ac netus tincidunt sed."
+    },
+    {
+        "avatar": "./avatar-6.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 12,
+        "text": "Viverra ultricies enim interdum fermentu tor. Facilisis nulla eun. Ac netus tincidunt."
+    },
+
+
+
+
+    {
+        "avatar": "./avatar-7.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 12,
+        "text": "Lorem ipsum dolor sit amet consectetur. Viverra ultricies enim interdum fermentu tor."
+    },
+    {
+        "avatar": "./avatar-8.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 19,
+        "text": "Lorem ipsum dolor sit amet consectetur.  Facilisis nulla eun. Ac netus tincidunt sed."
+    },
+    {
+        "avatar": "./avatar-9.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 12,
+        "text": "Viverra ultricies enim interdum fermentu tor. Facilisis nulla eun. Ac netus tincidunt."
+    },
+
+
+    {
+        "avatar": "./avatar-4.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 12,
+        "text": "Lorem ipsum dolor sit amet consectetur. Viverra ultricies enim interdum fermentu tor."
+    },
+    {
+        "avatar": "./avatar-5.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 19,
+        "text": "Lorem ipsum dolor sit amet consectetur.  Facilisis nulla eun. Ac netus tincidunt sed."
+    },
+    {
+        "avatar": "./avatar-6.png",
+        "reviewerName": "Name",
+        "hotelName": "Hotel name",
+        "daysAgoNum": 12,
+        "text": "Viverra ultricies enim interdum fermentu tor. Facilisis nulla eun. Ac netus tincidunt."
     }
+
+
+
 ]

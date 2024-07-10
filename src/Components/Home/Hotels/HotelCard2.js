@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import hotelsArr from './hotels.json';
+import './HotelCard.css';
+import { Link } from "react-router-dom";
+
 export const HotelCard = ({
     imagesArr,
     starsNum,
@@ -8,6 +11,7 @@ export const HotelCard = ({
     countryName,
     distanceFromCenter,
     nightCost,
+    id
 }) => {
     const starsArr = [];
     for (let i = 1; i <= starsNum; i++) {
@@ -27,7 +31,7 @@ export const HotelCard = ({
         }
     }, [currentIndex, imagesArr]);
 
-    useEffect(() => {//to automatically switch photos every 5 seconds
+    useEffect(() => {
         let slider = setInterval(() => setCurrentIndex((prevState) => prevState + 1), 5000);
         return () => {
             clearInterval(slider);
@@ -35,18 +39,18 @@ export const HotelCard = ({
     }, [currentIndex]);
 
     return (
-        <div className="hotel">
+        <div className="hotelHome">
             <button 
                className={`hotel__favourite ${isHotelFavourite ? 'hotel__favourite--active' : ''}`}
                 onClick={() => setIsHotelFavourite(!isHotelFavourite)}
             >
                 {!isHotelFavourite ? (
-                    // <img src="./star.svg" alt="" className="hotel__favourite-star" />
-                    <img src={process.env.PUBLIC_URL + '/star.svg'} alt="" className="hotel__favourite-star" />
+                
+                    <img src={'/Home/HotelList/'  + '/star.svg'} alt="" className="hotel__favourite-starbest" />
 
                 ) : (
-                    // <img src="./black-star-icon.svg" alt="" className="hotel__favourite-star" />
-                    <img src={process.env.PUBLIC_URL + '/black-star-icon.svg'} alt="" className="hotel__favourite-star" />
+                   
+                    <img src={'/Home/HotelList/'  + '/black-star-icon.svg'} alt="" className="hotel__favourite-starbest" />
 
                 )}
             </button>
@@ -63,8 +67,8 @@ export const HotelCard = ({
 
                             return (
                                 <article className={position} key={imageIndex}>
-                                    {/* <img src={imageSrc} alt="Hotel" className='hotel__image' /> */}
-                                    <img src={process.env.PUBLIC_URL + '/' + imageSrc} alt="Hotel" className='hotel__image' />
+                                  
+                                    <img src={'/Home/HotelList/' + imageSrc} alt="Hotel" className='hotel__image' />
 
                                 </article>
                             );
@@ -89,9 +93,11 @@ export const HotelCard = ({
                     </div>
                 </section>
             </div>
+            <Link to={`/hotels/${id}`} style={{ textDecoration: 'none'}}>
             <h4 className="hotel__title">
-                {hotelName} | {cityName} | {countryName}
+              {hotelName} | {cityName} | {countryName}
             </h4>
+            </Link>
             <div className="hotel__stars">
                 {starsArr.map((_, index) => (<div key={index} className="hotel__stars-star"></div>))}
             </div>

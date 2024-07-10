@@ -1,0 +1,22 @@
+[
+    {
+        "imagesArr": ["paris2.webp","paris1.jpg", "paris3.webp", "paris4.webp"],
+        "adress": "Lviv Street 8",
+        "adressLink": "https://maps.app.goo.gl/dZyRvqGFgdwmUWZY8", 
+        "features": [{
+            "icon": "crown.svg",
+            "text": "popular"
+        }, {
+            "icon": "rank.svg",
+            "text": "city centre"
+        }, {
+            "icon": "coffee.svg",
+            "text": "comfortable"
+        }],
+        "cityName": "Kyiv",
+        "nightCost": 85,
+        "description": "Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture. With luxurious accommodations and top-notch amenities, we provide a comfortable and relaxing stay for all our guests. Whether you're traveling for business or leisure, our attentive staff is always on hand to assist with any needs you may have. ",
+        "starsNum": 4
+
+    }
+]

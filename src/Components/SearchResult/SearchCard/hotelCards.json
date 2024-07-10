@@ -1,0 +1,87 @@
+[
+    {
+      "id": 1,
+      "image": "id1.png", 
+      "name": "Tourist Hotel",
+      "rating": 7.9,
+      "reviews": 345,
+      "price": 85,
+      "airportDistance": "3.5",
+      "stationDistance": "4.2",
+      "description":"Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...",
+      "starsNum": 4
+    },
+    {
+      "id": 2,
+      "image": "id2.png",
+      "name": "Tourist Hotel",
+      "rating": 6.7,
+      "reviews": 345,
+      "price": 85,
+      "airportDistance": "3.5",
+      "stationDistance": "4.2",
+        "description":"Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...",
+        "starsNum": 5
+    },
+    {
+      "id": 3,
+      "image": "id3.png", 
+      "name": "Tourist Hotel",
+      "rating": 9.3,
+      "reviews": 345,
+      "price": 85,
+      "airportDistance": "3.5",
+      "stationDistance": "4.2",
+        "description":"Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...",
+        "starsNum": 1
+    },
+    {
+      "id": 4,
+      "image": "id4.png", 
+      "name": "Tourist Hotel",
+      "rating": 7.5,
+      "reviews": 345,
+      "price": 85,
+      "airportDistance": "3.5",
+      "stationDistance": "4.2",
+        "description":"Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...",
+        "starsNum": 2
+    },
+    {
+      "id": 5,
+      "image": "id5.png", 
+      "name": "Tourist Hotel",
+      "rating": 7.6,
+      "reviews": 345,
+      "price": 85,
+      "airportDistance": "3.5",
+      "stationDistance": "4.2",
+        "description":"Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...",
+        "starsNum": 3
+    },
+    {
+      "id": 6,
+      "image": "id6.png", 
+      "name": "Tourist Hotel",
+      "rating": 5.9,
+      "reviews": 345,
+      "price": 85,
+      "airportDistance": "3.5",
+      "stationDistance": "4.2",
+        "description":"Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...",
+        "starsNum": 5
+    },
+    {
+      "id": 7,
+      "image": "id7.png", 
+      "name": "Tourist Hotel",
+      "rating": 7.1,
+      "reviews": 345,
+      "price": 85,
+      "airportDistance": "3.5",
+      "stationDistance": "4.2",
+        "description":"Located in the heart of Kiev, our hotel offers a prime location for exploring the city's rich history and culture...",
+        "starsNum": 4
+    }
+  ]
+  
