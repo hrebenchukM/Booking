@@ -1,0 +1,186 @@
+
+.account-page {
+    font-family: "Arial", sans-serif;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+  
+
+  .account-title {
+ 
+
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+
+display: flex;
+align-items: center;
+color: #581ADB;
+
+
+  }
+  
+  .section {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .top-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+box-sizing: border-box;
+
+
+background: #FFFFFF;
+
+border: 1px solid #DDDDDD;
+
+box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08), 0px 4px 69px rgba(0, 0, 0, 0.05);
+border-radius: 13px;
+
+  }
+  
+ 
+  .profile-image
+  {
+width: 272px;
+height: 248px;
+background-image: url(/public/MyProfile/Account/accphoto.png);
+border-radius: 13px;
+background-size:cover; 
+  }
+  .profile-details {
+    flex: 1;
+  }
+  .input-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  .icon-input {
+    position: absolute;
+    right: 10px; 
+    top: 40%;
+    transform: translateY(-50%); 
+    cursor: pointer;
+  }
+  .name-input {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+ 
+  }
+  
+  .change-photo-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 5px;
+    z-index: 0;
+    cursor: pointer;
+    color: rgba(113, 113, 113, 1);
+  }
+  
+  .change-photo-btn .icon {
+    width: 24px;
+    height: 24px;
+   
+
+    margin-left: -50px;
+    flex: none;
+    order: 1;
+    z-index: 1;
+  }
+  
+  .change-photo-btn:hover {
+    background-color: #f7f7f7;
+  }
+  
+ 
+  
+
+  .description-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .description-wrapper .note {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+
+
+  .form-wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+  }
+  
+  .input {
+    width: 50%; 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+  
+  .input:focus {
+    outline: none;
+  }
+  
+  .note {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px; 
+    align-self: flex-start;
+  }
+  
+  @media (max-width: 768px) {
+    .top-section {
+      flex-direction: column;
+    }
+  
+    .form-wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+  
