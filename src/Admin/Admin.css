@@ -1,0 +1,52 @@
+.admin {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .admin-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .admin-sidebar {
+    width: 250px;
+    background-color: #f4f4f8;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .admin-sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .admin-sidebar li {
+    padding: 15px 0;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .admin-sidebar li:hover {
+    color: #6200ee;
+  }
+  
+  .admin-main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .admin-main h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #6200ee;
+  }
+  
+  .admin-main p {
+    font-size: 16px;
+    color: #666;
+  }
+  
