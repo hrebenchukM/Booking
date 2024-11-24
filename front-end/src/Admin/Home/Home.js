@@ -1,5 +1,4 @@
 import { Info } from "../Components/Home/Info/Info";
-import { Header } from "../Components/Common/Header/Header";
 import "./Home.css";
 import React, { useEffect, useState } from 'react';
 import Recharts from "../Components/Home/Recharts/Recharts";
@@ -35,7 +34,6 @@ export function Home() {
   
   return (
     <div className="home">
-      <Header />
       <Info></Info>
       <Recharts data={userData} title="User Analytics" grid dataKey="Active User"/>
       
