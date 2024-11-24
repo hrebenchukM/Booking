@@ -1,5 +1,4 @@
 CREATE DATABASE Booking;
-GO
 USE Booking;
 
 CREATE TABLE users (
@@ -8,10 +7,12 @@ CREATE TABLE users (
 	password NVARCHAR(255) NOT NULL,      
     name NVARCHAR(255) NOT NULL, 
 	phone NVARCHAR(20),   
-	birth_date DATE NOT NULL,                          
+	birthday DATE NOT NULL,                          
     country NVARCHAR(255),                        
     city NVARCHAR(255),                          
-    currency NVARCHAR(3)
+    currency NVARCHAR(3),
+	created DATETIME DEFAULT GETDATE(),
+	active BIT DEFAULT 1
 );
 
 CREATE TABLE admins (
@@ -23,10 +24,10 @@ CREATE TABLE admins (
 );
 
 
-INSERT INTO users (email, password, name, phone, birth_date, country, city, currency)
+INSERT INTO users (email, password, name, phone, birthday, country, city, currency,active)
 VALUES
-    ('mary@gmail.com', 'password123', 'Mary Zaiats', '+380995410270', '2004-10-12', 'Ukraine', 'Odesa', 'USD'),
-    ('ira@gmail.com', 'password456', 'Ira Hrebenchuk', '+380995410271', '1977-08-10', 'Ukraine', 'Odesa', 'UAH')
+    ('mary@gmail.com', 'password123', 'Mary Zaiats', '+380995410270', '2004-10-12', 'Ukraine', 'Odesa', 'USD', 1),
+    ('ira@gmail.com', 'password456', 'Ira Hrebenchuk', '+380995410271', '1977-08-10', 'Ukraine', 'Odesa', 'UAH', 1)
 
 INSERT INTO admins (email, password, name, profession)
 VALUES
