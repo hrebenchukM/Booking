@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Hotel.css';
-import reviewsArr from '../../Home/Reviews/reviews.json';
 import { ReviewsList } from './ReviewsList/ReviewsList';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import 'swiper/css';
@@ -20,6 +17,15 @@ export function Hotel({
     starsNum
 }) {
     const [slideIndex, setSlideIndex] = useState(0);
+    const [reviews, setReviews] = useState([]);
+    
+    useEffect(() => {
+        fetch('http://localhost:8081/admin/reviews')
+            .then(response => response.json())
+            .then(data => setReviews(data.slice(0, 3))) // Limit to 3 reviews
+            .catch(error => console.error('Error fetching reviews:', error));
+    }, []);
+    
 
     const handleSlide = (direction) => {
         let newSlideIndex;
@@ -33,20 +39,20 @@ export function Hotel({
         setSlideIndex(newSlideIndex);
     };
 
-
     const starsArr = [];
-for (let i = 1; i <= starsNum; i++) {
-    starsArr.push(i);
-}
+    for (let i = 1; i <= starsNum; i++) {
+        starsArr.push(i);
+    }
+
     return (
         <section className="details-hotelA">
-           <span className="hotel-title">
-    {starsArr.map((_, index) => (
-        <div key={index} className="hotel__stars_search-star"></div>
-    ))}
-</span>
+            <span className="hotel-title">
+                {starsArr.map((_, index) => (
+                    <div key={index} className="hotel__stars_search-star"></div>
+                ))}
+            </span>
 
-            <span className="hotel-title "style={{ marginTop: '0px' }}>Tourist Hotel</span>
+            <span className="hotel-title" style={{ marginTop: '0px' }}>Tourist Hotel</span>
             <span className="hotel-text-number">(380) 555-0103</span>
 
             <div className="details-container details-hotel__container">
@@ -109,7 +115,7 @@ for (let i = 1; i <= starsNum; i++) {
                     </div>
                     <hr className="details-hotel__info-line" />
                     <div className="details-hotel__reviews">
-                        <ReviewsList reviewsArr={reviewsArr} />
+                        <ReviewsList reviewsArr={reviews} />
                     </div>
                 </div>
             </div>

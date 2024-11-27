@@ -1,65 +1,29 @@
 import "./Admin.css";
-import React, { useEffect, useState } from 'react';
-import { Home } from "./Home/Home";
-import { Header } from "../Components/Common/Header/Header";
+import React from 'react';
+import { Home } from "./Pages/Home/Home";
+import { HeaderAdmin } from "./сomponents/common/Header/Header";
+import { Routes, Route } from 'react-router-dom';
+import Sidebar from "./сomponents/common/SideBar/SideBar";
+import Users from "./Pages/Users/Users";
+import Hotels from "./Pages/Hotels/Hotels";
+import Reviews from "./Pages/Reviews/Reviews";
 
 export function Admin() {
- 
-  
+
   return (
     <div className="admin">
-     <Header></Header>
-     <Home></Home>
-       {/* <div className="admin-container">
-        <aside className="admin-sidebar">
-        <ul>
-    <li>Dashboard</li>
-    <li>Users</li>
-    <li>Bookings</li>
-    <li>Properties</li>
-    <li>Payments</li>
-    <li>Reviews</li>
-    <li>Reports</li>
-    <li>Notifications</li>
-    <li>Coupons</li>
-    <li>Settings</li>
-    <li>Support</li>
-</ul>
-
-        </aside>
+      <HeaderAdmin />
+      <div className="admin-container">
+        <Sidebar></Sidebar>
         <main className="admin-main">
-          <h1>Welcome to Admin Panel</h1>
-          <p>Use the sidebar to navigate through the panel.</p>
-          <table>
-        <thead>
-          <th>ID</th>
-          <th>Email</th>
-          <th>Password</th>
-          <th>Name</th>
-          <th>Phone</th>
-          <th>Birth date</th>
-          <th>Country</th>
-          <th>City</th>
-          <th>Currency</th>
-        </thead>
-        <tbody>
-          {data.map((d,i) =>(
-            <tr rey={i}>
-              <td>{d.id}</td>
-              <td>{d.email}</td>
-              <td>{d.password}</td>
-              <td>{d.name}</td>
-              <td>{d.phone}</td>
-              <td>{d.birth_date}</td>
-              <td>{d.country}</td>
-              <td>{d.city}</td>
-              <td>{d.currency}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+          <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="users" element={<Users />} />
+          <Route path="hotels" element={<Hotels />} />
+          <Route path="reviews" element={<Reviews />} />
+         </Routes>
         </main>
-      </div> */}
+      </div>
     </div>
   );
 }

@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect,useState } from "react";
+
 import './ReviewsList.css';
 import { ReviewCard } from "../../../Home/Reviews/ReviewCard";
-export const ReviewsList = ({
-    reviewsArr
-}) => {
+
+export const ReviewsList = ({ reviewsArr }) => {
+
     const [slideIndex, setSlideIndex] = useState(0);
+
+    if (!reviewsArr || reviewsArr.length === 0) {
+        return <div>No reviews available</div>;
+    }
 
     const handleSlide = (direction) => {
         let newSlideIndex;
@@ -21,7 +26,6 @@ export const ReviewsList = ({
     return (
         <div className="reviews__listhotel">
             <div className="reviews__sliderhotel">
-           
                 <div className="reviews__slider-contenthotel">
                     <div className="reviews__slidehotel reviews__slide--activehotel">
                         <ReviewCard
@@ -33,7 +37,6 @@ export const ReviewsList = ({
                         />
                     </div>
                 </div>
-            
                 <button className="reviews__slider-btnhotel reviews__slider-btn--prevhotel" onClick={() => handleSlide('left')}>&#10094;</button>
                 <button className="reviews__slider-btnhotel reviews__slider-btn--nexthotel" onClick={() => handleSlide('right')}>&#10095;</button>
             </div>

@@ -1,0 +1,97 @@
+
+.members {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    margin-right: 20px;
+  }
+  
+
+  
+  .membersTitle {
+    text-transform: capitalize;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 49px;
+    color: #581ADB;
+  }
+  
+
+  .adminImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+  
+  .adminImg:hover {
+    transform: scale(1.1);
+  }
+  
+  .adminList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .adminItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  
+  .adminInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .adminName {
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 27px;
+color: #222222;
+  }
+  
+  .adminRole {
+font-family: 'Nunito Sans', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 21.82px;
+color: rgba(113, 113, 113, 1);
+  }
+  
+  .viewBtn {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 12px;
+    background-color: #ebf0ff;
+    color:rgba(88, 26, 219, 1);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .viewBtn:hover {
+    background-color: #d8e5fe;
+    color: rgb(84, 26, 207);
+  }
+  
+  .viewIcon {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  

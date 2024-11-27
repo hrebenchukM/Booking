@@ -1,0 +1,64 @@
+.users {
+    flex: 4;
+  }
+  
+  .person {
+    display: flex;
+    align-items: center;
+  }
+  
+  .usersEdit {
+    color: #3bb077;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .usersDelete {
+    color: red;
+    cursor: pointer;
+  }
+  
+  .addUserButton {
+    text-decoration: none;
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .addButton {
+    border: 2px solid rgba(88, 26, 219, 1);
+    color: rgba(88, 26, 219, 1);
+    background-color: #f9f9f9;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: rgb(80, 26, 198);
+    color: white;
+    border-color: rgb(80, 26, 198);
+  }
+  
+  .addButton:active {
+    transform: translateY(1px);
+  }
+  
+  .addButton svg {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .addButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(80, 26, 198, 0.3);
+  }
+  
+  .users-icon{
+    margin-right: 5px;
+    font-size: 20px ;
+    color: #555; 
+}

@@ -1,0 +1,88 @@
+.sidebar {
+    flex: 0 0 250px;
+    background-color: #fbfbff;
+    position: sticky;
+    top: 50px;
+    transition: all 0.3s ease;
+    }
+  
+  .sidebar-wrapper {
+    padding: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-title {
+    font-size: 14px;
+    color: #6c5dd3; 
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-item {
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #6c6c81; 
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+  }
+  
+  .sidebar-item:hover,
+  .sidebar-item.active {
+    background-color: #673ab7; 
+    color: #ffffff; 
+    transform: translateX(5px);
+  }
+  
+  .sidebar-item .sidebar-icon {
+    margin-right: 12px;
+    font-size: 20px;
+    color: #a1a1c7;
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar-item:hover .sidebar-icon {
+    transform: translateX(5px);
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .sidebar-toggle {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    background-color: #6c5dd3; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar-toggle:hover {
+    background-color:rgba(88, 26, 219, 1); 
+  }
+  
+  .sidebar-icon{
+    margin-right: 5px;
+    font-size: 20px ;
+    color: #555; 
+}

@@ -8,8 +8,6 @@
   
 
   .account-title {
- 
-
 font-family: 'Nunito Sans';
 font-style: normal;
 font-weight: 700;
@@ -22,8 +20,9 @@ color: #581ADB;
 
 
   }
-  
-  .section {
+
+
+  .account-section {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;

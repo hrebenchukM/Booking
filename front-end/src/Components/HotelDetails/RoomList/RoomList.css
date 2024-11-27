@@ -3,7 +3,8 @@
   display: flex;
   width: fit-content;
   gap: 32px;
- margin-left: 150px;
+  align-items: center;
+  margin: auto;
  justify-content: center;
 }
 .rooms__list-title {

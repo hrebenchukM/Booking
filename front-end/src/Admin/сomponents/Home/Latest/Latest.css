@@ -1,0 +1,99 @@
+
+  .latest {
+    flex: 2;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  
+  }
+  
+ 
+  
+  .latestTitle {
+    text-transform: capitalize;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 49px;
+    color: #581ADB;
+    
+  }
+
+  .latestCol
+  {
+    font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 27px;
+color: #222222;
+  }
+  .latestTable {
+    width: 100%;
+    border-spacing: 10px;
+    border-collapse: collapse;
+
+  }
+  
+  .userInfo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #3b3b4f;
+    padding: 15px;
+  }
+  
+  .userImg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .userImg:hover {
+    transform: scale(1.1);
+  }
+  
+  .latestdate, 
+  .amount {
+    font-weight: 300;
+    font-size: 14px;
+    color: #707089;
+  }
+  
+  .statusBtn {
+    align-items: center;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 12px;
+    background-color: #ebf0ff;
+    color:rgba(88, 26, 219, 1);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .statusBtn.Approved {
+    background-color: #e6f8ee;
+    color: #38a169;
+  }
+  
+  .statusBtn.Declined {
+    background-color: #ebf0ff;
+    color: #e53e3e;
+  }
+  
+  .statusBtn.Pending {
+    background-color: #ebf0ff;
+    color: #3182ce;
+  }
+  
+  .statusBtn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  

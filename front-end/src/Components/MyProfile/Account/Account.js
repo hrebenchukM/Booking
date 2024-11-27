@@ -15,7 +15,7 @@ export const Account = () => {
       <h1 className="account-title">Your Account</h1>
 
      <div className="top-section">
-        <div className="profile-wrapper section">
+        <div className="profile-wrapper account-section" style={{ padding: '0px' }}>
         <span  className="profile-image" />
          
           <div className="profile-details">
@@ -43,7 +43,7 @@ export const Account = () => {
           </div>
         </div>
 
-        <div className="description-wrapper section">
+        <div className="description-wrapper account-section">
           <p className="note">
             Your name will be the only visible information to other users. All
             other details will remain private and will be utilized to suggest
@@ -53,7 +53,7 @@ export const Account = () => {
       </div>
 
     
-      <div className="form-wrapper section">
+      <div className="form-wrapper account-section">
         <div className="form-group">
           <input
             type="text"

@@ -1,0 +1,167 @@
+
+
+ .navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Nunito Sans',sans-serif;
+    font-weight: 600;
+    justify-content: space-between;
+    color: rgb(33, 33, 33);
+    margin: 10px;
+  }
+  
+  .logo {
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 33px;
+    display: block;
+    margin-left: 50px;
+    font-weight: 800;
+  }
+  
+
+  
+  
+  .other-container {
+    margin-right: 20px;
+    font-size: 15px;
+    display: flex;
+    width: 600px;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 18px;
+    gap: 20px;
+  }
+
+  .language {
+ 
+    position: relative;
+    width: 32px;
+    height: 32px;
+    
+    }
+    
+  .navbar-login-button  {
+    color: #222222;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 20px 10px 16px;
+    display: flex;
+    align-items: center; 
+    z-index: 0;
+}
+
+.navbar-login-button-icon {
+    width: 24px;
+    height: 24px;
+    background: #717171;
+    border-radius: 60px;
+    margin: 0; 
+    margin-left: 10px;
+    flex: none;
+    order: 1;
+    z-index: 1;
+
+}
+
+.register-button
+{
+    color: #222222;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 16px;
+    gap: 10px;
+}
+
+
+
+.navbar-login-button:hover, .register-button:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (min-width: 801px) {
+  .account-button {
+    display: none;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .navbar-login-button, .register-button {
+    display: none;
+  }
+
+  .account-button
+{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px 40px 10px 20px;
+gap: 10px;
+isolation: isolate;
+width: 120px;
+height: 32px;
+background: #FFFFFF;
+border: 1px solid #DDDDDD;
+border-radius: 30px;
+}
+
+
+  .logo {
+    font-size: 20px;
+    margin-left: 0px;
+width: 167px;
+height: 33px;
+font-family: 'Nunito Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 33px;
+display: flex;
+align-items: center;
+color: #222222;
+
+
+  }
+
+  .other-container {
+    margin-left: 30px;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+
+  .navbar-account-button-icon
+  {
+  width: 24px;
+  height: 24px;
+  background: #717171;
+  border-radius: 60px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+  margin-left: 10px;
+  }
+  .account-button:hover {
+    cursor: pointer;
+  }
+}
+
